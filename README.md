@@ -130,7 +130,6 @@ On entering the website, you are presented with some instructions explaining the
 - What is your email address (optional - only to be used to send your results)? 
 - First time or returning for a checkup?
 - What grade are you currently working at? 
-- What grade are you aiming for? 
 
 Then the user will be presented with a "start assessment" button. 
 
@@ -158,20 +157,36 @@ Email me the results button will appear at the bottom if they would like results
 
 ### Skeleton - wireframes
 
-
+#### Starting Section
+![Starting section wirefram](assets/images/readme/starting-section.png)
+#### Questions
+![Questions wireframe](assets/images/readme/question-page%20.png)
+#### Answer Reveal
+![Answer Reveal Wireframe](assets/images/readme/answer-reveal-page.png)
+#### Results
+![Results wireframe](assets/images/readme/results-page.png)
 
 ### Surface - Design Choices 
 
 #### Colour Scheme
-
+The colour scheme is in line with that of my business.
+![Colour Palette with muted blue green and purple](assets/images/readme/colour-palette.png)
 
 
 #### Typography 
 
+Alegreya Sans for the headings:
+![Alegreya sans font](assets/images/readme/alegraya-sans.png)
 
+Quicksand for the content: 
+![Quicksand font](assets/images/readme/quicksand.png)
 
 #### Imagery
 
+There will be minimal imagery in this project. The logo from "Maths Tutoring with Amy" will be used and portrayed on each page: 
+
+![Maths Tutoring with Amy logo](assets/images/readme/logo.png)
+![Maths Tutoring with Amy logo and title](assets/images/readme/logo-with-name.png)
 
 ## Features
 
@@ -183,23 +198,23 @@ Email me the results button will appear at the bottom if they would like results
 
 ## Tools and Technologies Used
  - Custom HTML and CSS were used throughout.
- - [Bootstrap v5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used in this project at various points for layout, form styling, creating cards and the navbar. I made some adaptations to the bootstrap styling at various points too. 
+ <!-- - [Bootstrap v5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used in this project at various points for layout, form styling, creating cards and the navbar. I made some adaptations to the bootstrap styling at various points too. 
  - CSS Flexbox was also used for layout purposes (outside of Bootstrap) - the reason I used Flexbox without Bootstrap was that it felt lighter and more customisable in places in addition to giving me good practice of using both flexbox and bootstrap for layout. 
  - Git for version control
  - Github for saving and storing files
- - VS Code for locally coding my project (to replace the use of online IDE such as Gitpod or Codeanywhere)
+ - VS Code for locally coding my project (to replace the use of online IDE such as Gitpod or Codeanywhere) -->
  - [Google Fonts](https://fonts.google.com/) for the font used in the website
  - Google developer tools to test the website for responsiveness and to fix bugs.
- - [Picture to people](https://www.picturetopeople.org/text_generator/others/transparent/transparent-text-generator.html "Picture to People website") was used to generate the title with a transparent background that overlays the hero image. 
+ <!-- - [Picture to people](https://www.picturetopeople.org/text_generator/others/transparent/transparent-text-generator.html "Picture to People website") was used to generate the title with a transparent background that overlays the hero image.  -->
  - [Image Resizer](https://imageresizer.com "Image Resizer Website") was used to compress and resize images. 
- - [Convertio](https://convertio.co/) for turning jpg to webp
- - [Coolors](https://coolors.co/ "Coolors Website") was used to generate the colour palette. 
+ <!-- - [Convertio](https://convertio.co/) for turning jpg to webp -->
+ - [Canva](https://canva.com "Canva Website") was used to generate the colour palette. 
  - Google Maps API to embed a map using an iframe.
- - [Font Awesome](https://fontawesome.com/) was used for all icons used on my page.
+ <!-- - [Font Awesome](https://fontawesome.com/) was used for all icons used on my page. -->
  - [Am I Responsive?](https://www.google.com/search?q=am+i+responsive&rlz=1C1ONGR_en-GBGB985GB985&oq=am+i+respon&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYQDIGCAMQRRhBMgYIBBBFGDwyBggFEEUYPNIBCDE4NTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8) to show how the website looks on different size screens and devices.
- - WAVE chrome extension for accessibility testing
+ <!-- - WAVE chrome extension for accessibility testing
  - WCAG Contrast checker chrome extension for colour contrast checking
-- [W3C Validator](https://validator.w3.org/) for validating HTML and CSS
+- [W3C Validator](https://validator.w3.org/) for validating HTML and CSS -->
 
 
 ## Testing and Validation
