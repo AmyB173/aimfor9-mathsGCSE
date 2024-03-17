@@ -50,6 +50,7 @@ Users will be students who are preparing and revising for their GCSE Maths, are 
 - (B) as a user, I want to be directed to specific resources that I can > use to revise based on where I'm currently at
 - (C) as a user, I want to be able to return to the website to see if > I've improved after doing the recommended work
 - (D) as a user, I want to be able to skip topics that I already know so I don't waste time completing those questions
+- (E) as a user, I want to be able to return to my results at a later date
 
 ### Strategy - Business Goals
 - as the business owner, I want my students to be more efficient in their revision so they are only revising those topics they currently can't access
@@ -107,6 +108,10 @@ Business logo on the page and link to business website appearing at several stag
 > #### User Story D - I want to be able to skip topics that I already know so I don't waste time completing those questions. 
 - have an option to skip the question and indicate if it's because it's too easy or too hard (too hard => need to revise, too easy => don't need to revise)
 
+> #### User Story E - I want to be able to return to my results at a later date
+
+- the user will be given an option to have the results emailed to the recipient
+
 ### Scope - content
 
 This is going to be a very content heavy project as the assessment will involve many questions and full, generally written, solutions in addition to instructional and tutorial videos.
@@ -117,21 +122,41 @@ This is going to be a very content heavy project as the assessment will involve 
 
 ### Structure
 
+There will only be one page on this site in the first instance. 
+
+On entering the website, you are presented with some instructions explaining the purpose of the page, then the following questions:
+
+- What is your name? 
+- What is your email address (optional - only to be used to send your results)? 
+- First time or returning for a checkup?
+- What grade are you currently working at? 
+- What grade are you aiming for? 
+
+Then the user will be presented with a "start assessment" button. 
+
+When the assessment starts each question will have the following: 
+- title with topic name
+- question 
+- previous button (will take you to the previous question)
+- Skip: question is too easy 
+- Skip: question is too hard 
+- Show answer
+
+When "show answer" is clicked, the user is presented with: 
+
+- Did you get it right? Yes or no.
+
+For consistency, predictability and learnability each question will have the same layout and the buttons will stay in the same place. 
+
+User will get feedback on each button clicked because a visible outcome occures (move to previous questions, answer is revealed, next question is revealed). 
+
+At the end of the assessment, the user will be presented with two outcomes (their name and grade info will added for personalisation):
+- an analysis of how they did (table with red/amber/green)
+- then revision suggestions based on this 
+
+Email me the results button will appear at the bottom if they would like results sent to them. 
 
 ### Skeleton - wireframes
-
-
-
-#### Home Page
-
-
-
-#### Services Page
-
-
-
-#### Contact Page
-
 
 
 
