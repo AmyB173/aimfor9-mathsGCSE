@@ -3,11 +3,13 @@
 let username; 
 let grade; 
 
-// This stores the name and grade of the student to use at the end.
-document.getElementById("submit").addEventListener("click", function() {
-    username = document.querySelector('[name="name"]').value;
+// Trigger for starting assessment
+document.getElementById("submit").addEventListener("click", startAssessment);
+
+// This stores the name and grade of the student to use at the end and starts the assessment
+function startAssessment() {
+    username = document.querySelector('[name="username"]').value;
     grade = document.querySelector('[name="grade"]:checked').value;
-
-});
-
-//This function creates the HTML structure for the question page
+    $(".start-wrapper").addClass("d-none");
+    $("#question-wrapper").removeClass("d-none");
+}
