@@ -21,7 +21,9 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
    - [Skeleton - Wireframes](#skeleton---wireframes)
    - [Surface - Design Choices](#surface---design-choices)
 
-2. [Features](#features-1)
+2. [Logic Planning](#logic-planning)
+
+3.  [Features](#features-1)
    -
 
 3. [Tools and Technologies Used](#tools-and-technologies-used-1)
@@ -187,6 +189,21 @@ There will be minimal imagery in this project. The logo from "Maths Tutoring wit
 
 ![Maths Tutoring with Amy logo](assets/images/readme/logo.png)
 ![Maths Tutoring with Amy logo and title](assets/images/readme/logo-with-name.png)
+
+## Logic Planning
+This is a high-level plan of how I envisage the logic working. 
+
+The content for Grade 9 algebra will be split into "modules" that have "subtopics" of increasing difficulty.
+
+Logic will be as follows: 
+
+Student will start with Module 1, subtopic 1. 
+- if the student gets the **answer correct** or they select **"Skip: too easy!** they move onto Module 1, subtopic 2. This subtopic is marked as **"mastered"** and they move onto the **next subtopic**. 
+- if the student gets the **answer incorrect** or they select **"Skip: too hard!"** and this is the **first incorrect/hard skip** answer in this module, they still move onto the next question. This subtopic is marked **needs revision** and they move onto the **next subtopic**
+- if the student gets the **answer incorrect** or they select **"Skip: too hard!"** and this is the **second incorrect/hard skip** answer in this module, they **skip the remaining subtopics**. This subtopic and all further subtopics in the module are marked **needs revision** and they move onto the **next module**
+
+The logic will continue like this until all subtopics are noted as mastered or need revision.
+
 
 ## Features
 
