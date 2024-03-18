@@ -47,3 +47,10 @@ label {
 .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
     background-color: #485963;
 }
+
+.question-content {
+    height: 200px;
+}
+.content-wrapper {
+    height: auto;
+}
