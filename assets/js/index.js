@@ -4,8 +4,8 @@ import {
 
 //global variables, could be changed by user using the back button
 
-var currentQuestionCode = "1";
-var currentModuleCode = "1";
+var currentQuestionCode = 1;
+var currentModuleCode = 1;
 let username; 
 let grade;
 
@@ -19,7 +19,7 @@ $("#start-assessment").on("click", () => {
     grade = document.querySelector('[name="grade"]:checked').value;
     $(".start-wrapper").addClass("d-none");
     $("#question-wrapper").removeClass("d-none");
-    insertQuestion();
+    insertNextQuestion();
 
 });
 
@@ -28,7 +28,7 @@ $("#start-assessment").on("click", () => {
 // question buttons are replaced with answer buttons
 $("#show-answer").on("click",  () => {
     console.log("Hello")
-    let currentModule = modules.find(module => module.name === "module" + currentModuleCode);
+    let currentModule = modules.find(module => module.name === "module" + currentModuleCode.toString());
     let currentQuestion = currentModule.content.find(question => question.questionCode === currentQuestionCode);
     $(".question-title")[0].innerHTML = "Answer: " + currentQuestion.answer;
     $(".question-content")[0].innerHTML = currentQuestion.solution;
@@ -37,18 +37,22 @@ $("#show-answer").on("click",  () => {
 })
 
 $("#yes-btn").on("click", () => {
+    console.log(currentQuestionCode);
     markAsMastered();
     updateCodes();
-    triggerNextQuestion();
+    console.log(currentQuestionCode);
+    insertNextQuestion();
 })
 
 $("#easy-btn").on("click", () => {
     markAsMastered();
     updateCodes();
-    triggerNextQuestion();
+    insertNextQuestion();
 })
 
-function insertQuestion() {
+function insertNextQuestion() {
+    $("#questions-buttons").removeClass("d-none");
+    $("#answer-buttons").addClass("d-none");
     let currentModule = modules.find(module => module.name === "module" + currentModuleCode);
     let currentQuestion = currentModule.content.find(question => question.questionCode === currentQuestionCode);
     $(".question-title")[0].innerHTML = currentQuestion.name;
@@ -57,10 +61,6 @@ function insertQuestion() {
 
 function markAsMastered() {
     modules.find(module => module.name === "module" + currentModuleCode).content.find(question => question.questionCode === currentQuestionCode).mastered = true;
-}
-
-function triggerNextQuestion() {
-
 }
 
 // this function checks whether the module code should be updated and then updates if so
