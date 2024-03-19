@@ -1,5 +1,8 @@
 
-export let module1Questions = [
+export let modules = [
+    {
+    name: "module1",
+    content: [
     {
         name: "Expand single Brackets",
         moduleCode: "1",
@@ -23,6 +26,6 @@ export let module1Questions = [
         question: `<p>Module 1 Topic 3 Question</p>`, 
         answer: `<p>Module 1 Topic 3 Answer</p>`,
         solution: `<img src="assets/images/logo.png"></img>`
-    }
-
+    }]
+}
 ]
