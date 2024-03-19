@@ -9,7 +9,8 @@ export let modules = [
         questionCode: "1",
         question: `<p>Module 1 Topic 1 Question</p>`, 
         answer: `<p>Module 1 Topic 1 Answer</p>`,
-        solution: `<img src="assets/images/logo.png"></img>`
+        solution: `<img src="assets/images/logo.png"></img>`,
+        mastered: false
     },
     {
         name: "Expand Two Brackets",
@@ -17,7 +18,8 @@ export let modules = [
         questionCode: "2",
         question: `<p>Module 1 Topic 2 Question</p>`, 
         answer: `<p>Module 1 Topic 2 Answer</p>`,
-        solution: `<img src="assets/images/logo.png"></img>`
+        solution: `<img src="assets/images/logo.png"></img>`,
+        mastered: false
     },
     {
         name: "Expand Three Brackets",
@@ -25,7 +27,8 @@ export let modules = [
         questionCode: "3",
         question: `<p>Module 1 Topic 3 Question</p>`, 
         answer: `<p>Module 1 Topic 3 Answer</p>`,
-        solution: `<img src="assets/images/logo.png"></img>`
+        solution: `<img src="assets/images/logo.png"></img>`,
+        mastered: false
     }]
 }
 ]

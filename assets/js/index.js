@@ -23,13 +23,17 @@ $("#start-assessment").on("click", () => {
 
 });
 
-// When show answer is clicked
+// When show answer is clicked question title is replaced with the answer 
+// and the question is replaced with the fully worked solution
+// question buttons are replaced with answer buttons
 $("#show-answer").on("click",  () => {
     console.log("Hello")
     let currentModule = modules.find(module => module.name === "module" + currentModuleCode);
     let currentQuestion = currentModule.content.find(question => question.questionCode === currentQuestionCode);
     $(".question-title")[0].innerHTML = "Answer: " + currentQuestion.answer;
     $(".question-content")[0].innerHTML = currentQuestion.solution;
+    $("#questions-buttons").addClass("d-none");
+    $("#answer-buttons").removeClass("d-none");
 })
 
 
