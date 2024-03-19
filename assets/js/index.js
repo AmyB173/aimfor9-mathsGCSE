@@ -61,8 +61,7 @@ function markAsMastered() {
 
 // this function checks whether the module code should be updated and then updates if so
 function updateCodes() {
-    console.log(currentQuestionCode);
-    console.log(modules.find(module => module.name === "module" + currentModuleCode).content.length);
+
     let endOfModule = currentQuestionCode == modules.find(module => module.name === "module" + currentModuleCode).content.length;
     let twoWrong = false;    
     // if we are at the end of the array 
