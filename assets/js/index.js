@@ -36,6 +36,17 @@ $("#show-answer").on("click",  () => {
     $("#answer-buttons").removeClass("d-none");
 })
 
+$("#yes-btn").on("click", () => {
+    markAsMastered();
+    updateCodes();
+    triggerNextQuestion();
+})
+
+$("#easy-btn").on("click", () => {
+    markAsMastered();
+    updateCodes();
+    triggerNextQuestion();
+})
 
 function insertQuestion() {
     let currentModule = modules.find(module => module.name === "module" + currentModuleCode);
@@ -44,3 +55,26 @@ function insertQuestion() {
     $(".question-content")[0].innerHTML = currentQuestion.question;
 }
 
+function markAsMastered() {
+    modules.find(module => module.name === "module" + currentModuleCode).content.find(question => question.questionCode === currentQuestionCode).mastered = true;
+}
+
+function triggerNextQuestion() {
+
+}
+
+// this function checks whether the module code should be updated and then updates if so
+function updateCodes() {
+    let endOfModule = currentQuestionCode == modules.find(module => module.name === "module" + currentModuleCode).length;
+    let twoWrong = false;    
+    // if we are at the end of the array 
+    if (endOfModule) {
+        console.log("END OF MODULE")
+        currentModuleCode += 1;
+        currentQuestionCode = 1;
+    } else 
+    {
+        currentQuestionCode += 1;
+    }
+    // if we have got two or more questions wrong within a module
+}
