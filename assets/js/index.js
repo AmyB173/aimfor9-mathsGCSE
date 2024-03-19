@@ -9,10 +9,6 @@ var currentModuleCode = 1;
 let username; 
 let grade;
 
-
-let test = modules.find(module => module.name === "module1");
-console.log(test.content[2].name);
-
 // Trigger for starting assessment and inserting question 1
 $("#start-assessment").on("click", () => {
     username = document.querySelector('[name="username"]').value;
@@ -27,7 +23,6 @@ $("#start-assessment").on("click", () => {
 // and the question is replaced with the fully worked solution
 // question buttons are replaced with answer buttons
 $("#show-answer").on("click",  () => {
-    console.log("Hello")
     let currentModule = modules.find(module => module.name === "module" + currentModuleCode.toString());
     let currentQuestion = currentModule.content.find(question => question.questionCode === currentQuestionCode);
     $(".question-title")[0].innerHTML = "Answer: " + currentQuestion.answer;
@@ -37,15 +32,16 @@ $("#show-answer").on("click",  () => {
 })
 
 $("#yes-btn").on("click", () => {
-    console.log(currentQuestionCode);
     markAsMastered();
     updateCodes();
-    console.log(currentQuestionCode);
+    if (checkIfEndOfTest()) {return};
+    
     insertNextQuestion();
 })
 
 $("#easy-btn").on("click", () => {
     markAsMastered();
+    if (checkIfEndOfTest()) {return};
     updateCodes();
     insertNextQuestion();
 })
@@ -65,11 +61,12 @@ function markAsMastered() {
 
 // this function checks whether the module code should be updated and then updates if so
 function updateCodes() {
-    let endOfModule = currentQuestionCode == modules.find(module => module.name === "module" + currentModuleCode).length;
+    console.log(currentQuestionCode);
+    console.log(modules.find(module => module.name === "module" + currentModuleCode).content.length);
+    let endOfModule = currentQuestionCode == modules.find(module => module.name === "module" + currentModuleCode).content.length;
     let twoWrong = false;    
     // if we are at the end of the array 
     if (endOfModule) {
-        console.log("END OF MODULE")
         currentModuleCode += 1;
         currentQuestionCode = 1;
     } else 
@@ -77,4 +74,15 @@ function updateCodes() {
         currentQuestionCode += 1;
     }
     // if we have got two or more questions wrong within a module
+}
+
+function checkIfEndOfTest() {
+    let endOfTest = currentModuleCode > modules.length;
+    if(endOfTest){
+        $(".start-wrapper").addClass("d-none");
+        $("#question-wrapper").addClass("d-none");
+        $("#results-wrapper").removeClass("d-none");
+        return true;
+    }
+    return false;
 }
