@@ -5,6 +5,7 @@ import {
 //global variables
 var currentQuestionCode = 1;
 var currentModuleCode = 1;
+var failureCounter = 0;
 let username; 
 let grade;
 
@@ -34,6 +35,10 @@ $("#yes-btn, #easy-btn").on("click", () => {
     questionPassed();
 })
 
+$("#no-btn, #hard-btn").on("click", () => {
+    questionFailed();
+})
+
 function insertNextQuestion() {
     $("#questions-buttons").removeClass("d-none");
     $("#answer-buttons").addClass("d-none");
@@ -50,6 +55,13 @@ function questionPassed() {
     insertNextQuestion();
 }
 
+function questionFailed() {
+    failureCounter += 1;
+    updateCodes();
+    if (checkIfEndOfTest()) {return};
+    insertNextQuestion();
+}
+
 
 function markAsMastered() {
     modules.find(module => module.name === "module" + currentModuleCode).content.find(question => question.questionCode === currentQuestionCode).mastered = true;
@@ -57,18 +69,21 @@ function markAsMastered() {
 
 // this function checks whether the module code should be updated and then updates if so
 function updateCodes() {
-
     let endOfModule = currentQuestionCode == modules.find(module => module.name === "module" + currentModuleCode).content.length;
-    let twoWrong = false;    
-    // if we are at the end of the array 
-    if (endOfModule) {
+    let twoWrong = failureCounter === 2;    
+    
+    if (endOfModule || twoWrong) {
+        // This means we move onto the next module
+        // Questions restarts at 1 for new module
+        // Resets failure counter for new module
         currentModuleCode += 1;
         currentQuestionCode = 1;
+        failureCounter = 0;
     } else 
     {
+        //Stay in this module but increase the question number
         currentQuestionCode += 1;
     }
-    // if we have got two or more questions wrong within a module
 }
 
 function checkIfEndOfTest() {
@@ -81,3 +96,4 @@ function checkIfEndOfTest() {
     }
     return false;
 }
+
