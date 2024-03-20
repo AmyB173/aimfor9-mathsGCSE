@@ -32,11 +32,11 @@ $("#show-answer").on("click",  () => {
 })
 
 $("#yes-btn, #easy-btn").on("click", () => {
-    questionPassed();
+    questionFinished("pass");
 })
 
 $("#no-btn, #hard-btn").on("click", () => {
-    questionFailed();
+    questionFinished("fail");
 })
 
 $("#previous-btn").on("click", () => {
@@ -75,18 +75,12 @@ function insertNextQuestion() {
 // marks the current questions as mastered, updates question and module codes
 // checks if the test if finished
 // if it's not finished next question is initiated
-function questionPassed() {
-    markAsMastered();
-    updateCodes();
-    if (checkIfEndOfTest()) {return};
-    insertNextQuestion();
-}
-
-// updates the failure counter for that module, updates question and module codes
-// checks if the test if finished
-// if it's not finished next question is initiated
-function questionFailed() {
-    failureCounter += 1;
+function questionFinished(result) {
+    // mastered is automatically false
+    // if they pass the question is marked as mastered
+    // if incorrect the failure counter updates the number of failed questions in the module
+    result === "pass" ? markAsMastered() : failureCounter += 1;
+    
     updateCodes();
     if (checkIfEndOfTest()) {return};
     insertNextQuestion();
