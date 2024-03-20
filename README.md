@@ -37,7 +37,11 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
 6. [Credits](#credits-1)
    -
    * [Images](#images)
+
+
    * [Code](#code)
+
+
    * [Content](#content)
 
 7. [Acknowledgments](#acknowledgments-1)
@@ -286,10 +290,18 @@ To fork the double-seven-guitars repository:
 
 
 ### Code 
+
+
+
 #### General
 
 - To install Bootstrap via npm so that I could do some customisation, I watched this tutorial video: https://www.youtube.com/watch?v=WPAiTlQr7no 
-- 
+- I used the following websites to learn about MathML, MathJax CDN and MathType for creating accessible and well-presented equations:  
+   -  https://www.w3.org/Math/whatIsMathML.html 
+   - https://stackoverflow.com/questions/12431339/how-to-write-equations-in-html
+   - https://accessibility.oit.ncsu.edu/putting-math-on-the-web-using-mathml-and-html5/
+   - [MathJax Documentation](https://docs.mathjax.org/en/latest/basic/mathematics.html)
+
 
 #### Specific Code 
 
