@@ -39,13 +39,35 @@ $("#no-btn, #hard-btn").on("click", () => {
     questionFailed();
 })
 
+$("#previous-btn").on("click", () => {
+    if (currentQuestionCode > 1) {
+        currentQuestionCode -= 1;
+    } else {
+        //makes the question number the last question of the previous module
+        currentModuleCode -= 1;
+        currentQuestionCode = currentModule().content.length;
+    }
+    //If they got the previous question wrong, but want to go back and correct it we don't want to double
+    //count the wrong answer if they get it wrong again
+    if (currentQuestion().mastered = false) {failureCounter -= 1};
+    insertNextQuestion();
+})
+
+//returns the current module array
+function currentModule() {
+    return modules.find(module => module.name === "module" + currentModuleCode.toString());
+}
+
+//returns the current question
+function currentQuestion() {    
+    return currentModule().content.find(question => question.questionCode === currentQuestionCode);
+}
+
 function insertNextQuestion() {
     $("#questions-buttons").removeClass("d-none");
     $("#answer-buttons").addClass("d-none");
-    let currentModule = modules.find(module => module.name === "module" + currentModuleCode);
-    let currentQuestion = currentModule.content.find(question => question.questionCode === currentQuestionCode);
-    $(".question-title")[0].innerHTML = currentQuestion.name;
-    $(".question-content")[0].innerHTML = currentQuestion.question;
+    $(".question-title")[0].innerHTML = currentQuestion().name;
+    $(".question-content")[0].innerHTML = currentQuestion().question;
 }
 
 function questionPassed() {
@@ -61,7 +83,6 @@ function questionFailed() {
     if (checkIfEndOfTest()) {return};
     insertNextQuestion();
 }
-
 
 function markAsMastered() {
     modules.find(module => module.name === "module" + currentModuleCode).content.find(question => question.questionCode === currentQuestionCode).mastered = true;
