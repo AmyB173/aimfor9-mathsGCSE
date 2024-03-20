@@ -66,8 +66,16 @@ function currentQuestion() {
 // changes back to question mode by adding in next question and removing answer buttons
 // and adding question buttons
 function insertNextQuestion() {
+    // previous button to be removed on first question
+    if (currentQuestionCode === 1 && currentModuleCode === 1) {
+        $("#previous-btn").addClass("d-none")
+    } else if (currentQuestionCode === 2 && currentModuleCode === 1){
+        $("#previous-btn").removeClass("d-none")
+    }
+    //change from answer mode to question mode
     $("#questions-buttons").removeClass("d-none");
     $("#answer-buttons").addClass("d-none");
+    //insert question title and content
     $(".question-title")[0].innerHTML = currentQuestion().name;
     $(".question-content")[0].innerHTML = currentQuestion().question;
 }
