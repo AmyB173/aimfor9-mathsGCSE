@@ -2,8 +2,7 @@ import {
     modules
 } from './questions.js';
 
-//global variables, could be changed by user using the back button
-
+//global variables
 var currentQuestionCode = 1;
 var currentModuleCode = 1;
 let username; 
@@ -31,19 +30,8 @@ $("#show-answer").on("click",  () => {
     $("#answer-buttons").removeClass("d-none");
 })
 
-$("#yes-btn").on("click", () => {
-    markAsMastered();
-    updateCodes();
-    if (checkIfEndOfTest()) {return};
-    
-    insertNextQuestion();
-})
-
-$("#easy-btn").on("click", () => {
-    markAsMastered();
-    if (checkIfEndOfTest()) {return};
-    updateCodes();
-    insertNextQuestion();
+$("#yes-btn, #easy-btn").on("click", () => {
+    questionPassed();
 })
 
 function insertNextQuestion() {
@@ -54,6 +42,14 @@ function insertNextQuestion() {
     $(".question-title")[0].innerHTML = currentQuestion.name;
     $(".question-content")[0].innerHTML = currentQuestion.question;
 }
+
+function questionPassed() {
+    markAsMastered();
+    updateCodes();
+    if (checkIfEndOfTest()) {return};
+    insertNextQuestion();
+}
+
 
 function markAsMastered() {
     modules.find(module => module.name === "module" + currentModuleCode).content.find(question => question.questionCode === currentQuestionCode).mastered = true;

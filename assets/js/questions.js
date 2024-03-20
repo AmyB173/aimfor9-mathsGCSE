@@ -30,5 +30,36 @@ export let modules = [
         solution: `<img src="assets/images/logo.png"></img>`,
         mastered: false
     }]
+},
+{
+    name: "module2",
+    content: [
+    {
+        name: "Solving one step equation",
+        moduleCode: 2,
+        questionCode: 1,
+        question: `<p>Module 2 Topic 1 Question</p>`, 
+        answer: `<p>Module 2 Topic 1 Answer</p>`,
+        solution: `<img src="assets/images/logo.png"></img>`,
+        mastered: false
+    },
+    {
+        name: "Solve two step equations",
+        moduleCode: 2,
+        questionCode: 2,
+        question: `<p>Module 2 Topic 2 Question</p>`, 
+        answer: `<p>Module 2 Topic 2 Answer</p>`,
+        solution: `<img src="assets/images/logo.png"></img>`,
+        mastered: false
+    },
+    {
+        name: "Solve complex equations",
+        moduleCode: 2,
+        questionCode: 3,
+        question: `<p>Module 2 Topic 3 Question</p>`, 
+        answer: `<p>Module 2 Topic 3 Answer</p>`,
+        solution: `<img src="assets/images/logo.png"></img>`,
+        mastered: false
+    }]
 }
 ]
