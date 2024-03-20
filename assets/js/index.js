@@ -3,9 +3,9 @@ import {
 } from './questions.js';
 
 //global variables
-var currentQuestionCode = 1;
-var currentModuleCode = 1;
-var failureCounter = 0;
+let currentQuestionCode = 1;
+let currentModuleCode = 1;
+let failureCounter = 0;
 let username; 
 let grade;
 
