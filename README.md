@@ -204,6 +204,10 @@ Student will start with Module 1, subtopic 1.
 
 The logic will continue like this until all subtopics are noted as mastered or need revision.
 
+### Modular and easily updated   
+The aim is to ensure that people can easily add extra questions into modules and extra modules into the whole assessment. At the moment, this is designed to be a minimal test on specific algebra topics but could be expanded in the future for extra topics and grade levels. 
+
+I will try to avoid any "hard coding" so that the programme doesn't rely on a specific number of modules or questions in each module.
 
 ## Features
 
