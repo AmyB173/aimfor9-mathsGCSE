@@ -58,11 +58,13 @@ function currentModule() {
     return modules.find(module => module.name === "module" + currentModuleCode.toString());
 }
 
-//returns the current question
+//returns the current question object
 function currentQuestion() {    
     return currentModule().content.find(question => question.questionCode === currentQuestionCode);
 }
 
+// changes back to question mode by adding in next question and removing answer buttons
+// and adding question buttons
 function insertNextQuestion() {
     $("#questions-buttons").removeClass("d-none");
     $("#answer-buttons").addClass("d-none");
@@ -70,6 +72,9 @@ function insertNextQuestion() {
     $(".question-content")[0].innerHTML = currentQuestion().question;
 }
 
+// marks the current questions as mastered, updates question and module codes
+// checks if the test if finished
+// if it's not finished next question is initiated
 function questionPassed() {
     markAsMastered();
     updateCodes();
@@ -77,6 +82,9 @@ function questionPassed() {
     insertNextQuestion();
 }
 
+// updates the failure counter for that module, updates question and module codes
+// checks if the test if finished
+// if it's not finished next question is initiated
 function questionFailed() {
     failureCounter += 1;
     updateCodes();
@@ -84,6 +92,7 @@ function questionFailed() {
     insertNextQuestion();
 }
 
+// marks the current question key "mastered" as true
 function markAsMastered() {
     modules.find(module => module.name === "module" + currentModuleCode).content.find(question => question.questionCode === currentQuestionCode).mastered = true;
 }
@@ -107,6 +116,8 @@ function updateCodes() {
     }
 }
 
+//This function checks if we are at the end of the test
+//If so results section is presented 
 function checkIfEndOfTest() {
     let endOfTest = currentModuleCode > modules.length;
     if(endOfTest){
