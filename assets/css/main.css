@@ -11965,6 +11965,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.margin-center {
+  margin: 0 auto;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
 }
@@ -11986,6 +11990,10 @@ h1, .h1 {
   margin: 0 auto;
 }
 
+fieldset {
+  max-width: 300px;
+}
+
 input[type=text] {
   width: 200px;
   padding: 5px;
@@ -12000,13 +12008,6 @@ input[type=textarea] {
   margin: 8px;
 }
 
-.form-wrapper {
-  padding: 30px;
-  max-width: 768px;
-  margin: auto 0;
-  box-shadow: 0 0 10px;
-}
-
 .form-button {
   width: 236px;
   margin: 0 auto;
@@ -12016,6 +12017,15 @@ input[type=textarea] {
 
 label {
   display: block;
+}
+
+#start-assessment:hover {
+  border-width: 3px;
+  border-color: white;
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
 
 .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {

@@ -34,34 +34,24 @@
     <main class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-11 col-md-10 col-lg-8 col-xl-6">
-                <div class="start-wrapper border rounded bg-secondary my-5 p-3">
-                <p class="text-center">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus
-                    modi
-                    nesciunt rem recusandae, dignissimos nemo magnam reprehenderit incidunt doloremque ex minus odio ducimus
-                    porro
-                    repellendus quibusdam accusantium maxime quas.</p>
+                <div class="start-wrapper border shadow-lg rounded bg-secondary my-5 px-1 py-4">
+                    <p class="text-center"></p>
 
-                <input type="text" id="username" name="username" class="border rounded  =mt-4" aria-required="true" required
-                    placeholder="Name">
+                    <input type="text" id="username" name="username" class="border rounded d-block margin-center" aria-required="true" required
+                        placeholder="Name">
+                    <fieldset class="border border-3 rounded-3 p-3 my-4 d-flex justify-content-center margin-center">
+                        <legend class="float-none w-auto px-3 fs-6">Current Maths Grade: </legend>
+                        <input type="radio" class="btn-check m-2" name="grade" id="grade7" value="7" autocomplete="off" checked>
+                        <label class="btn btn-primary mx-2 text-white" for="grade7">7</label>
+                        <input type="radio" class="btn-check" name="grade" id="grade8" value="8" autocomplete="off">
+                        <label class="btn btn-primary mx-2 text-white rounded-3" for="grade8">8</label>
+                        <input type="radio" class="btn-check" name="grade" id="grade9" value="9" autocomplete="off">
+                        <label class="btn btn-primary mx-2 text-white" for="grade9">9</label>
+                        <input type="radio" class="btn-check" name="grade" id="gradeNA" value="na" autocomplete="off">
+                        <label class="btn btn-primary mx-2 text-white" for="gradeNA">N/A</label>
+                    </fieldset>
 
-                <fieldset class="border rounded-3 p-3 my-4 d-flex justify-content-center">
-
-                    <legend class="float-none w-auto px-3 fs-6">Current Maths Grade: </legend>
-
-                    <input type="radio" class="btn-check m-2" name="grade" id="grade7" value="7" autocomplete="off" checked>
-                    <label class="btn btn-primary mx-2 text-white" for="grade7">7</label>
-
-                    <input type="radio" class="btn-check" name="grade" id="grade8" value="8" autocomplete="off">
-                    <label class="btn btn-primary mx-2 text-white" for="grade8">8</label>
-
-                    <input type="radio" class="btn-check" name="grade" id="grade9" value="9" autocomplete="off">
-                    <label class="btn btn-primary mx-2 text-white" for="grade9">9</label>
-
-                    <input type="radio" class="btn-check" name="grade" id="gradeNA" value="na" autocomplete="off">
-                    <label class="btn btn-primary mx-2 text-white" for="gradeNA">N/A</label>
-                </fieldset>
-
-                <button id="start-assessment" class="btn btn-primary bg-primary text-white p-2">Start Assessment</button>
+                    <button id="start-assessment" class="btn btn-primary bg-primary text-white d-block margin-center rounded-pill shadow-sm p-3 fw-medium">Start Assessment</button>
                 </div>
                 <div id="question-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column d-none">
                     <button id="previous-btn" class="btn btn-primary text-white align-self-start"> arrow Previous

@@ -11,6 +11,11 @@ $secondary: #8fB3AF;
 
 // Then add additional custom code here
 
+// Re usable styles
+.margin-center {
+    margin: 0 auto;
+}
+
 // global styling
 body{
     font-family: "Quicksand", sans-serif;
@@ -39,7 +44,13 @@ footer a {
     // margin-right: 10px;
 }
 
+//start section
+.start-wrapper {
 
+}
+fieldset {
+    max-width: 300px;
+}
 input[type=text] {
     width: 200px;
     padding: 5px;
@@ -54,12 +65,6 @@ input[type=textarea] {
     margin: 8px;
 }
 
-.form-wrapper {
-    padding: 30px;
-    max-width: 768px;
-    margin: auto 0;
-    box-shadow: 0 0 10px;
-}
 
 .form-button {
     width: 236px;
@@ -70,6 +75,14 @@ input[type=textarea] {
 
 label {
     display: block;
+}
+
+#start-assessment:hover {
+    border-width: 3px;
+    border-color: white;
+}
+.btn:hover {
+    opacity: 0.7;
 }
 
 // Used chrome dev tools to find the exactly selector for the form buttons to change the colour to provide better contrast
