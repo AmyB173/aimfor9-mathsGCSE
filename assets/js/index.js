@@ -14,6 +14,7 @@ $("#start-assessment").on("click", () => {
     username = document.querySelector('[name="username"]').value;
     grade = document.querySelector('[name="grade"]:checked').value;
     $(".start-wrapper").addClass("d-none");
+    $("#explanation-text").addClass("d-none");
     $("#question-wrapper").removeClass("d-none");
     insertNextQuestion();
 
