@@ -11965,6 +11965,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.logo {
+  margin: 20px 0 20px 0;
+}
+
+footer a {
+  margin-right: 10px;
+}
+
 input[type=text] {
   width: 200px;
   padding: 5px;
