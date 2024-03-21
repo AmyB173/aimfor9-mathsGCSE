@@ -11967,10 +11967,7 @@ textarea.form-control-lg {
 }
 .logo {
   margin: 20px 0 20px 0;
-}
-
-footer a {
-  margin-right: 10px;
+  height: 100px;
 }
 
 input[type=text] {
