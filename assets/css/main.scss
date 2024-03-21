@@ -12,12 +12,26 @@ $secondary: #8fB3AF;
 // Then add additional custom code here
 
 // global styling
+body{
+    font-family: "Quicksand", sans-serif;
+}
 
+h1, h2 ,h3, h4, h5, h6 {
+    font-family: "Alegreya Sans", sans-serif;
+}
 
 // Header 
 .logo {
-    margin: 20px 0 20px 0;
+    margin: 5px;
     height: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#main-heading {
+    margin: 0 auto;
 }
 
 // Footer 
