@@ -26,8 +26,11 @@ $("#start-assessment").on("click", () => {
 $("#show-answer").on("click",  () => {
     let currentModule = modules.find(module => module.name === "module" + currentModuleCode.toString());
     let currentQuestion = currentModule.content.find(question => question.questionCode === currentQuestionCode);
-    $(".question-title")[0].innerHTML = "Answer: " + currentQuestion.answer;
-    $(".question-content")[0].innerHTML = currentQuestion.solution;
+    $(".question-title")[0].innerHTML = "ANSWER: " + currentQuestion.answer;
+    $(".question-content")[0].innerHTML = `
+    <p class="fs-3">Fully worked solution: </p>
+    ${currentQuestion.solution}
+    `;
     $("#questions-buttons").addClass("d-none");
     $("#answer-buttons").removeClass("d-none");
 })

@@ -12033,7 +12033,12 @@ label {
 }
 
 .question-content {
-  height: 200px;
+  min-height: 300px;
+}
+
+.question-content img {
+  max-height: 250px;
+  max-width: 70vw;
 }
 
 .content-wrapper {
