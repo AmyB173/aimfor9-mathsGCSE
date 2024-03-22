@@ -9,7 +9,9 @@ export let modules = [
         name: "Expand single brackets with complex powers",
         moduleCode: 1,
         questionCode: 1,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Expand: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mn>2</mn><msup>
@@ -74,7 +76,9 @@ export let modules = [
         name: "Expand Two Brackets",
         moduleCode: 1,
         questionCode: 2,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Expand: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mo stretchy='false'>(</mo><mn>4</mn><mi>x</mi><mo>&#x2212;</mo><mn>2</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy='false'>)</mo></mrow>
@@ -117,7 +121,9 @@ export let modules = [
         name: "Expand Three Brackets",
         moduleCode: 1,
         questionCode: 3,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Expand: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mo stretchy='false'>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mn>2</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy='false'>)</mo></mrow>
@@ -170,7 +176,9 @@ export let modules = [
         name: "Factorising into single brackets with complex powers",
         moduleCode: 2,
         questionCode: 1,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Factorise: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mn>16</mn><msup>
@@ -226,7 +234,9 @@ export let modules = [
         name: "Factorising a quadratic where to coefficient of x is 1",
         moduleCode: 2,
         questionCode: 2,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Factorise: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <msup>
@@ -269,7 +279,9 @@ export let modules = [
         name: "Difference of two squares factorising",
         moduleCode: 2,
         questionCode: 3,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Factorise: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <msup>
@@ -311,7 +323,9 @@ export let modules = [
         name: "Factorising quadratics where the coefficent of x is greater than 1",
         moduleCode: 2,
         questionCode: 4,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Factorise: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mn>6</mn><msup>
@@ -354,7 +368,9 @@ export let modules = [
         name: "Difference of two squares factorising where the coefficient of x is greater than 1",
         moduleCode: 2,
         questionCode: 5,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Factorise: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mn>4</mn><msup>
@@ -402,7 +418,9 @@ export let modules = [
         name: "Simplifying simple fractions with letter and number cancellation",
         moduleCode: 3,
         questionCode: 1,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Simplify: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -479,7 +497,9 @@ export let modules = [
         name: "Factorise numerator or denominator and cancel brackets",
         moduleCode: 3,
         questionCode: 2,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Simplify: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -527,7 +547,9 @@ export let modules = [
         name: "Factorising and cancelling when a squared bracket is involved",
         moduleCode: 3,
         questionCode: 3,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Simplify: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -589,7 +611,9 @@ export let modules = [
         name: "Factorising quadratics where the coefficent of x is greater than 1",
         moduleCode: 3,
         questionCode: 4,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Simplify: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -637,7 +661,9 @@ export let modules = [
         name: "Complex simplification (avoid cancelling summed brackets)",
         moduleCode: 3,
         questionCode: 5,
-        question: `<math display='block'>
+        question: `
+        <p class="fs-3">Simplify: </p>
+        <math display='block'>
         <semantics>
          <mrow>
           <mfrac>
