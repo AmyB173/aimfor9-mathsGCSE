@@ -106,3 +106,24 @@ label {
 math {
     font-size: xx-large;
 }
+
+// results wrapper
+#results-wrapper h2 {
+    margin-top: 20px;
+}
+
+//table styling 
+table, th, td {
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+}
+table {
+    width: 100%;
+}
+th{
+    width: 70%;
+}
+td {
+    width: 30%;
+}
