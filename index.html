@@ -34,48 +34,43 @@
         <div class="row justify-content-center">
             <div class="col-11 col-md-10 col-lg-8 col-xl-6">
                 <div id="explanation-text">
-                    
-                    <table class="border">
-                        <tr class="border">
-                            <th>Expanding Brackets</th>
-                        </tr>
-                        <tr>
-                            <th class="border">Expand single bracket</th>
-                            <td class="border">Mastered</td>
-                        </tr>
-                        
-                    </table>
-
-                    
                     <h2 class="text-center mt-5">Welcome to Aim for Grade 9.</h2>
-                    <p>Try out this test to see how well you know GCSE algebra needed for achieving a Grade 9. It will show you what you're good at and what you need to work on. Then, it'll give you suggestions for studying those areas.</p>
+                    <p>Try out this test to see how well you know GCSE algebra needed for achieving a Grade 9. It will
+                        show you what you're good at and what you need to work on. Then, it'll give you suggestions for
+                        studying those areas.</p>
                     <h3>Is this test for you?</h3>
-                    <p>This test is for students <strong>who want to get a Grade 9</strong> in GCSE Maths. Make sure you're at least at a Grade 7 level, or else it might be too hard for you and not very useful.</p>
+                    <p>This test is for students <strong>who want to get a Grade 9</strong> in GCSE Maths. Make sure
+                        you're at least at a Grade 7 level, or else it might be too hard for you and not very useful.
+                    </p>
                     <h4>Instructions for completing the test: </h4>
                     <ul>
                         <li>Answer each question on paper.</li>
-                        <li>Click "show answer" after finishing to check your answer. Then, choose if you got it right or wrong.</li>
-                        <li>If a question seems too difficult, you can skip it. If you do this twice in a module, you'll be moved onto the next module.</li>
-                        <li>If a question seems too easy, select to skip it, and we'll mark it as correct for you.</li> 
+                        <li>Click "show answer" after finishing to check your answer. Then, choose if you got it right
+                            or wrong.</li>
+                        <li>If a question seems too difficult, you can skip it. If you do this twice in a module, you'll
+                            be moved onto the next module.</li>
+                        <li>If a question seems too easy, select to skip it, and we'll mark it as correct for you.</li>
                     </ul>
                     <!-- CREDIT: customised from bootstrap: https://getbootstrap.com/docs/5.3/components/collapse/#how-it-works -->
                     <p class="d-inline-flex gap-1">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#checkModules" aria-expanded="false" aria-controls="checkModules">
-                          Click here to see what modules will be in the test
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#checkModules" aria-expanded="false" aria-controls="checkModules">
+                            Click here to see what modules will be in the test
                         </button>
-                      </p>
-                      <div class="collapse" id="checkModules">
+                    </p>
+                    <div class="collapse" id="checkModules">
                         <div class="card card-body" id="moduleList">
-                          
+
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="start-wrapper border shadow-lg rounded bg-secondary my-5 px-1 py-4">
-                    <input type="text" id="username" name="username" class="border rounded d-block margin-center" aria-required="true" required
-                        placeholder="Name">
+                    <input type="text" id="username" name="username" class="border rounded d-block margin-center"
+                        aria-required="true" required placeholder="Name">
                     <fieldset class="border border-3 rounded-3 p-3 my-4 d-flex justify-content-center margin-center">
                         <legend class="float-none w-auto px-3 fs-6">Current Maths Grade: </legend>
-                        <input type="radio" class="btn-check m-2" name="grade" id="grade7" value="7" autocomplete="off" checked>
+                        <input type="radio" class="btn-check m-2" name="grade" id="grade7" value="7" autocomplete="off"
+                            checked>
                         <label class="btn btn-primary mx-2 text-white" for="grade7">7</label>
                         <input type="radio" class="btn-check" name="grade" id="grade8" value="8" autocomplete="off">
                         <label class="btn btn-primary mx-2 text-white rounded-3" for="grade8">8</label>
@@ -85,20 +80,26 @@
                         <label class="btn btn-primary mx-2 text-white" for="gradeNA">N/A</label>
                     </fieldset>
 
-                    <button id="start-assessment" class="btn btn-primary bg-primary text-white d-block margin-center rounded-pill shadow-sm p-3 fw-medium">Start Assessment</button>
+                    <button id="start-assessment"
+                        class="btn btn-primary bg-primary text-white d-block margin-center rounded-pill shadow-sm p-3 fw-medium">Start
+                        Assessment</button>
                 </div>
                 <div id="question-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column d-none">
                     <button id="previous-btn" class="btn btn-primary text-white align-self-start"> arrow Previous
                         Question</button>
                     <h2 class="question-title text-center p-4 fw-bold">Title Placeholder</h2>
-                    <div class="question-content bg-white p-3 d-flex justify-content-center align-items-center flex-column border rounded-3">
+                    <div
+                        class="question-content bg-white p-3 d-flex justify-content-center align-items-center flex-column border rounded-3">
                         Question Placeholder
                     </div>
                     <div id="questions-buttons" class="d-flex flex-column">
-                        <button id="show-answer" class="btn btn-primary btn-lg text-white align-self-center m-2 mt-4">Show
+                        <button id="show-answer"
+                            class="btn btn-primary btn-lg text-white align-self-center m-2 mt-4">Show
                             Answer</button>
-                        <button id="easy-btn" class="btn btn-primary text-white align-self-center m-2">Skip: too easy!</button>
-                        <button id="hard-btn" class="btn btn-primary text-white align-self-center m-2">Skip: too hard!</button>
+                        <button id="easy-btn" class="btn btn-primary text-white align-self-center m-2">Skip: too
+                            easy!</button>
+                        <button id="hard-btn" class="btn btn-primary text-white align-self-center m-2">Skip: too
+                            hard!</button>
                     </div>
                     <div id="answer-buttons" class="d-flex flex-column align-items-center d-none">
                         <p class="p-3 fs-3">Did you get it right?</p>
@@ -110,7 +111,8 @@
                 </div>
                 <div id="results-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column d-none">
                     <!-- CREDIT: Code for accordian taken and adapted from here: https://getbootstrap.com/docs/5.3/components/accordion/ -->
-                    <h2 class="text-center pt-3">Well done <span id="studentName"></span>! You've completed the assessment. Here are your results:</h2>
+                    <h2 class="text-center pt-3">Well done <span id="studentName"></span>! You've completed the
+                        assessment. Here are your results:</h2>
                     <div class="accordion mt-5" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -119,9 +121,10 @@
                                     How did you do?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body" id="results">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -132,15 +135,20 @@
                                     Revision Suggestions
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until
                                     the collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes control
+                                    plugin adds the appropriate classes that we use to style each element. These classes
+                                    control
                                     the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                                    appearance, as well as the showing and hiding via CSS transitions. You can modify
+                                    any of
                                     this with custom
-                                    CSS or overriding our default variables. It's also worth noting that just about any HTML can
+                                    CSS or overriding our default variables. It's also worth noting that just about any
+                                    HTML can
                                     go within the
                                     <code>.accordion-body</code>, though the transition does limit overflow.
                                 </div>

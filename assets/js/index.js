@@ -6,7 +6,7 @@ import {
 let currentQuestionCode = 1;
 let currentModuleCode = 1;
 let failureCounter = 0;
-let username; 
+let username;
 let grade;
 
 // ----------------------START SECTION----------------------------
@@ -18,7 +18,7 @@ window.onload = () => {
     for (const module of modules) {
         list += `<li><strong>${module.displayName}</strong>: ${module.content.length} questions</li>`
     }
-    $("#moduleList")[0].innerHTML = "<ul>" +   `${list}` + "</ul>";
+    $("#moduleList")[0].innerHTML = "<ul>" + `${list}` + "</ul>";
 }
 
 // Trigger for starting assessment and inserting question 1
@@ -36,7 +36,7 @@ $("#start-assessment").on("click", () => {
 // When show answer is clicked question title is replaced with the answer 
 // and the question is replaced with the fully worked solution
 // question buttons are replaced with answer buttons
-$("#show-answer").on("click",  () => {
+$("#show-answer").on("click", () => {
     let currentModule = modules.find(module => module.name === "module" + currentModuleCode.toString());
     let currentQuestion = currentModule.content.find(question => question.questionCode === currentQuestionCode);
     $(".question-title")[0].innerHTML = "ANSWER: " + currentQuestion.answer;
@@ -66,7 +66,7 @@ $("#previous-btn").on("click", () => {
     }
     //If they got the previous question wrong, but want to go back and correct it we don't want to double
     //count the wrong answer if they get it wrong again
-    if (currentQuestion().mastered = false) {failureCounter -= 1};
+    if (currentQuestion().mastered = false) { failureCounter -= 1 };
     insertNextQuestion();
 })
 
@@ -76,7 +76,7 @@ function currentModule() {
 }
 
 //returns the current question object
-function currentQuestion() {    
+function currentQuestion() {
     return currentModule().content.find(question => question.questionCode === currentQuestionCode);
 }
 
@@ -86,7 +86,7 @@ function insertNextQuestion() {
     // previous button to be removed on first question
     if (currentQuestionCode === 1 && currentModuleCode === 1) {
         $("#previous-btn").addClass("d-none")
-    } else if (currentQuestionCode === 2 && currentModuleCode === 1){
+    } else if (currentQuestionCode === 2 && currentModuleCode === 1) {
         $("#previous-btn").removeClass("d-none")
     }
     //change from answer mode to question mode
@@ -105,9 +105,9 @@ function questionFinished(result) {
     // if they pass the question is marked as mastered
     // if incorrect the failure counter updates the number of failed questions in the module
     result === "pass" ? markAsMastered() : failureCounter += 1;
-    
+
     updateCodes();
-    if (checkIfEndOfTest()) {return};
+    if (checkIfEndOfTest()) { return };
     insertNextQuestion();
 }
 
@@ -119,8 +119,8 @@ function markAsMastered() {
 // this function checks whether the module code should be updated and then updates if so
 function updateCodes() {
     let endOfModule = currentQuestionCode == modules.find(module => module.name === "module" + currentModuleCode).content.length;
-    let twoWrong = failureCounter === 2;    
-    
+    let twoWrong = failureCounter === 2;
+
     if (endOfModule || twoWrong) {
         // This means we move onto the next module
         // Questions restarts at 1 for new module
@@ -128,8 +128,7 @@ function updateCodes() {
         currentModuleCode += 1;
         currentQuestionCode = 1;
         failureCounter = 0;
-    } else 
-    {
+    } else {
         //Stay in this module but increase the question number
         currentQuestionCode += 1;
     }
@@ -139,7 +138,7 @@ function updateCodes() {
 //If so results section is presented 
 function checkIfEndOfTest() {
     let endOfTest = currentModuleCode > modules.length;
-    if(endOfTest){
+    if (endOfTest) {
         $(".start-wrapper").addClass("d-none");
         $("#question-wrapper").addClass("d-none");
         $("#results-wrapper").removeClass("d-none");
@@ -152,26 +151,25 @@ function checkIfEndOfTest() {
 
 // ----------------------RESULTS SECTION----------------------------
 
+//Build a table of results for each module
 function populateResultsTable() {
+
     $("#results")[0].innerHTML = "";
-    let resultsTable = "";
+
     for (const module of modules) {
-       resultsTable += `
-        <tr>
-            <th>${module.displayName}</th>
-        </tr>
-        `
+        $("#results")[0].innerHTML += `<h2>${module.displayName}</h2>`
+        let resultsTable = "";
         for (const question of module.content) {
             let mastered;
+
             question.mastered ? mastered = "Mastered" : mastered = "Needs revision";
             resultsTable += `
             <tr>
-                <th>${question.name}<th>
+                <th>${question.name}</th>
                 <td>${mastered}</td>
             </tr>
         `
-        }  
+        }
+        $("#results")[0].innerHTML += "<table>" + `${resultsTable}` + "</table>";
     }
-    $("#results")[0].innerHTML = "<table>" + `${resultsTable}` + "</table>"
-    
 }
