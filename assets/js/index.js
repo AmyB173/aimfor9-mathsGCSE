@@ -144,6 +144,7 @@ function checkIfEndOfTest() {
         $("#question-wrapper").addClass("d-none");
         $("#results-wrapper").removeClass("d-none");
         $("#studentName")[0].innerHTML = username;
+        populateResultsTable();
         return true;
     }
     return false;
@@ -151,3 +152,26 @@ function checkIfEndOfTest() {
 
 // ----------------------RESULTS SECTION----------------------------
 
+function populateResultsTable() {
+    $("#results")[0].innerHTML = "";
+    let resultsTable = "";
+    for (const module of modules) {
+       resultsTable += `
+        <tr>
+            <th>${module.displayName}</th>
+        </tr>
+        `
+        for (const question of module.content) {
+            let mastered;
+            question.mastered ? mastered = "Mastered" : mastered = "Needs revision";
+            resultsTable += `
+            <tr>
+                <th>${question.name}<th>
+                <td>${mastered}</td>
+            </tr>
+        `
+        }  
+    }
+    $("#results")[0].innerHTML = "<table>" + `${resultsTable}` + "</table>"
+    
+}
