@@ -97,7 +97,7 @@
                 </div>
                 <div id="results-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column d-none">
                     <!-- CREDIT: Code for accordian taken and adapted from here: https://getbootstrap.com/docs/5.3/components/accordion/ -->
-                    <h2 class="text-center pt-3">Well done! You've completed the assessment. Here are your results:</h2>
+                    <h2 class="text-center pt-3">Well done <span id="studentName"></span>! You've completed the assessment. Here are your results:</h2>
                     <div class="accordion mt-5" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -107,16 +107,8 @@
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                                    collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes control
-                                    the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-                                    this with custom
-                                    CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                                    go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="accordion-body" id="results">
+                                    
                                 </div>
                             </div>
                         </div>

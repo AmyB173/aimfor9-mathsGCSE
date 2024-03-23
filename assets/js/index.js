@@ -143,7 +143,11 @@ function checkIfEndOfTest() {
         $(".start-wrapper").addClass("d-none");
         $("#question-wrapper").addClass("d-none");
         $("#results-wrapper").removeClass("d-none");
+        $("#studentName")[0].innerHTML = username;
         return true;
     }
     return false;
 }
+
+// ----------------------RESULTS SECTION----------------------------
+
