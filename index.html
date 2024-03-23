@@ -42,9 +42,20 @@
                     <ul>
                         <li>Answer each question on paper.</li>
                         <li>Click "show answer" after finishing to check your answer. Then, choose if you got it right or wrong.</li>
-                        <li>If a question seems too difficult, you can skip it.</li>
+                        <li>If a question seems too difficult, you can skip it. If you do this twice in a module, you'll be moved onto the next module.</li>
                         <li>If a question seems too easy, select to skip it, and we'll mark it as correct for you.</li> 
                     </ul>
+                    <!-- CREDIT: customised from bootstrap: https://getbootstrap.com/docs/5.3/components/collapse/#how-it-works -->
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          Click here to see what modules will be in the test
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body" id="moduleList">
+                          
+                        </div>
+                      </div>
                 </div>
                 <div class="start-wrapper border shadow-lg rounded bg-secondary my-5 px-1 py-4">
                     <input type="text" id="username" name="username" class="border rounded d-block margin-center" aria-required="true" required

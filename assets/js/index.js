@@ -9,6 +9,18 @@ let failureCounter = 0;
 let username; 
 let grade;
 
+// ----------------------START SECTION----------------------------
+// Insert Module Names to "check to see what modules will be in the test" button
+// Designed to be dynamic so that the list will automatically populate with 
+// any additional modules
+window.onload = () => {
+    let list = "";
+    for (const module of modules) {
+        list += `<li><strong>${module.displayName}</strong>: ${module.content.length} questions</li>`
+    }
+    $("#moduleList")[0].innerHTML = "<ul>" +   `${list}` + "</ul>";
+}
+
 // Trigger for starting assessment and inserting question 1
 $("#start-assessment").on("click", () => {
     username = document.querySelector('[name="username"]').value;
@@ -20,6 +32,7 @@ $("#start-assessment").on("click", () => {
 
 });
 
+// ----------------------QUESTION SECTION----------------------------
 // When show answer is clicked question title is replaced with the answer 
 // and the question is replaced with the fully worked solution
 // question buttons are replaced with answer buttons
@@ -134,4 +147,3 @@ function checkIfEndOfTest() {
     }
     return false;
 }
-
