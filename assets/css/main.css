@@ -11990,6 +11990,18 @@ h1, .h1 {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 540px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 541px) {
+  .logo-holder {
+    position: absolute;
+  }
+}
 fieldset {
   max-width: 300px;
 }
