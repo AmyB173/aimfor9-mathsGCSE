@@ -49,6 +49,9 @@ h1 {
 }
 // position logo on left of header on larger screens
 @media only screen and (min-width: 541px) {
+    header {
+        position: relative;
+    }
     .logo-holder {
         position: absolute;
     }
