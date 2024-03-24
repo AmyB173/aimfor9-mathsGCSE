@@ -18,35 +18,35 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-    
+
 </head>
 
-<body class="min-vh-100">
-    <header class="bg-primary py-3 mb-auto" >
+<body class="d-flex flex-column min-vh-100">
+    <header class="bg-primary py-3 mb-auto">
         <button type="button" class="btn btn-primary rounded-pill text-white logo-holder" data-bs-toggle="modal"
-                        data-bs-target="#logo-modal">
+            data-bs-target="#logo-modal">
             <img src="./assets/images/logo-name.webp" class="logo">
         </button>
-        <div class="modal fade" id="logo-modal" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="logoLabel" aria-hidden="true">
+        <div class="modal fade" id="logo-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="logoLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="restartLabel">WARNING</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         This will take you to the start page and any inputs you may have entered will be erased.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"
-                            data-bs-dismiss="modal"><strong>Cancel:</strong> continue assessment</button>
-                        <button type="button" class="btn btn-primary restart-btn"><strong>Understood:</strong> take me to the start</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><strong>Cancel:</strong>
+                            continue assessment</button>
+                        <button type="button" class="btn btn-primary restart-btn"><strong>Understood:</strong> take me
+                            to the start</button>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
         <div id="main-heading">
             <h1 class="text-white text-center pb-1">Aim for Grade 9</h1>
             <h2 class="text-white text-center pb-1">GCSE Maths</h2>
@@ -107,7 +107,8 @@
                         Assessment</button>
                 </div>
                 <div id="question-wrapper" class="border rounded bg-secondary mt-5 p-3 d-flex flex-column d-none">
-                    <button id="previous-btn" class="btn btn-primary text-white align-self-start"> <i class="fa-solid fa-arrow-left"></i> Previous
+                    <button id="previous-btn" class="btn btn-primary text-white align-self-start"> <i
+                            class="fa-solid fa-arrow-left"></i> Previous
                         Question</button>
                     <h2 class="question-title text-center p-4 fw-bold">Title Placeholder</h2>
                     <div
@@ -157,7 +158,8 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal"><strong>Cancel:</strong> continue assessment</button>
-                                    <button type="button" class="btn btn-primary restart-btn"><strong>Understood:</strong>
+                                    <button type="button"
+                                        class="btn btn-primary restart-btn"><strong>Understood:</strong>
                                         restart</button>
                                 </div>
                             </div>
@@ -188,60 +190,51 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal"><strong>Cancel:</strong> continue assessment</button>
-                                    <button id="end-btn" type="button" class="btn btn-primary"><strong>Understood:</strong> end the
+                                    <button id="end-btn" type="button"
+                                        class="btn btn-primary"><strong>Understood:</strong> end the
                                         assessment</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="results-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column d-none">
+                <div id="results-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column align-items-center d-none">
                     <!-- CREDIT: Code for accordian taken and adapted from here: https://getbootstrap.com/docs/5.3/components/accordion/ -->
-                    <h2 class="text-center pt-3">Well done <span id="studentName"></span>! You've completed the
-                        assessment. Here are your results:</h2>
-                    <div class="accordion mt-5" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How did you do?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body" id="results">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Revision Suggestions
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until
-                                    the collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes
-                                    control
-                                    the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify
-                                    any of
-                                    this with custom
-                                    CSS or overriding our default variables. It's also worth noting that just about any
-                                    HTML can
-                                    go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
+                    <h2 class="text-center py-3">Well done <span id="studentName"></span> <i class="fa-regular fa-thumbs-up"></i>! You've completed the
+                        assessment.</h2>
+                    <div></div>
+                    <!-- CREDIT:  taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseResults" aria-expanded="false" aria-controls="collapseExample">
+                            Show me my results
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseResults">
+                        <div class="card card-body" id="results">
                         </div>
                     </div>
-                    <button class="btn btn-primary bg-primary text-white p-2 mt-5">Email me the results</button>
+                    <!-- CREDIT:  taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
+                    <p class="d-inline-flex gap-1 mt-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseRevision" aria-expanded="false" aria-controls="collapseExample">
+                            What can I do to improve?
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseRevision">
+                        <div class="card card-body">
+                            <h3>Recommended Websites: </h3>
+                            <ul>
+                                <li><a href="https://www.drfrost.org/" target="_blank">Dr Frost Learning</a> is a fantastic resource for those looking to achieve the top grades. Handy too are the Further Maths GCSE resources if you're also doing that.</li>
+                                <li><a href="https://www.maths4everyone.com/" target="_blank">Maths 4 Everyone</a> is an excellent website. Take a particular look at their "GCSE Questions by Topic" section which feature exam style questions and full solutions (not just answers!)</li>
+                                <li><a href="https://www.mathsgenie.co.uk/gcse.html" target="_blank">Maths Genie </a> has a wide range of videos, exam questions and full solutions</li>                                
+                                <li><a href="https://corbettmaths.com/2023/08/01/gcse-revision/" target="_blank">Corbett Maths</a> has been a go-to website for Maths revision for a long time and has a huge wealth of videos, worksheets and answers.</li>
+                            </ul>
+                            <h3>Need some structured help to get to a Grade 9?</h3>
+                            <p>My "Achieve a Grade 9" programme may well be for you. Head over, take a look, and book a free consultation call to see if it's the right thing for you.</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary bg-primary border shadow text-white p-2 mt-3">Email me the results</button>
                 </div>
             </div>
         </div>
@@ -249,7 +242,8 @@
     <!-- CREDIT: footer to stick to bottom of page https://radu.link/make-footer-stay-bottom-page-bootstrap/ -->
     <footer class="bg-primary d-flex justify-content-end mt-auto">
         <div class="p-3">
-            <a class="text-white text-decoration-none fs-6" href="https://mathstutoringwithamy.co.uk/" target="_blank">mathstutoringwithamy.co.uk
+            <a class="text-white text-decoration-none fs-6" href="https://mathstutoringwithamy.co.uk/"
+                target="_blank">mathstutoringwithamy.co.uk
                 <img src="./assets/images/2.png" height="50" class="ps-2"></a>
         </div>
     </footer>
