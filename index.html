@@ -20,11 +20,32 @@
         rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <header class="bg-primary py-3 mb-auto">
-        <div class="logo-holder">
+<body class="min-vh-100">
+    <header class="bg-primary py-3 mb-auto" >
+        <button type="button" class="btn btn-primary rounded-pill text-white logo-holder" data-bs-toggle="modal"
+                        data-bs-target="#logo-modal">
             <img src="./assets/images/logo-name.webp" class="logo">
-        </div>
+        </button>
+        <div class="modal fade" id="logo-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="logoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="restartLabel">WARNING</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        This will take you to the start page and all inputs will be erased.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary restart-btn">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
         <div id="main-heading">
             <h1 class="text-white text-center pb-1">Aim for Grade 9</h1>
             <h2 class="text-white text-center pb-1">GCSE Maths</h2>
@@ -84,7 +105,7 @@
                         class="btn btn-primary bg-primary text-white d-block margin-center rounded-pill shadow-sm p-3 fw-medium">Start
                         Assessment</button>
                 </div>
-                <div id="question-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column d-none">
+                <div id="question-wrapper" class="border rounded bg-secondary mt-5 p-3 d-flex flex-column d-none">
                     <button id="previous-btn" class="btn btn-primary text-white align-self-start"> arrow Previous
                         Question</button>
                     <h2 class="question-title text-center p-4 fw-bold">Title Placeholder</h2>
@@ -108,6 +129,72 @@
                             <button id="no-btn" class="btn btn-primary text-white align-self-center m-2">No</button>
                         </div>
                     </div>
+                </div>
+                <div id="question-additional-buttons" class="mb-5 d-flex justify-content-between d-none">
+
+                    <!-- CREDIT: taken and adapted from https://getbootstrap.com/docs/5.3/components/modal/-->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary rounded-pill text-white m-2" data-bs-toggle="modal"
+                        data-bs-target="#restart-modal">
+                        Restart Assessment
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="restart-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="restartLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="restartLabel">WARNING</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    This will restart the assessment completely. All prior inputs will be erased. If you
+                                    want to change your previous answer, use the previous question button.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary restart-btn">Understood -
+                                        restart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CREDIT: taken and adapted from https://getbootstrap.com/docs/5.3/components/modal/-->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary rounded-pill text-white m-2" data-bs-toggle="modal"
+                        data-bs-target="#end-modal">
+                        End Assessment
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="end-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="endLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="endLabel">WARNING</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    This will end the assessment completely. Any questions you have not mastered yet
+                                    will be marked as incorrect.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button id="end-btn" type="button" class="btn btn-primary">Understood - end the
+                                        assessment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div id="results-wrapper" class="border rounded bg-secondary my-5 p-3 d-flex flex-column d-none">
                     <!-- CREDIT: Code for accordian taken and adapted from here: https://getbootstrap.com/docs/5.3/components/accordion/ -->

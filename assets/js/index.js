@@ -28,6 +28,7 @@ $("#start-assessment").on("click", () => {
     $(".start-wrapper").addClass("d-none");
     $("#explanation-text").addClass("d-none");
     $("#question-wrapper").removeClass("d-none");
+    $("#question-additional-buttons").removeClass("d-none")
     insertNextQuestion();
 
 });
@@ -68,6 +69,17 @@ $("#previous-btn").on("click", () => {
     //count the wrong answer if they get it wrong again
     if (currentQuestion().mastered = false) { failureCounter -= 1 };
     insertNextQuestion();
+})
+
+$(".restart-btn").on("click", () => {
+    location.reload();
+})
+$("#end-btn").on("click", () => {
+    $('#end-modal').modal('hide');
+    console.log(currentModuleCode);
+    currentModuleCode = modules.length + 1;
+    console.log(currentModuleCode);
+    checkIfEndOfTest();
 })
 
 //returns the current module array
@@ -139,8 +151,10 @@ function updateCodes() {
 function checkIfEndOfTest() {
     let endOfTest = currentModuleCode > modules.length;
     if (endOfTest) {
+        console.log("in end of test");
         $(".start-wrapper").addClass("d-none");
         $("#question-wrapper").addClass("d-none");
+        $("#question-additional-buttons").addClass("d-none");
         $("#results-wrapper").removeClass("d-none");
         $("#studentName")[0].innerHTML = username;
         populateResultsTable();

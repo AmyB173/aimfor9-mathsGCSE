@@ -11990,14 +11990,15 @@ h1, .h1 {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 580px) {
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
-@media only screen and (min-width: 541px) {
+@media only screen and (min-width: 581px) {
   header {
     position: relative;
   }
