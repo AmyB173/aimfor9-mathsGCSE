@@ -214,18 +214,18 @@ export let modules = [
            <mi>z</mi>
            <mn>2</mn>
           </msup>
-          <mo stretchy='false'>(</mo><mn>2</mn><mi>x</mi><mi>y</mi><mi>z</mi><mo>&#x2212;</mo><mn>3</mn><mi>z</mi><mo stretchy='false'>)</mo></mrow>
+          <mo stretchy='false'>(</mo><mn>2</mn><mi>x</mi><mi>y</mi><mi>z</mi><mo>&#x2212;</mo><mn>3</mn><mo stretchy='false'>)</mo></mrow>
          <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
          feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
          hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
          4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
          vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
-         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaWiecaaI4a
-         GaamiEaiaadQhadaahaaWcbeqaaiaaikdaaaGccaGGOaGaaGOmaiaa
-         dIhacaWG5bGaamOEaiabgkHiTiaaiodacaWG6bGaaiykaaaa@41FF@
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaaGioaiaadI
+         hacaWG6bWaaWbaaSqabeaacaaIYaaaaOGaaiikaiaaikdacaWG4bGa
+         amyEaiaadQhacqGHsislcaaIZaGaaiykaaaa@4061@
          </annotation>
         </semantics>
-       </math>
+       </math>       
        `,
         solution: `<img src="assets/images/solutions/21.webp">`,
         mastered: false
@@ -348,18 +348,18 @@ export let modules = [
         answer: `<math display='block'>
         <semantics>
          <mrow>
-          <mo stretchy='false'>(</mo><mn>2</mn><mi>x</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mn>6</mn><mo stretchy='false'>)</mo></mrow>
+          <mo stretchy='false'>(</mo><mn>2</mn><mi>x</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy='false'>)</mo></mrow>
          <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
          feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
          hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
          4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
          vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
-         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbiqaaWiecaGGOa
-         GaaGOmaiaadIhacqGHsislcaaIXaGaaiykaiaacIcacaWG4bGaeyOe
-         I0IaaGOnaiaacMcaaaa@3F53@
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaaiikaiaaik
+         dacaWG4bGaeyOeI0IaaGymaiaacMcacaGGOaGaaG4maiaadIhacqGH
+         RaWkcaaIYaGaaiykaaaa@3F62@
          </annotation>
         </semantics>
-       </math>
+       </math>       
        `,
         solution: `<img src="assets/images/solutions/24.webp">`,
         mastered: false
