@@ -58,7 +58,6 @@ h1 {
     }
 }
 
-
 // Footer 
 footer a {
     // margin-right: 10px;
@@ -118,13 +117,18 @@ label {
     max-width: 70vw;
 }
 
-.content-wrapper {
-    height: auto;
+// styling for equations
+@media only screen and (min-width: 401px) {
+    math {
+        font-size: xx-large;
+        max-width: 70vw;
+    }
 }
 
-//styling for equations
-math {
-    font-size: xx-large;
+@media only screen and (max-width: 400px) {
+    math {
+        font-size: large;
+    }
 }
 
 // results wrapper

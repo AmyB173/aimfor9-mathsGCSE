@@ -12057,14 +12057,17 @@ label {
   max-width: 70vw;
 }
 
-.content-wrapper {
-  height: auto;
+@media only screen and (min-width: 401px) {
+  math {
+    font-size: xx-large;
+    max-width: 70vw;
+  }
 }
-
-math {
-  font-size: xx-large;
+@media only screen and (max-width: 400px) {
+  math {
+    font-size: large;
+  }
 }
-
 #results-wrapper h2, #results-wrapper .h2 {
   margin-top: 20px;
 }
