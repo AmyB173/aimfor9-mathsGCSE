@@ -187,3 +187,4 @@ function populateResultsTable() {
         $("#results")[0].innerHTML += "<table>" + `${resultsTable}` + "</table>";
     }
 }
+

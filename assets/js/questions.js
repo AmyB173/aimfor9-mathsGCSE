@@ -704,5 +704,302 @@ export let modules = [
         solution: `<img src="assets/images/solutions/35.webp">`,
         mastered: false
     }]
+},
+{
+    name: "module4",
+    displayName: "Arithmetic with Algebraic Fractions",
+    content: [
+    {
+        name: "Subtract Algebraic Fractions with Number Denominators",
+        moduleCode: 4,
+        questionCode: 1,
+        question: `
+        <p class="fs-3">Simplify fully: </p>
+        <math display='block'>
+            <semantics>
+            <mrow>
+            <mfrac>
+                <mi>x</mi>
+                <mn>5</mn>
+            </mfrac>
+            <mo>&#x2212;</mo><mfrac>
+                <mrow>
+                <mn>3</mn><mi>x</mi></mrow>
+                <mn>2</mn>
+            </mfrac>
+            </mrow>
+            <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+            feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+            hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+            4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+            vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+            fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+            WG4baabaGaaGynaaaacqGHsisldaWcaaqaaiaaiodacaWG4baabaGa
+            aGOmaaaaaaa@3B36@
+            </annotation>
+            </semantics>
+        </math>
+       `, 
+        answer: `<math display='block'>
+        <semantics>
+         <mrow>
+          <mfrac>
+           <mrow>
+            <mo>&#x2212;</mo><mn>13</mn><mi>x</mi></mrow>
+           <mrow>
+            <mn>10</mn></mrow>
+          </mfrac>
+          </mrow>
+         <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+         feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+         hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+         4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+         vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaacq
+         GHsislcaaIXaGaaG4maiaadIhaaeaacaaIXaGaaGimaaaaaaa@3ADE@
+         </annotation>
+        </semantics>
+       </math>       
+       `,
+        solution: `<img src="assets/images/solutions/41.webp">`,
+        mastered: false
+    },
+    {
+        name: "Subtract Algebraic Fractions with Algebraic Denominators",
+        moduleCode: 4,
+        questionCode: 2,
+        question: `
+        <p class="fs-3">Simplify fully: </p>
+        <math display='block'>
+            <semantics>
+            <mrow>
+            <mfrac>
+                <mn>5</mn>
+                <mi>x</mi>
+            </mfrac>
+            <mo>&#x2212;</mo><mfrac>
+                <mn>3</mn>
+                <mrow>
+                <mi>x</mi><mo>&#x2212;</mo><mn>1</mn></mrow>
+            </mfrac>
+            </mrow>
+            <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+            feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+            hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+            4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+            vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+            fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+            aI1aaabaGaamiEaaaacqGHsisldaWcaaqaaiaaiodaaeaacaWG4bGa
+            eyOeI0IaaGymaaaaaaa@3C22@
+            </annotation>
+            </semantics>
+            </math>
+       `, 
+        answer: `<math display='block'>
+        <semantics>
+         <mrow>
+          <mfrac>
+           <mrow>
+            <mn>2</mn><mi>x</mi><mo>&#x2212;</mo><mn>5</mn></mrow>
+           <mrow>
+            <mi>x</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy='false'>)</mo></mrow>
+          </mfrac>
+          </mrow>
+         <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+         feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+         hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+         4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+         vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+         aIYaGaamiEaiabgkHiTiaaiwdaaeaacaWG4bGaaiikaiaadIhacqGH
+         sislcaaIXaGaaiykaaaaaaa@3E67@
+         </annotation>
+        </semantics>
+       </math>       
+       `,
+        solution: `<img src="assets/images/solutions/42.webp">`,
+        mastered: false
+    },
+    {
+        name: "Multiplying Algebraic Fractions",
+        moduleCode: 4,
+        questionCode: 3,
+        question: `
+        <p class="fs-3">Simplify fully: </p>
+        <math display='block'>
+            <semantics>
+            <mrow>
+            <mfrac>
+                <mi>x</mi>
+                <mrow>
+                <mi>x</mi><mo>&#x2212;</mo><mn>1</mn></mrow>
+            </mfrac>
+            <mo>&#x00D7;</mo><mfrac>
+                <mn>3</mn>
+                <mrow>
+                <mi>x</mi><mo>&#x2212;</mo><mn>2</mn></mrow>
+            </mfrac>
+            </mrow>
+            <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+            feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+            hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+            4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+            vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+            fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+            WG4baabaGaamiEaiabgkHiTiaaigdaaaGaey41aq7aaSaaaeaacaaI
+            ZaaabaGaamiEaiabgkHiTiaaikdaaaaaaa@3F33@
+            </annotation>
+            </semantics>
+            </math>
+       `, 
+        answer: `<math display='block'>
+        <semantics>
+         <mrow>
+          <mfrac>
+           <mrow>
+            <mn>3</mn><mi>x</mi></mrow>
+           <mrow>
+            <mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mn>2</mn><mo stretchy='false'>)</mo></mrow>
+          </mfrac>
+          </mrow>
+         <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+         feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+         hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+         4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+         vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+         aIZaGaamiEaaqaaiaacIcacaWG4bGaeyOeI0IaaGymaiaacMcacaGG
+         OaGaamiEaiabgkHiTiaaikdacaGGPaaaaaaa@3FBE@
+         </annotation>
+        </semantics>
+       </math>
+       
+       `,
+        solution: `<img src="assets/images/solutions/43.webp">`,
+        mastered: false
+    },
+    {
+        name: "Adding Algebraic Fractions with Complex Algebraic Denominators",
+        moduleCode: 4,
+        questionCode: 4,
+        question: `
+        <p class="fs-3">Simplify fully: </p>
+        <math display='block'>
+            <semantics>
+            <mrow>
+            <mfrac>
+                <mn>2</mn>
+                <mrow>
+                <mi>x</mi><mo>+</mo><mn>2</mn></mrow>
+            </mfrac>
+            <mo>+</mo><mfrac>
+                <mi>x</mi>
+                <mrow>
+                <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+                </msup>
+                <mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow>
+            </mfrac>
+            </mrow>
+            <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+            feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+            hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+            4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+            vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+            fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+            aIYaaabaGaamiEaiabgUcaRiaaikdaaaGaey4kaSYaaSaaaeaacaWG
+            4baabaGaamiEamaaCaaaleqabaGaaGOmaaaakiabgUcaRiaaiwdaca
+            WG4bGaey4kaSIaaGOnaaaaaaa@417D@
+            </annotation>
+            </semantics>
+            </math>
+
+       `, 
+        answer: `<math display='block'>
+        <semantics>
+         <mrow>
+          <mfrac>
+           <mn>3</mn>
+           <mrow>
+            <mi>x</mi><mo>+</mo><mn>3</mn></mrow>
+          </mfrac>
+          </mrow>
+         <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+         feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+         hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+         4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+         vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+         aIZaaabaGaamiEaiabgUcaRiaaiodaaaaaaa@3960@
+         </annotation>
+        </semantics>
+       </math>
+             
+       `,
+        solution: `<img src="assets/images/solutions/44.webp">`,
+        mastered: false
+    },
+    {
+        name: "Complex Arithmetic involving Algebraic Fractions and BIDMAS",
+        moduleCode: 4,
+        questionCode: 5,
+        question: `
+        <p class="fs-3">Simplify fully: </p>
+        <math display='block'>
+        <semantics>
+         <mrow>
+          <mn>5</mn><mo>&#x2212;</mo><mo stretchy='false'>(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy='false'>)</mo><mo>&#x00F7;</mo><mfenced>
+           <mrow>
+            <mfrac>
+             <mrow>
+              <msup>
+               <mi>x</mi>
+               <mn>2</mn>
+              </msup>
+              <mo>&#x2212;</mo><mn>4</mn></mrow>
+             <mrow>
+              <mi>x</mi><mo>&#x2212;</mo><mn>3</mn></mrow>
+            </mfrac>
+            </mrow>
+          </mfenced></mrow>
+         <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+         feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+         hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+         4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+         vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaaGynaiabgk
+         HiTiaacIcacaWG4bGaey4kaSIaaGOmaiaacMcacqGH3daUdaqadaqa
+         amaalaaabaGaamiEamaaCaaaleqabaGaaGOmaaaakiabgkHiTiaais
+         daaeaacaWG4bGaeyOeI0IaaG4maaaaaiaawIcacaGLPaaaaaa@45AD@
+         </annotation>
+        </semantics>
+       </math>       
+       `, 
+        answer: `<math display='block'>
+        <semantics>
+         <mrow>
+          <mfrac>
+           <mrow>
+            <mn>4</mn><mi>x</mi><mo>&#x2212;</mo><mn>7</mn></mrow>
+           <mrow>
+            <mi>x</mi><mo>&#x2212;</mo><mn>2</mn></mrow>
+          </mfrac>
+          </mrow>
+         <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+         feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+         hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+         4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+         vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+         fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+         aI0aGaamiEaiabgkHiTiaaiEdaaeaacaWG4bGaeyOeI0IaaGOmaaaa
+         aaa@3C16@
+         </annotation>
+        </semantics>
+       </math>       
+       `,
+        solution: `<img src="assets/images/solutions/45.webp">`,
+        mastered: false
+    }]
 }
 ]
