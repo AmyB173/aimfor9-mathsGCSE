@@ -1001,5 +1001,177 @@ export let modules = [
         solution: `<img src="assets/images/solutions/45.webp">`,
         mastered: false
     }]
+},
+{
+    name: "module5",
+    displayName: "Solving Equations with Algebraic Fractions",
+    content: [
+    {
+        name: "Solve Equations involving Algebraic Fractions with Numeric Denominators",
+        moduleCode: 5,
+        questionCode: 1,
+        question: `
+        <math display='block'>
+            <semantics>
+            <mrow>
+            <mfrac>
+                <mrow>
+                <mn>6</mn><mi>x</mi><mo>&#x2212;</mo><mn>1</mn></mrow>
+                <mn>4</mn>
+            </mfrac>
+            <mo>&#x2212;</mo><mfrac>
+                <mrow>
+                <mn>5</mn><mo>&#x2212;</mo><mn>2</mn><mi>x</mi></mrow>
+                <mn>2</mn>
+            </mfrac>
+            <mo>=</mo><mn>1</mn></mrow>
+            <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+            feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+            hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+            4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+            vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+            fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+            aI2aGaamiEaiabgkHiTiaaigdaaeaacaaI0aaaaiabgkHiTmaalaaa
+            baGaaGynaiabgkHiTiaaikdacaWG4baabaGaaGOmaaaacqGH9aqpca
+            aIXaaaaa@4109@
+            </annotation>
+            </semantics>
+            </math>
+       `, 
+        answer: `
+        <math display='block'>
+            <semantics>
+            <mrow>
+            <mi>x</mi><mo>=</mo><mn>1.5</mn></mrow>
+            <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+            feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+            hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+            4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+            vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+            fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamiEaiabg2
+            da9iaaigdacaGGUaGaaGynaaaa@3A26@
+            </annotation>
+            </semantics>
+            </math>
+       `,
+        solution: `<img src="assets/images/solutions/51.webp">`,
+        mastered: false
+    },
+    {
+        name: "Solve Equations involving Algebraic Fractions with Algebraic Denominators",
+        moduleCode: 5,
+        questionCode: 2,
+        question: `
+        <math display='block'>
+        <semantics>
+        <mrow>
+        <mfrac>
+            <mn>2</mn>
+            <mrow>
+            <mn>5</mn><mi>x</mi><mo>&#x2212;</mo><mn>2</mn></mrow>
+        </mfrac>
+        <mo>=</mo><mfrac>
+            <mn>3</mn>
+            <mrow>
+            <mn>6</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow>
+        </mfrac>
+        </mrow>
+        <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+        feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+        hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+        4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+        vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+        fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+        aIYaaabaGaaGynaiaadIhacqGHsislcaaIYaaaaiabg2da9maalaaa
+        baGaaG4maaqaaiaaiAdacaWG4bGaey4kaSIaaGymaaaaaaa@3F55@
+        </annotation>
+        </semantics>
+        </math>
+
+       `, 
+        answer: `
+        <math display='block'>
+        <semantics>
+        <mrow>
+        <mi>x</mi><mo>=</mo><mfrac>
+            <mn>8</mn>
+            <mn>3</mn>
+        </mfrac>
+        </mrow>
+        <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+        feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+        hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+        4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+        vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+        fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamiEaiabg2
+        da9maalaaabaGaaGioaaqaaiaaiodaaaaaaa@3989@
+        </annotation>
+        </semantics>
+        </math>
+       `,
+        solution: `<img src="assets/images/solutions/52.webp">`,
+        mastered: false
+    },
+    {
+        name: "Solve Equations involving Algebraic Fractions with Quadratic Denominators",
+        moduleCode: 5,
+        questionCode: 3,
+        question: `
+        <math display='block'>
+        <semantics>
+        <mrow>
+        <mfrac>
+            <mn>4</mn>
+            <mrow>
+            <mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow>
+        </mfrac>
+        <mo>+</mo><mfrac>
+            <mn>1</mn>
+            <mrow>
+            <mn>4</mn><msup>
+            <mi>x</mi>
+            <mn>2</mn>
+            </msup>
+            <mo>&#x2212;</mo><mn>1</mn></mrow>
+        </mfrac>
+        <mo>=</mo><mn>3</mn></mrow>
+        <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+        feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+        hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+        4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+        vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+        fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaWaaSaaaeaaca
+        aI0aaabaGaaGOmaiaadIhacqGHRaWkcaaIXaaaaiabgUcaRmaalaaa
+        baGaaGymaaqaaiaaisdacaWG4bWaaWbaaSqabeaacaaIYaaaaOGaey
+        OeI0IaaGymaaaacqGH9aqpcaaIZaaaaa@41E1@
+        </annotation>
+        </semantics>
+        </math>
+                
+       `, 
+        answer: `
+        <math display='block'>
+            <semantics>
+            <mrow>
+            <mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>x</mi><mo>=</mo><mfrac>
+                <mn>2</mn>
+                <mn>3</mn>
+            </mfrac>
+            </mrow>
+            <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
+            feaahGart1ev3aaatCvAUfeBSjuyZL2yd9gzLbvyNv2CaerbuLwBLn
+            hiov2DGi1BTfMBaeXatLxBI9gBaerbd9wDYLwzYbItLDharqqtubsr
+            4rNCHbGeaGqiVu0Je9sqqrpepC0xbbL8F4rqqrFfpeea0xe9Lq=Jc9
+            vqaqpepm0xbba9pwe9Q8fs0=yqaqpepae9pg0FirpepeKkFr0xfr=x
+            fr=xb9adbaqaaeGaciGaaiaabeqaamaabaabaaGcbaGaamiEaiabg2
+            da9iaaicdacaGGSaGaamiEaiabg2da9maalaaabaGaaGOmaaqaaiaa
+            iodaaaaaaa@3CF0@
+            </annotation>
+            </semantics>
+            </math>
+       `,
+        solution: `<img src="assets/images/solutions/43.webp">`,
+        mastered: false
+    }]
 }
 ]
