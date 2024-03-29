@@ -76,9 +76,7 @@ $(".restart-btn").on("click", () => {
 })
 $("#end-btn").on("click", () => {
     $('#end-modal').modal('hide');
-    console.log(currentModuleCode);
     currentModuleCode = modules.length + 1;
-    console.log(currentModuleCode);
     checkIfEndOfTest();
 })
 
@@ -151,7 +149,6 @@ function updateCodes() {
 function checkIfEndOfTest() {
     let endOfTest = currentModuleCode > modules.length;
     if (endOfTest) {
-        console.log("in end of test");
         $(".start-wrapper").addClass("d-none");
         $("#question-wrapper").addClass("d-none");
         $("#question-additional-buttons").addClass("d-none");
@@ -187,4 +184,3 @@ function populateResultsTable() {
         $("#results")[0].innerHTML += "<table>" + `${resultsTable}` + "</table>";
     }
 }
-
