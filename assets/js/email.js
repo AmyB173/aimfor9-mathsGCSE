@@ -56,3 +56,9 @@ const sendEmail = () => {
 }
 
 $("#sendEmail").on("click", sendEmail);
+$("#email").on("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      sendEmail();
+    }
+  })
