@@ -155,6 +155,12 @@ function checkIfEndOfTest() {
         $("#results-wrapper").removeClass("d-none");
         $("#studentName")[0].innerHTML = username;
         populateResultsTable();
+        //add JS confetti foe end of test
+        const jsConfetti = new JSConfetti();
+        jsConfetti.addConfetti({
+            emojis: ['📚','✖️','➕','➗','🔢','📝', '📐','🥇', '🤓', '🧠', '📈'],
+         })
+        jsConfetti.addConfetti()
         return true;
     }
     return false;
@@ -162,9 +168,10 @@ function checkIfEndOfTest() {
 
 // ----------------------RESULTS SECTION----------------------------
 
-//Build a table of results for each module
-function populateResultsTable() {
 
+    
+//Build a table of results for each module
+function populateResultsTable() { 
     $("#results")[0].innerHTML = "";
 
     for (const module of modules) {
