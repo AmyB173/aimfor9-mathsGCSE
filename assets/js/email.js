@@ -33,6 +33,9 @@ const sendEmail = () => {
     const email = document.getElementById("email").value;
     const resultsInfo = populateResultsForEmail();
     const username = $("#studentName")[0].innerHTML;
+    const spinner = $(".spinner-grow");
+
+    spinner.removeClass("d-none");
     emailjs
         .send("service_pnqn1sn", "template_b2pynfe", {
             to_email: email,
@@ -40,14 +43,18 @@ const sendEmail = () => {
             results: resultsInfo
         })
         .then(
+            
             function (response) {
+                spinner.addClass("d-none");
                 // Show Bootstrap alert
                 const alertSuccess = document.getElementById("alertSuccess");
                 alertSuccess.style.display = "block";
-                // Hide after 5 seconds
+                document.getElementById("email").value = "";
+                // Hide 
                 setTimeout(() => {
                     alertSuccess.style.display = "none";
-                }, 2500);
+
+                }, 5000);
             },
             function (error) {
                 alert("Failed to send the email.");
