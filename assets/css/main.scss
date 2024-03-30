@@ -131,11 +131,17 @@ label {
     }
 }
 
-// results wrapper
+// results 
 #results-wrapper h2 {
     margin-top: 20px;
 }
 
+.results-section {
+    background-color: rgba(143, 165, 179, 0.5);
+}
+#results-title { 
+    background-color: white;
+}
 //table styling 
 table, th, td {
     border-style: solid;
@@ -150,4 +156,9 @@ th{
 }
 td {
     width: 30%;
+}
+
+//Email section
+#email-form-section { 
+    background-color: rgba(143, 165, 179, 0.5);
 }

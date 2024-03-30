@@ -12072,6 +12072,14 @@ label {
   margin-top: 20px;
 }
 
+.results-section {
+  background-color: rgba(143, 165, 179, 0.5);
+}
+
+#results-title {
+  background-color: white;
+}
+
 table, th, td {
   border-style: solid;
   border-width: 2px;
@@ -12088,4 +12096,8 @@ th {
 
 td {
   width: 30%;
+}
+
+#email-form-section {
+  background-color: rgba(143, 165, 179, 0.5);
 }/*# sourceMappingURL=main.css.map */

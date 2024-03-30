@@ -198,15 +198,14 @@
                     </div>
                 </div>
                 <div id="results-wrapper"
-                    class="border rounded bg-secondary my-5 p-3 d-flex flex-column align-items-center d-none">
+                    class="border rounded bg-secondary my-5 p-5 d-flex flex-column align-items-center d-none">
                     <!-- CREDIT: Code for accordian taken and adapted from here: https://getbootstrap.com/docs/5.3/components/accordion/ -->
                     <h2 class="text-center py-3">Well done <span id="studentName"></span> <i
                             class="fa-regular fa-thumbs-up"></i>! You've completed the
                         assessment.</h2>
-                    <div></div>
                     <!-- CREDIT:  taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
                     <p class="d-inline-flex gap-1">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        <button class="btn btn-primary border rounded text-white" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseResults" aria-expanded="false" aria-controls="collapseExample">
                             Show me my results
                         </button>
@@ -217,7 +216,7 @@
                     </div>
                     <!-- CREDIT:  taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
                     <p class="d-inline-flex gap-1 mt-1">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        <button class="btn btn-primary border rounded text-white" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseRevision" aria-expanded="false" aria-controls="collapseExample">
                             What can I do to improve?
                         </button>
@@ -243,8 +242,9 @@
                                 free consultation call to see if it's the right thing for you.</p>
                         </div>
                     </div>
+     
                     <!-- email section -->
-                    <div class="email-form-section" id="email-form-section">
+                    <div class="email-form-section p-3 mt-5 mb-2 border rounded" id="email-form-section">
                         <div id="alertSuccess" class="alert alert-success" role="alert" style="display: none">
                             Your message has been sent successfully!
                         </div>
@@ -254,9 +254,10 @@
                                 <label for="email" class="form-label email-label">Enter your email:</label>
                                 <input type="email" class="form-control" id="email">
                             </div>
-                            <button type="button" id="sendEmail" class="btn btn-primary">Send</button>
+                            <button type="button" id="sendEmail" class="btn btn-primary border rounded text-white">Send</button>
                         </form>
                     </div>
+                    
                     <!-- <button id="email-btn" class="btn btn-primary bg-primary border shadow text-white p-2 mt-3">Email me the results</button> -->
                 </div>
             </div>
