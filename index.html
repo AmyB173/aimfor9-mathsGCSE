@@ -2,25 +2,35 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
+    <meta name="description" conte="Can you get a Grade 9 in GCSE Maths? Come here to find out!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Tab Title -->
     <title>Get a Grade 9 Maths GCSE</title>
+
+    <!-- Maths Tutoring with Amy FAVICON-->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.webp">
+
+    <!-- My own stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Mathjax CDN for presenting equations correctly -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <!-- Google fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> 
+
+    <!-- JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    
+    <!--------- HEADER --------->
     <header class="bg-primary py-3 mb-auto">
         <button type="button" class="btn btn-primary rounded-pill text-white logo-holder" data-bs-toggle="modal"
             data-bs-target="#logo-modal">
@@ -37,10 +47,11 @@
                     <div class="modal-body">
                         This will take you to the start page and any inputs you may have entered will be erased.
                     </div>
-                    <div class="modal-footer">                     
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-primary restart-btn"><strong>Understood:</strong> take me
                             to the start</button>
-                        <button type="button" class="btn btn-secondary fw-light fs-6" data-bs-dismiss="modal"><strong>Cancel:</strong>
+                        <button type="button" class="btn btn-secondary fw-light fs-6"
+                            data-bs-dismiss="modal"><strong>Cancel:</strong>
                             continue assessment</button>
                     </div>
                 </div>
@@ -51,9 +62,12 @@
             <h2 class="text-white text-center pb-1">GCSE Maths</h2>
         </div>
     </header>
+    
     <main class="container-fluid ">
         <div class="row justify-content-center">
             <div class="test-area col-11 col-md-10 col-lg-8 col-xl-6">
+                
+                <!--------- INTRODUCTORY TEXT: this section explains the test and appears at the start -->
                 <div id="explanation-text">
                     <h2 class="text-center mt-5">Welcome to Aim for Grade 9.</h2>
                     <p>Try out this test to see how well you know GCSE algebra needed for achieving a Grade 9. It will
@@ -72,7 +86,7 @@
                             be moved onto the next module.</li>
                         <li>If a question seems too easy, select to skip it, and we'll mark it as correct for you.</li>
                     </ul>
-                    <!-- CREDIT: customised from bootstrap: https://getbootstrap.com/docs/5.3/components/collapse/#how-it-works -->
+                    <!-- CREDIT: collapsable button customised from bootstrap: https://getbootstrap.com/docs/5.3/components/collapse/#how-it-works -->
                     <p class="d-inline-flex gap-1">
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                             data-bs-target="#checkModules" aria-expanded="false" aria-controls="checkModules">
@@ -81,13 +95,15 @@
                     </p>
                     <div class="collapse" id="checkModules">
                         <div class="card card-body" id="moduleList">
-
                         </div>
                     </div>
                 </div>
+
+                <!--------- STARTING BOX: this section is where the user inputs their name, grade and starts the test -->
                 <div class="start-wrapper border shadow-lg rounded bg-secondary my-5 px-1 py-4">
+                    <!-- Input fields for test - name non-mandatory -->
                     <input type="text" id="username" name="username" class="border rounded d-block margin-center"
-                        aria-required="true" required placeholder="Name">
+                        placeholder="Name">
                     <fieldset class="border border-3 rounded-3 p-3 my-4 d-flex justify-content-center margin-center">
                         <legend class="float-none w-auto px-3 fs-6">Current Maths Grade: </legend>
                         <input type="radio" class="btn-check m-2" name="grade" id="grade7" value="7" autocomplete="off"
@@ -100,20 +116,27 @@
                         <input type="radio" class="btn-check" name="grade" id="gradeNA" value="na" autocomplete="off">
                         <label class="btn btn-primary mx-2 text-white" for="gradeNA">N/A</label>
                     </fieldset>
-
+                    <!-- Button to trigger starting the test -->
                     <button id="start-assessment"
                         class="btn btn-primary bg-primary text-white d-block margin-center rounded-pill shadow-sm p-3 fw-medium">Start
                         Assessment</button>
                 </div>
+
+                <!--------- QUESTION AND ANSWERS SECTION: this section will house both the questions and then the answers for the test -->
                 <div id="question-wrapper" class="border rounded bg-secondary mt-5 p-3 d-flex flex-column d-none">
+                    <!-- Button to trigger moving to the previous question -->
                     <button id="previous-btn" class="btn btn-primary text-white align-self-start"> <i
                             class="fa-solid fa-arrow-left"></i> Previous
                         Question</button>
+                    
+                    <!-- Question title and content, replaced by answer and solution image when show answer button is clicked -->
                     <h2 class="question-title text-center p-4 fw-bold">Title Placeholder</h2>
                     <div
                         class="question-content bg-white p-3 d-flex justify-content-center align-items-center flex-column border rounded-3">
                         Question Placeholder
                     </div>
+
+                    <!-- Buttons that appear only when the question is showing -->
                     <div id="questions-buttons" class="d-flex flex-column">
                         <button id="show-answer"
                             class="btn btn-primary btn-lg text-white align-self-center m-2 mt-4">Show
@@ -123,6 +146,8 @@
                         <button id="hard-btn" class="btn btn-primary text-white align-self-center m-2">Skip: too
                             hard!</button>
                     </div>
+
+                    <!-- Buttons that only appear when the answer is showing -->
                     <div id="answer-buttons" class="d-flex flex-column align-items-center d-none">
                         <p class="p-3 fs-3">Did you get it right?</p>
                         <div>
@@ -131,16 +156,16 @@
                         </div>
                     </div>
                 </div>
-                <div id="question-additional-buttons" class="mb-5 d-flex justify-content-between d-none">
 
-                    <!-- CREDIT: taken and adapted from https://getbootstrap.com/docs/5.3/components/modal/-->
-                    <!-- Button trigger modal -->
+                <!--------- RESTART AND END BUTTONS: these are to appear at all times during the test -->
+                <div id="question-additional-buttons" class="mb-5 d-flex justify-content-between d-none">
+                    <!-- CREDIT: modal taken and adapted from https://getbootstrap.com/docs/5.3/components/modal/-->
+                    <!-- Button that triggers test to restart -->
                     <button type="button" class="btn btn-primary rounded-pill text-white m-2" data-bs-toggle="modal"
                         data-bs-target="#restart-modal">
                         Restart Assessment
                     </button>
-
-                    <!-- Modal -->
+                    <!-- Modal - warning that inputs will be erased -->
                     <div class="modal fade" id="restart-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                         tabindex="-1" aria-labelledby="restartLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -165,14 +190,13 @@
                         </div>
                     </div>
 
-                    <!-- CREDIT: taken and adapted from https://getbootstrap.com/docs/5.3/components/modal/-->
-                    <!-- Button trigger modal -->
+                    <!-- CREDIT: modal taken and adapted from https://getbootstrap.com/docs/5.3/components/modal/-->
+                    <!-- Button that triggers test to end -->
                     <button type="button" class="btn btn-primary rounded-pill text-white m-2" data-bs-toggle="modal"
                         data-bs-target="#end-modal">
                         End Assessment
                     </button>
-
-                    <!-- Modal -->
+                    <!-- Modal - warning that it will end the test and future answers will be marked incorrect -->
                     <div class="modal fade" id="end-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                         tabindex="-1" aria-labelledby="endLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -190,23 +214,25 @@
                                     <button id="end-btn" type="button"
                                         class="btn btn-primary"><strong>Understood:</strong> end the
                                         assessment</button>
-                                        <button type="button" class="btn btn-secondary fs-6 fw-light"
-                                        data-bs-dismiss="modal"><strong>Cancel:</strong> continue assessment</button>          
+                                    <button type="button" class="btn btn-secondary fs-6 fw-light"
+                                        data-bs-dismiss="modal"><strong>Cancel:</strong> continue assessment</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!--------- RESULTS SECTION: The results of the test and the option to have them emailed are here -->
                 <div id="results-wrapper"
                     class="border rounded bg-secondary my-5 p-5 d-flex flex-column align-items-center d-none">
-                    <!-- CREDIT: Code for accordian taken and adapted from here: https://getbootstrap.com/docs/5.3/components/accordion/ -->
                     <h2 class="text-center py-3">Well done <span id="studentName"></span> <i
                             class="fa-regular fa-thumbs-up"></i>! You've completed the
                         assessment.</h2>
-                    <!-- CREDIT:  taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
+                    <!-- CREDIT: collapsable button taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
                     <p class="d-inline-flex gap-1">
-                        <button class="btn btn-primary border rounded text-white" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseResults" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-primary border rounded text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseResults" aria-expanded="false"
+                            aria-controls="collapseExample">
                             Show me my results
                         </button>
                     </p>
@@ -214,10 +240,11 @@
                         <div class="card card-body" id="results">
                         </div>
                     </div>
-                    <!-- CREDIT:  taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
+                    <!-- CREDIT: collapsable button taken from bootstrap here: https://getbootstrap.com/docs/5.3/components/collapse/ -->
                     <p class="d-inline-flex gap-1 mt-1">
-                        <button class="btn btn-primary border rounded text-white" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseRevision" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-primary border rounded text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseRevision" aria-expanded="false"
+                            aria-controls="collapseExample">
                             What can I do to improve?
                         </button>
                     </p>
@@ -242,13 +269,16 @@
                                 free consultation call to see if it's the right thing for you.</p>
                         </div>
                     </div>
-     
-                    <!-- email section -->
-                    <div class="email-form-section p-3 mt-5 mb-2 border rounded d-flex flex-column align-items-center" id="email-form-section">
+
+                    <!-- EMAIL SECTION - option to have to results emailed to you -->
+                    <!-- CREDIT: ideas taken from https://github.com/yamesjamess/feb-24-hackathon-love-riot on how to set this up properly -->
+                    <div class="email-form-section p-3 mt-5 mb-2 border rounded d-flex flex-column align-items-center"
+                        id="email-form-section">
                         <div class="spinner-grow d-none" role="status">
                             <span class="visually-hidden ">Loading...</span>
                         </div>
-                        <div id="alertSuccess" class="alert alert-success bg-white border-white" role="alert" style="display: none">
+                        <div id="alertSuccess" class="alert alert-success bg-white border-white" role="alert"
+                            style="display: none">
                             Your message has been sent successfully!
                         </div>
                         <form class="user-input">
@@ -257,15 +287,16 @@
                                 <label for="email" class="form-label email-label">Enter your email:</label>
                                 <input type="email" class="form-control" id="email">
                             </div>
-                            <button type="button" id="sendEmail" class="btn btn-primary border rounded text-white">Send</button>
+                            <button type="button" id="sendEmail"
+                                class="btn btn-primary border rounded text-white">Send</button>
                         </form>
                     </div>
-                    
-                    <!-- <button id="email-btn" class="btn btn-primary bg-primary border shadow text-white p-2 mt-3">Email me the results</button> -->
                 </div>
             </div>
         </div>
     </main>
+
+    <!--------- FOOTER --------->
     <!-- CREDIT: footer to stick to bottom of page https://radu.link/make-footer-stay-bottom-page-bootstrap/ -->
     <footer class="bg-primary d-flex justify-content-end mt-auto">
         <div class="p-3">
@@ -274,18 +305,28 @@
                 <img src="./assets/images/logo.webp" height="50" class="ps-2"></a>
         </div>
     </footer>
-    <!-- Boostrap JS -->
+
+    <!--------- SCRIPTS --------->
+    <!-- Bootstrap JS -->
+    <!-- I compiled the CSS into a file included in the project ut decided to use the CDN link for the JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
+        
+    <!-- Mathjax CDN for presenting equations correctly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9f7f10393d.js" crossorigin="anonymous"></script>
+
     <!-- Main Script -->
     <script src="./assets/js/index.js" type="module"></script>
+
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="module" src="./assets/js/email.js"></script>
 
+    <!-- JS CONFETTI -->
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </body>
-
 </html>
