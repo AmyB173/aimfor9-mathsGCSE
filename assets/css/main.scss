@@ -9,23 +9,26 @@ $secondary: #8fB3AF;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
-
-// Re usable styles
+// ------------------Re usable styles
 .margin-center {
     margin: 0 auto;
 }
 
-// global styling
+// ------------------Styles for the whole page
 body {
     font-family: "Quicksand", sans-serif;
 }
 
-h1, h2 ,h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Alegreya Sans", sans-serif;
 }
 
-// Header 
+// ------------------Header
 .logo {
     margin: 5px;
     height: 100px;
@@ -33,10 +36,6 @@ h1, h2 ,h3, h4, h5, h6 {
 
 h1 {
     font-size: 50px;
-}
-
-#main-heading {
-    margin: 0 auto;
 }
 
 //position logo on top of title on smaller screens to avoid overlap
@@ -48,48 +47,27 @@ h1 {
         justify-content: center;
     }
 }
+
 // position logo on left of header on larger screens
 @media only screen and (min-width: 581px) {
     header {
         position: relative;
     }
+
     .logo-holder {
         position: absolute;
     }
 }
 
-// Footer 
-footer a {
-    // margin-right: 10px;
-}
-
-//start section
-.start-wrapper {
-
-}
+// ------------------Starting Section
 fieldset {
     max-width: 300px;
 }
+
 input[type=text] {
     width: 200px;
     padding: 5px;
-    /* This includes the padding and border in the total size of the box */
     box-sizing: border-box;
-}
-
-input[type=textarea] {
-    max-width: 768px;
-    height: 200px;
-    padding: 5px;
-    margin: 8px;
-}
-
-
-.form-button {
-    width: 236px;
-    margin: 0 auto;
-    border-radius: 15px;
-    border:rgb(7, 116, 116);
 }
 
 label {
@@ -100,18 +78,25 @@ label {
     border-width: 3px;
     border-color: white;
 }
+
 .btn:hover {
     opacity: 0.7;
 }
 
 // Used chrome dev tools to find the exactly selector for the form buttons to change the colour to provide better contrast
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+.btn-check:checked+.btn,
+:not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
     background-color: #485963;
 }
 
+// ------------------Question and answer section
 .question-content {
-  min-height: 300px;
+    min-height: 300px;
 }
+
 .question-content img {
     max-height: 250px;
     max-width: 70vw;
@@ -131,35 +116,34 @@ label {
     }
 }
 
-// results 
+// ------------------Results sections
 #results-wrapper h2 {
     margin-top: 20px;
 }
 
-.results-section {
-    background-color: rgba(143, 165, 179, 0.5);
-}
-#results-title { 
-    background-color: white;
-}
 //table styling 
-table, th, td {
+table,
+th,
+td {
     border-style: solid;
     border-width: 2px;
     padding: 10px;
 }
+
 table {
     width: 100%;
 }
-th{
+
+th {
     width: 70%;
 }
+
 td {
     width: 30%;
 }
 
 //Email section
-#email-form-section { 
+#email-form-section {
     background-color: rgba(143, 165, 179, 0.5);
 }
 
