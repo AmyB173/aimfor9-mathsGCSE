@@ -11973,7 +11973,17 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: "Alegreya Sans", sans-serif;
 }
 
@@ -11984,10 +11994,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1 {
   font-size: 50px;
-}
-
-#main-heading {
-  margin: 0 auto;
 }
 
 @media only screen and (max-width: 580px) {
@@ -12013,22 +12019,7 @@ fieldset {
 input[type=text] {
   width: 200px;
   padding: 5px;
-  /* This includes the padding and border in the total size of the box */
   box-sizing: border-box;
-}
-
-input[type=textarea] {
-  max-width: 768px;
-  height: 200px;
-  padding: 5px;
-  margin: 8px;
-}
-
-.form-button {
-  width: 236px;
-  margin: 0 auto;
-  border-radius: 15px;
-  border: rgb(7, 116, 116);
 }
 
 label {
@@ -12044,7 +12035,11 @@ label {
   opacity: 0.7;
 }
 
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
   background-color: #485963;
 }
 
@@ -12072,15 +12067,9 @@ label {
   margin-top: 20px;
 }
 
-.results-section {
-  background-color: rgba(143, 165, 179, 0.5);
-}
-
-#results-title {
-  background-color: white;
-}
-
-table, th, td {
+table,
+th,
+td {
   border-style: solid;
   border-width: 2px;
   padding: 10px;
@@ -12104,4 +12093,15 @@ td {
 
 .spinner-grow {
   margin: 0 auto;
+}
+
+#body-404 {
+  background-image: url(../images/error-background.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+#error-btn {
+  width: -moz-max-content;
+  width: max-content;
 }/*# sourceMappingURL=main.css.map */

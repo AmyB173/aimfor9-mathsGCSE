@@ -10,9 +10,11 @@ let username;
 let grade;
 
 // ----------------------START SECTION----------------------------
-// Insert Module Names to "check to see what modules will be in the test" button
-// Designed to be dynamic so that the list will automatically populate with 
-// any additional modules
+/* 
+    Insert Module Names to "check to see what modules will be in the test" button
+    Designed to be dynamic so that the list will automatically populate with 
+    any additional modules
+ */
 window.onload = () => {
     let list = "";
     for (const module of modules) {

@@ -17,6 +17,7 @@ $secondary: #8fB3AF;
 // ------------------Styles for the whole page
 body {
     font-family: "Quicksand", sans-serif;
+    
 }
 
 h1,
@@ -149,4 +150,15 @@ td {
 
 .spinner-grow {
     margin: 0 auto;
+}
+
+// ------------------Error page
+#body-404 { 
+    background-image: url(../images/error-background.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+#error-btn  {
+    width:max-content;
 }
