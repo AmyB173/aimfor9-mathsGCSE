@@ -51,6 +51,8 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
 
 
    * [Code](#code)
+      - [Getting emailJS to work](#getting-email-js-to-work)
+      - [Validating email input](#validating-email-input)
 
 
    * [Content](#content)
@@ -414,7 +416,8 @@ I also decided to have the option to enter the email at the end, as I didn't wan
 
 ## Tools and Technologies Used
  - Custom HTML, CSS and JS were used throughout.
- - [Bootstrap v5.3](https://getbootstrap.com/) was used for layout and stylinig
+ - [Bootstrap v5.3](https://getbootstrap.com/) was used for layout and styling
+ - [JQuery v3.7.1](https://jquery.com/) was used in conjunction with vanilla JS
  - Git for version control
  - Github for saving and storing files
  - VS Code for locally coding my project (to replace the use of online IDE such as Gitpod or Codeanywhere)
@@ -428,9 +431,10 @@ I also decided to have the option to enter the email at the end, as I didn't wan
  - [Am I Responsive?](https://www.google.com/search?q=am+i+responsive&rlz=1C1ONGR_en-GBGB985GB985&oq=am+i+respon&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYQDIGCAMQRRhBMgYIBBBFGDwyBggFEEUYPNIBCDE4NTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8) to show how the website looks on different size screens and devices.
  - [Math Type](https://mathtype.en.softonic.com/) to convert equations to Mathematical Markup Language so that MathJax can render them
  - [MathJax](https://www.mathjax.org/) to present equation
- <!-- - WAVE chrome extension for accessibility testing
+- [JS Confetti](https://www.npmjs.com/package/js-confetti) was used to display emojis as confetti at the end of the test
+ - WAVE chrome extension for accessibility testing
  - WCAG Contrast checker chrome extension for colour contrast checking
-- [W3C Validator](https://validator.w3.org/) for validating HTML and CSS -->
+- [W3C Validator](https://validator.w3.org/) for validating HTML and CSS
 
 
 ## Testing and Validation
@@ -492,10 +496,192 @@ To fork the double-seven-guitars repository:
    - https://stackoverflow.com/questions/12431339/how-to-write-equations-in-html
    - https://accessibility.oit.ncsu.edu/putting-math-on-the-web-using-mathml-and-html5/
    - [MathJax Documentation](https://docs.mathjax.org/en/latest/basic/mathematics.html)
+- To get the footer to stick to the bottom of the page with bootstrap: https://radu.link/make-footer-stay-bottom-page-bootstrap/
 
 
 #### Specific Code 
 
+#### Getting Email JS to Work
+
+I was struggling to get my head around the documentation on emailJS and so I used [this](https://github.com/yamesjamess/feb-24-hackathon-love-riot) project as a guide for me - I then adapted it for my own needs. You can see I took the general structure but adapted it with my own function "poplateResultsTable", I fixed the issue of the spinner staying present after failure message and added in a email validation code so it couldn't be sent unless the email was valid.
+
+##### Their code
+```
+// Links to EmailJS Account -
+// Initialize EmailJS user ID
+emailjs.init("eW8pEkcltsdImigyc");
+
+const sendBtn = document.getElementById("sendEmail");
+const emailForm = document.getElementById("email");
+
+const sendEmail = () => {
+  const email = document.getElementById("email").value;
+  const userName = document.getElementById("user-name").value;
+  const crushName = document.getElementById("crush-name").value;
+  const compatibilityPercentage = document.getElementById(
+    "compatibility-percentage"
+  ).innerText;
+
+  // check the game first if the user have calculated or not
+  if (compatibilityPercentage === "80%" && compatibilityPercentage === "0%") {
+    alert("you have to calculate first");
+  }
+  // only send email if the user has input username,
+  // crush name, email, and calculate their score
+  else if (
+    userName &&
+    crushName &&
+    email &&
+    compatibilityPercentage !== "80%" &&
+    compatibilityPercentage !== "0%"
+  ) {
+    emailjs
+      .send("service_6heqq18", "template_nq4vvcz", {
+        to_email: email,
+        subject_from_name: userName,
+        crush_name: crushName,
+        user_name: userName,
+        compatibilityPercentage: compatibilityPercentage,
+      })
+      .then(
+        function (response) {
+          // Show Bootstrap alert
+          const alertSuccess = document.getElementById("alertSuccess");
+          alertSuccess.style.display = "block";
+          // Hide after 5 seconds
+          setTimeout(() => {
+            alertSuccess.style.display = "none";
+          }, 2500);
+        },
+        function (error) {
+          alert("Failed to send the email.");
+        }
+      );
+  } else {
+    alert(
+      "Please enter your name, crush's name, email and calculate the score first!"
+    );
+  }
+};
+
+const handleEnterKey = (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    document.getElementById("sendEmail").click();
+  }
+};
+
+if (sendBtn && emailForm) {
+  sendBtn.addEventListener("click", sendEmail);
+  emailForm.addEventListener("keydown", handleEnterKey);
+}
+```
+##### My code
+```
+import {
+    modules
+} from './questions.js';
+
+
+// CREDIT: I used the follow repository as a guide on how to use emailJS correctly: https://github.com/yamesjamess/feb-24-hackathon-love-riot
+// CREDIT: full details in readme
+
+// Links to EmailJS Account -
+// Initialize EmailJS user ID
+emailjs.init("k1hA0o1HzShiQtmFq");
+
+// My OWN CODE
+const populateResultsForEmail = () => {
+    let resultsString = "";
+    for (const module of modules) {
+        resultsString += `${module.displayName}`.toUpperCase() + "\n";
+        for (const question of module.content) {
+            let mastered;
+            question.mastered ? mastered = "Mastered" : mastered = "Needs revision";
+            if (question.questionCode == module.content.length) {
+                resultsString += question.name + ": " + mastered + "\n\n";
+            } else {
+                resultsString += question.name + ": " + mastered + "\n";
+            }
+        }
+    }
+    return resultsString;
+}
+
+//Code adapted - see credit above 
+const sendEmail = () => {
+    const email = document.getElementById("email").value;
+    const resultsInfo = populateResultsForEmail();
+    const username = $("#studentName")[0].innerHTML;
+    const spinner = $(".spinner-grow");
+
+    spinner.removeClass("d-none");
+    emailjs
+        .send("service_pnqn1sn", "template_b2pynfe", {
+            to_email: email,
+            name: username,
+            results: resultsInfo
+        })
+        .then(
+            
+            function (response) {
+                spinner.addClass("d-none");
+                // Show Bootstrap alert
+                const alertSuccess = document.getElementById("alertSuccess");
+                alertSuccess.style.display = "block";
+                document.getElementById("email").value = "";
+                // Hide 
+                setTimeout(() => {
+                    alertSuccess.style.display = "none";
+
+                }, 5000);
+            },
+            function (error) {
+                alert("Failed to send the email - please try again");
+                spinner.addClass("d-none");
+            }
+        );
+}
+
+// CREDIT: code taken from here: https://www.w3resource.com/javascript/form/email-validation.php
+function validateEmail() {
+    const email = document.getElementById("email").value;
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+    return (true)
+    }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+
+$("#sendEmail").on("click", () => {
+    if (validateEmail()) {
+        sendEmail();
+    }
+});
+
+$("#email").on("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      sendEmail();
+    }
+  })
+```
+
+
+#### Validating email input
+
+I used the following code in my email.js file exactly from [here](https://www.w3resource.com/javascript/form/email-validation.php): 
+
+```
+function validateEmail() {
+    const email = document.getElementById("email").value;
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+    return (true)
+    }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+```
 
 
 ### Content
