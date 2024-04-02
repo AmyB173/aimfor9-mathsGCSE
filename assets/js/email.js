@@ -63,7 +63,21 @@ const sendEmail = () => {
         );
 }
 
-$("#sendEmail").on("click", sendEmail);
+function validateEmail() {
+    const email = document.getElementById("email").value;
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+    return (true)
+    }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+
+$("#sendEmail").on("click", () => {
+    if (validateEmail()) {
+        sendEmail();
+    }
+});
+
 $("#email").on("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
