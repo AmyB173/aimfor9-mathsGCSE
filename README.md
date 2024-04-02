@@ -374,15 +374,15 @@ On a small screen:
 
 When the email is entered a spinner appears to show the waiting time before confirming the email has been sent successfully: 
 
-VIDEO PLACEHOLDER
+https://github.com/AmyB173/aimfor9-mathsGCSE/assets/148871917/2f6d6106-7585-4b40-9043-0e307c4e1b5b
 
 When an invalid email is entered a warning modal appears to notify the user: 
 
-VIDEO PLACEHOLDER
+https://github.com/AmyB173/aimfor9-mathsGCSE/assets/148871917/3bb67776-2109-4eb0-8fda-ca9c60c8ff23
 
 When the email is unsuccessful the user is also warned and then the spinner disappears after button is clicked:
 
-VIDEO PLACEHOLDER
+https://github.com/AmyB173/aimfor9-mathsGCSE/assets/148871917/82880c63-44bc-4bab-9930-534f3a043e80
 
 ### Example email
 
