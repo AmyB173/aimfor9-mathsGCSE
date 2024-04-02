@@ -358,11 +358,11 @@ This button shows a list of websites that can be used to revise these topics as 
 
 On a small screen: 
 
-![Image of the how to improve button not collapsed](./assets/images/readme/features/show-me-results-sm.png)
+![Image of the how to improve button not collapsed](./assets/images/readme/features/improve-sm.png)
 
 On a larger screen: 
 
-![Image of the how to improve button not collapsed](./assets/images/readme/features/show-me-results-lg.png)
+![Image of the how to improve button not collapsed](./assets/images/readme/features/improve-lg.png)
 
 ### Email
 
