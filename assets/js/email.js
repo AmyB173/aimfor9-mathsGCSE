@@ -57,7 +57,8 @@ const sendEmail = () => {
                 }, 5000);
             },
             function (error) {
-                alert("Failed to send the email.");
+                alert("Failed to send the email - please try again");
+                spinner.addClass("d-none");
             }
         );
 }
