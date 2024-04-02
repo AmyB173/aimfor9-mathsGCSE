@@ -65,7 +65,7 @@ Users will be students who are preparing and revising for their GCSE Maths, are 
 
 - (A) as a user, I want an assessment of what I do and do not know
 - (B) as a user, I want to be directed to specific resources that I can > use to revise based on where I'm currently at
-- (C) as a user, I want to be able to return to the website to see if > I've improved after doing the recommended work
+- (C) as a user, I want to be able to return to the website to see if > I've improved after doing the recommended work (later removed to make scope more manageable)
 - (D) as a user, I want to be able to skip topics that I already know so I don't waste time completing those questions
 - (E) as a user, I want to be able to return to my results at a later date
 
@@ -95,7 +95,7 @@ Opportunity 1's viability is low because the course is large, and to create an a
 | Opportunity/Problem | Importance | Viability
 | ----------- | ----------- | ----------- 
 | 1. To provide an assessment for ALGEBRA topics required to achieve a grade 9 | 5 | 5 |
-| 2. To provide a list all of the topics required to achieve a grade 9 | 5 | 5
+| 2. To provide a list all of the topics required to achieve a grade 9 (later removed to make the scope more manageable) | 5 | 5
 | 4. To provide links to videos on the topics they need to work on | 5 | 5
 | 5. To provide practice questions and solutions for the topics they need to work on | 5 | 5
 | Totals | 20 | 20
@@ -118,9 +118,7 @@ Business logo on the page and link to business website appearing at several stag
 - The end of the assessment will produce a Red Amber Green list of all the topics required to get a grade 9 (Algebra) based on the answers provided. 
 - The end of the assessment will provide a coherent set of instructions of how to improve. These will be in the form of videos, followed by questions and answers. 
 
-> #### User Story C - I want to be able to return to the website to see if I've improved after doing the recommended work
-- a message indicating they can return to the website after the work has completed for a check
-- an option at the start to indicate if this is an "initial assessment" or a "return assessment" so that they aren't asked the same questions.
+> #### User Story C - removed
 
 > #### User Story D - I want to be able to skip topics that I already know so I don't waste time completing those questions. 
 - have an option to skip the question and indicate if it's because it's too easy or too hard (too hard => need to revise, too easy => don't need to revise)
@@ -393,10 +391,26 @@ This is what the email that is delivered looks like:
 
 
 ### Changes from initial planning
+
+Without realising it, I had created too much work for the project. To this end, the following changed were made:
+
+- User Story C has been deliberately removed as it is not essential to the essence of the project and is a "nice-to have".
+- As the project was only on the algebra topics, it has not been necessary to provide a full list of all the topics needed for Grade 9 and would create some confusion (why are all topics listed if we are only being tested on the algebra?)
+- Intially, I had imagined giving *very* personalised ways to improve by linking specific videos and worksheets to each question they did not master. This would have been a tremendous amount of work. I have simplified this to direct them towards websites that all have videos and worksheets on all the topics in the test and it would only require them to navigate to the website and find the topic.
+
+I also decided to have the option to enter the email at the end, as I didn't want it to be a pre-requisite for taking the test. I wanted it to be accessible. They can choose at the end whether they would like their results emailed.
+
 ### Future implementations
 
+- To have an option to check back later and see if you've improved (with different questions). This would need to be implemented with a second set of modules with the same topics but different questions.
 
+- To have more personalisation in the results, where specific videos and worksheets are given for each topic.
 
+- To have the option to save your results as a pdf instead of emailed.
+
+- To have the test only accessible to those sign up to a mailing list (for marketing purposed)
+
+- To offer all the topics needed to achieve a Grade 9.
 
 ## Tools and Technologies Used
  - Custom HTML and CSS were used throughout.
