@@ -4,9 +4,9 @@ The purpose of this website is to analyse the skill level of students aiming for
 
 This is to complement my business "Maths Tutoring with Amy" and could potentially be linked to the website at a later date. 
 
-[Deployed site here]() 
+[Deployed site here](https://amyb173.github.io/aimfor9-mathsGCSE/) 
 
-![Am I Responsive Screenshot](./images/am-I-responsive.png)
+![Am I Responsive Screenshot](./assets/images/readme/am-I-responsive.png)
 
 ## Table of contents
 
@@ -413,21 +413,21 @@ I also decided to have the option to enter the email at the end, as I didn't wan
 - To offer all the topics needed to achieve a Grade 9.
 
 ## Tools and Technologies Used
- - Custom HTML and CSS were used throughout.
- <!-- - [Bootstrap v5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used in this project at various points for layout, form styling, creating cards and the navbar. I made some adaptations to the bootstrap styling at various points too. 
- - CSS Flexbox was also used for layout purposes (outside of Bootstrap) - the reason I used Flexbox without Bootstrap was that it felt lighter and more customisable in places in addition to giving me good practice of using both flexbox and bootstrap for layout. 
+ - Custom HTML, CSS and JS were used throughout.
+ - [Bootstrap v5.3](https://getbootstrap.com/) was used for layout and stylinig
  - Git for version control
  - Github for saving and storing files
- - VS Code for locally coding my project (to replace the use of online IDE such as Gitpod or Codeanywhere) -->
+ - VS Code for locally coding my project (to replace the use of online IDE such as Gitpod or Codeanywhere)
  - [Google Fonts](https://fonts.google.com/) for the font used in the website
  - Google developer tools to test the website for responsiveness and to fix bugs.
- <!-- - [Picture to people](https://www.picturetopeople.org/text_generator/others/transparent/transparent-text-generator.html "Picture to People website") was used to generate the title with a transparent background that overlays the hero image.  -->
+ - [Picture to people](https://www.picturetopeople.org/text_generator/others/transparent/transparent-text-generator.html "Picture to People website") was used to generate the title with a transparent background that appears in the header.
  - [Image Resizer](https://imageresizer.com "Image Resizer Website") was used to compress and resize images. 
- <!-- - [Convertio](https://convertio.co/) for turning jpg to webp -->
+- [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp) to convert images to webp.
  - [Canva](https://canva.com "Canva Website") was used to generate the colour palette. 
- - Google Maps API to embed a map using an iframe.
- <!-- - [Font Awesome](https://fontawesome.com/) was used for all icons used on my page. -->
+  - [Font Awesome](https://fontawesome.com/) was used for all icons used on my page.
  - [Am I Responsive?](https://www.google.com/search?q=am+i+responsive&rlz=1C1ONGR_en-GBGB985GB985&oq=am+i+respon&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYQDIGCAMQRRhBMgYIBBBFGDwyBggFEEUYPNIBCDE4NTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8) to show how the website looks on different size screens and devices.
+ - [Math Type](https://mathtype.en.softonic.com/) to convert equations to Mathematical Markup Language so that MathJax can render them
+ - [MathJax](https://www.mathjax.org/) to present equation
  <!-- - WAVE chrome extension for accessibility testing
  - WCAG Contrast checker chrome extension for colour contrast checking
 - [W3C Validator](https://validator.w3.org/) for validating HTML and CSS -->
@@ -497,8 +497,10 @@ To fork the double-seven-guitars repository:
 #### Specific Code 
 
 
+
 ### Content
 
+All content was created by me.
 
 ## Acknowledgments
 
