@@ -21,10 +21,21 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
    - [Skeleton - Wireframes](#skeleton---wireframes)
    - [Surface - Design Choices](#surface---design-choices)
 
-2. [Logic Planning](#logic-planning)
-
-3.  [Features](#features-1)
+2. [Logic Planning](#logic-planning-1)
    -
+
+3. [Features](#features-1)
+   -
+   - [General Overview](#general-overview)
+   - [Header](#header)
+   - [Introductory Text](#introductory-text)
+   - [Modules Button](#modules-button)
+   - [Starting Section Input](#starting-section-input)
+   - [Question Section](#question-section)
+   - [Answer Section](#answer-section)
+   - [Restart Assessment Button](#restart-assessment-button)
+   - [Logo Button](#logo-button-in-header)
+   - [End Assessment Button](#end-assessment-button)
 
 3. [Tools and Technologies Used](#tools-and-technologies-used-1)
    -
@@ -215,7 +226,173 @@ I will try to avoid any "hard coding" so that the programme doesn't rely on a sp
 
 ## Features
 
+### General Overview 
 
+This website has been built as an assessment for Grade 9 students. It is designed as a single-page website that changes based on user interaction. The forward and back buttons cannot be used. 
+
+Every section is responsive for screen sizes down to 320px width.
+
+### Header
+
+The includes the name of the webpage and then the overarching business logo from "Maths Tutoring with Amy". The logo can be clicked to redirect you back to the starting section.
+
+On a small screen:
+
+![Image of header including title "Get a Grade 9 - GCSE Maths" and "Maths Tutoring with Amy" logo](./assets/images/readme/features/header-sm.png)
+
+On a large screen: 
+![Image of header including title "Get a Grade 9 - GCSE Maths" and "Maths Tutoring with Amy" logo](./assets/images/readme/features/header-lg.png)
+
+### Introductory Text
+This section includes text to explain how the assessment works to guide the users. 
+
+On a small screen: 
+
+![Image of the introductory text](./assets/images/readme/features/intro-text-sm.png)
+
+On a larger screen: 
+
+![Image of the introductory text](./assets/images/readme/features/intro-text-lg.png)
+
+### Modules Button
+This is a collapsible button that will show all the modules currently in the test and the number of questions in each: 
+
+On a small screen: 
+
+![Image of the collapsible button opened](./assets/images/readme/features/module-list-sm.[png])
+
+On a larger screen: 
+
+![Image of the collapsible button opened](./assets/images/readme/features/modules-list-lg.png)
+
+### Starting Section Input
+
+This section allows the user to put in their name (not mandatory), their grade (not used but is there to indicate this test is only for Grade 7+), and then a start assessment button.
+
+On a small screen:
+
+![Image of the starting section input fields](./assets/images/readme/features/start-input-sm.png)
+
+On a larger screen: 
+
+![Image of the starting section input fields](./assets/images/readme/features/start-input-lg.png)
+
+The chosen grade is darker than they others and the start assessment button gets a border when hovered over : 
+
+![Image of the start assessment button](./assets/images/readme/features/start-input-button-highlight-lg.png)
+
+### Question section
+
+On a small screen: 
+
+![Image of the question section with title and question below and buttons](./assets/images/readme/features/first-q-sm.png)
+
+On a large screen: 
+
+![Image of the question section with title and question below and buttons](./assets/images/readme/features/first-q-lg.png)
+
+After the first question, a previous question button appears:
+
+![Image of the question section with title and question below and buttons](./assets/images/readme/features/second-q-sm.png)
+
+### Answer section
+
+When the use clicks "show answer" button on the question section the answer appears with the workings shown below.
+
+On a small screen: 
+
+![Image of the answer section with answer and fully worked solution below](./assets/images/readme/features/answer-sm.png)
+
+On a large screen:
+
+![Image of the answer section with answer and fully worked solution below](./assets/images/readme/features/answer-lg.png)
+
+### Restart Assessment Button
+When the restart assessment button is clicked a modal appears warning them that their results will be erased - option to continue or restart given.
+
+![Image of the warning modal warning of answers being erased](./assets/images/readme/features/restart-modal-lg.png)
+
+### Logo Button in Header 
+
+When the logo is click in the header a warning is given that this will restart the assessment: 
+
+![Image of the warning modal warning of answers being erased](./assets/images/readme/features/logo-btn-warning.png)
+
+### End Assessment Button 
+
+When the end assessment button is clicked warning is given about all future answers being marked as incorrect: 
+
+![Image of the warning modal warning of all future answers being marked incorrect](./assets/images/readme/features/end-assessment-btn-modal.png)
+
+### Results Section 
+
+The results section is personalised with the name of the person (if they inputted it).
+
+When the assessment is ended js confetti appears over the screen with mathematical emojis: 
+
+![Image of the results page covered by maths emojis](./assets/images/readme/features/confetti.png)
+
+Once that has cleared it look like this on a small screen.
+
+![Image of the results page with collapsed buttons](./assets/images/readme/features/results-sm.png)
+
+On a larger screen: 
+
+![Image of the results page with collapsed buttons](./assets/images/readme/features/results-lg.png)
+
+### Show my my results button
+
+The results of the test are presented in a table that is shown when the show me my results button is clicked. 
+
+On a small screen: 
+
+![Image of the results table under "Show me my results" button](./assets/images/readme/features/show-me-results-sm.png)
+
+On a larger screen: 
+
+![Image of the results table under "Show me my results" button](./assets/images/readme/features/show-me-results-lg.png)
+
+### What can I do to improve button
+
+This button shows a list of websites that can be used to revise these topics as well as directing them to use my website and direct business in that direction: 
+
+On a small screen: 
+
+![Image of the how to improve button not collapsed](./assets/images/readme/features/show-me-results-sm.png)
+
+On a larger screen: 
+
+![Image of the how to improve button not collapsed](./assets/images/readme/features/show-me-results-lg.png)
+
+### Email
+
+At the bottom of the results section is the option to have these results emailed to you. 
+
+On a small screen: 
+
+![Email input section](./assets/images/readme/features/email-results.png)
+
+When the email is entered a spinner appears to show the waiting time before confirming the email has been sent successfully: 
+
+VIDEO PLACEHOLDER
+
+When an invalid email is entered a warning modal appears to notify the user: 
+
+VIDEO PLACEHOLDER
+
+When the email is unsuccessful the user is also warned and then the spinner disappears after button is clicked:
+
+VIDEO PLACEHOLDER
+
+### Example email
+
+This is what the email that is delivered looks like:
+
+![Example email part 1](./assets/images/readme/features/results-email-1.png)
+![Example email part 2](./assets/images/readme/features/results-email-2.png)
+
+
+### Changes from initial planning
 ### Future implementations
 
 
