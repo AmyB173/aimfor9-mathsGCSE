@@ -1,15 +1,21 @@
-// the question and answer values contain long mathml code, collapse questions and answers for 
-// better readability
+/*
+    This is a list of all modules in the test
+    Modules is an array of modules (objects)
+    Each module (object) contains key value pairs, including "content"
+    "Content" contains an array of question objects
+    The question and answer values contain long mathml code, collapse questions and answers for 
+    better readability
+*/
 export let modules = [
     {
-    name: "module1",
-    displayName: "Expanding Brackets",
-    content: [
-    {
-        name: "Expand single brackets with complex powers",
-        moduleCode: 1,
-        questionCode: 1,
-        question: `
+        name: "module1",
+        displayName: "Expanding Brackets",
+        content: [
+            {
+                name: "Expand single brackets with complex powers",
+                moduleCode: 1,
+                questionCode: 1,
+                question: `
         <p class="fs-3">Expand: </p>
         <math display='block'>
         <semantics>
@@ -35,8 +41,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mn>8</mn><msup>
@@ -69,14 +75,14 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/11.webp">`,
-        mastered: false
-    },
-    {
-        name: "Expand Two Brackets",
-        moduleCode: 1,
-        questionCode: 2,
-        question: `
+                solution: `<img src="assets/images/solutions/11.webp">`,
+                mastered: false
+            },
+            {
+                name: "Expand Two Brackets",
+                moduleCode: 1,
+                questionCode: 2,
+                question: `
         <p class="fs-3">Expand: </p>
         <math display='block'>
         <semantics>
@@ -93,8 +99,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mn>12</mn><msup>
@@ -114,14 +120,14 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/12.webp">`,
-        mastered: false
-    },
-    {
-        name: "Expand Three Brackets",
-        moduleCode: 1,
-        questionCode: 3,
-        question: `
+                solution: `<img src="assets/images/solutions/12.webp">`,
+                mastered: false
+            },
+            {
+                name: "Expand Three Brackets",
+                moduleCode: 1,
+                questionCode: 3,
+                question: `
         <p class="fs-3">Expand: </p>
         <math display='block'>
         <semantics>
@@ -138,8 +144,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <msup>
@@ -164,19 +170,19 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/13.webp">`,
-        mastered: false
-    }]
-},
-{
-    name: "module2",
-    displayName: "Factorising",
-    content: [
+                solution: `<img src="assets/images/solutions/13.webp">`,
+                mastered: false
+            }]
+    },
     {
-        name: "Factorising into single brackets with complex powers",
-        moduleCode: 2,
-        questionCode: 1,
-        question: `
+        name: "module2",
+        displayName: "Factorising",
+        content: [
+            {
+                name: "Factorising into single brackets with complex powers",
+                moduleCode: 2,
+                questionCode: 1,
+                question: `
         <p class="fs-3">Factorise: </p>
         <math display='block'>
         <semantics>
@@ -206,8 +212,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mn>8</mn><mi>x</mi><msup>
@@ -227,14 +233,14 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/21.webp">`,
-        mastered: false
-    },
-    {
-        name: "Factorising a quadratic where to coefficient of x is 1",
-        moduleCode: 2,
-        questionCode: 2,
-        question: `
+                solution: `<img src="assets/images/solutions/21.webp">`,
+                mastered: false
+            },
+            {
+                name: "Factorising a quadratic where to coefficient of x is 1",
+                moduleCode: 2,
+                questionCode: 2,
+                question: `
         <p class="fs-3">Factorise: </p>
         <math display='block'>
         <semantics>
@@ -255,8 +261,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mn>12</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mi>x</mi><mo>+</mo><mn>10</mn><mo stretchy='false'>)</mo></mrow>
@@ -272,14 +278,14 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/22.webp">`,
-        mastered: false
-    },
-    {
-        name: "Difference of two squares factorising",
-        moduleCode: 2,
-        questionCode: 3,
-        question: `
+                solution: `<img src="assets/images/solutions/22.webp">`,
+                mastered: false
+            },
+            {
+                name: "Difference of two squares factorising",
+                moduleCode: 2,
+                questionCode: 3,
+                question: `
         <p class="fs-3">Factorise: </p>
         <math display='block'>
         <semantics>
@@ -299,8 +305,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mo stretchy='false'>(</mo><mi>x</mi><mo>+</mo><mn>6</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mn>6</mn><mo stretchy='false'>)</mo></mrow>
@@ -316,14 +322,14 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/23.webp">`,
-        mastered: false
-    },
-    {
-        name: "Factorising quadratics where the coefficent of x is greater than 1",
-        moduleCode: 2,
-        questionCode: 4,
-        question: `
+                solution: `<img src="assets/images/solutions/23.webp">`,
+                mastered: false
+            },
+            {
+                name: "Factorising quadratics where the coefficent of x is greater than 1",
+                moduleCode: 2,
+                questionCode: 4,
+                question: `
         <p class="fs-3">Factorise: </p>
         <math display='block'>
         <semantics>
@@ -344,8 +350,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mo stretchy='false'>(</mo><mn>2</mn><mi>x</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy='false'>)</mo></mrow>
@@ -361,14 +367,14 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/24.webp">`,
-        mastered: false
-    },
-    {
-        name: "Difference of two squares factorising where the coefficient of x is greater than 1",
-        moduleCode: 2,
-        questionCode: 5,
-        question: `
+                solution: `<img src="assets/images/solutions/24.webp">`,
+                mastered: false
+            },
+            {
+                name: "Difference of two squares factorising where the coefficient of x is greater than 1",
+                moduleCode: 2,
+                questionCode: 5,
+                question: `
         <p class="fs-3">Factorise: </p>
         <math display='block'>
         <semantics>
@@ -389,8 +395,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mo stretchy='false'>(</mo><mn>2</mn><mi>x</mi><mo>&#x2212;</mo><mn>5</mn><mo stretchy='false'>)</mo><mo stretchy='false'>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy='false'>)</mo></mrow>
@@ -406,19 +412,19 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/25.webp">`,
-        mastered: false
-    }]
-},
-{
-    name: "module3",
-    displayName: "Simplifying Algebraic Fractions",
-    content: [
+                solution: `<img src="assets/images/solutions/25.webp">`,
+                mastered: false
+            }]
+    },
     {
-        name: "Simplifying simple fractions with letter and number cancellation",
-        moduleCode: 3,
-        questionCode: 1,
-        question: `
+        name: "module3",
+        displayName: "Simplifying Algebraic Fractions",
+        content: [
+            {
+                name: "Simplifying simple fractions with letter and number cancellation",
+                moduleCode: 3,
+                questionCode: 1,
+                question: `
         <p class="fs-3">Simplify: </p>
         <math display='block'>
         <semantics>
@@ -460,8 +466,8 @@ export let modules = [
         </semantics>
        </math>
        
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -490,14 +496,14 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/31.webp">`,
-        mastered: false
-    },
-    {
-        name: "Factorise numerator or denominator and cancel brackets",
-        moduleCode: 3,
-        questionCode: 2,
-        question: `
+                solution: `<img src="assets/images/solutions/31.webp">`,
+                mastered: false
+            },
+            {
+                name: "Factorise numerator or denominator and cancel brackets",
+                moduleCode: 3,
+                questionCode: 2,
+                question: `
         <p class="fs-3">Simplify: </p>
         <math display='block'>
         <semantics>
@@ -524,8 +530,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>       
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow>
@@ -540,14 +546,14 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/32.webp">`,
-        mastered: false
-    },
-    {
-        name: "Factorising and cancelling when a squared bracket is involved",
-        moduleCode: 3,
-        questionCode: 3,
-        question: `
+                solution: `<img src="assets/images/solutions/32.webp">`,
+                mastered: false
+            },
+            {
+                name: "Factorising and cancelling when a squared bracket is involved",
+                moduleCode: 3,
+                questionCode: 3,
+                question: `
         <p class="fs-3">Simplify: </p>
         <math display='block'>
         <semantics>
@@ -581,8 +587,8 @@ export let modules = [
         </semantics>
        </math>
        
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -604,14 +610,14 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/33.webp">`,
-        mastered: false
-    },
-    {
-        name: "Factorising quadratics where the coefficent of x is greater than 1",
-        moduleCode: 3,
-        questionCode: 4,
-        question: `
+                solution: `<img src="assets/images/solutions/33.webp">`,
+                mastered: false
+            },
+            {
+                name: "Factorising quadratics where the coefficent of x is greater than 1",
+                moduleCode: 3,
+                questionCode: 4,
+                question: `
         <p class="fs-3">Simplify: </p>
         <math display='block'>
         <semantics>
@@ -638,8 +644,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>       
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mn>2</mn><mo stretchy='false'>(</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo stretchy='false'>)</mo></mrow>
@@ -654,14 +660,14 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/34.webp">`,
-        mastered: false
-    },
-    {
-        name: "Complex simplification (avoid cancelling summed brackets)",
-        moduleCode: 3,
-        questionCode: 5,
-        question: `
+                solution: `<img src="assets/images/solutions/34.webp">`,
+                mastered: false
+            },
+            {
+                name: "Complex simplification (avoid cancelling summed brackets)",
+                moduleCode: 3,
+                questionCode: 5,
+                question: `
         <p class="fs-3">Simplify: </p>
         <math display='block'>
         <semantics>
@@ -686,8 +692,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mn>1</mn>
          <annotation encoding='MathType-MTEF'>MathType@MTEF@5@5@+=
@@ -701,19 +707,19 @@ export let modules = [
         </semantics>
        </math>
        `,
-        solution: `<img src="assets/images/solutions/35.webp">`,
-        mastered: false
-    }]
-},
-{
-    name: "module4",
-    displayName: "Arithmetic with Algebraic Fractions",
-    content: [
+                solution: `<img src="assets/images/solutions/35.webp">`,
+                mastered: false
+            }]
+    },
     {
-        name: "Subtract Algebraic Fractions with Number Denominators",
-        moduleCode: 4,
-        questionCode: 1,
-        question: `
+        name: "module4",
+        displayName: "Arithmetic with Algebraic Fractions",
+        content: [
+            {
+                name: "Subtract Algebraic Fractions with Number Denominators",
+                moduleCode: 4,
+                questionCode: 1,
+                question: `
         <p class="fs-3">Simplify fully: </p>
         <math display='block'>
             <semantics>
@@ -739,8 +745,8 @@ export let modules = [
             </annotation>
             </semantics>
         </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -761,14 +767,14 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/41.webp">`,
-        mastered: false
-    },
-    {
-        name: "Subtract Algebraic Fractions with Algebraic Denominators",
-        moduleCode: 4,
-        questionCode: 2,
-        question: `
+                solution: `<img src="assets/images/solutions/41.webp">`,
+                mastered: false
+            },
+            {
+                name: "Subtract Algebraic Fractions with Algebraic Denominators",
+                moduleCode: 4,
+                questionCode: 2,
+                question: `
         <p class="fs-3">Simplify fully: </p>
         <math display='block'>
             <semantics>
@@ -794,8 +800,8 @@ export let modules = [
             </annotation>
             </semantics>
             </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -817,14 +823,14 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/42.webp">`,
-        mastered: false
-    },
-    {
-        name: "Multiplying Algebraic Fractions",
-        moduleCode: 4,
-        questionCode: 3,
-        question: `
+                solution: `<img src="assets/images/solutions/42.webp">`,
+                mastered: false
+            },
+            {
+                name: "Multiplying Algebraic Fractions",
+                moduleCode: 4,
+                questionCode: 3,
+                question: `
         <p class="fs-3">Simplify fully: </p>
         <math display='block'>
             <semantics>
@@ -851,8 +857,8 @@ export let modules = [
             </annotation>
             </semantics>
             </math>
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -875,14 +881,14 @@ export let modules = [
        </math>
        
        `,
-        solution: `<img src="assets/images/solutions/43.webp">`,
-        mastered: false
-    },
-    {
-        name: "Adding Algebraic Fractions with Complex Algebraic Denominators",
-        moduleCode: 4,
-        questionCode: 4,
-        question: `
+                solution: `<img src="assets/images/solutions/43.webp">`,
+                mastered: false
+            },
+            {
+                name: "Adding Algebraic Fractions with Complex Algebraic Denominators",
+                moduleCode: 4,
+                questionCode: 4,
+                question: `
         <p class="fs-3">Simplify fully: </p>
         <math display='block'>
             <semantics>
@@ -915,8 +921,8 @@ export let modules = [
             </semantics>
             </math>
 
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -937,14 +943,14 @@ export let modules = [
        </math>
              
        `,
-        solution: `<img src="assets/images/solutions/44.webp">`,
-        mastered: false
-    },
-    {
-        name: "Complex Arithmetic involving Algebraic Fractions and BIDMAS",
-        moduleCode: 4,
-        questionCode: 5,
-        question: `
+                solution: `<img src="assets/images/solutions/44.webp">`,
+                mastered: false
+            },
+            {
+                name: "Complex Arithmetic involving Algebraic Fractions and BIDMAS",
+                moduleCode: 4,
+                questionCode: 5,
+                question: `
         <p class="fs-3">Simplify fully: </p>
         <math display='block'>
         <semantics>
@@ -975,8 +981,8 @@ export let modules = [
          </annotation>
         </semantics>
        </math>       
-       `, 
-        answer: `<math display='block'>
+       `,
+                answer: `<math display='block'>
         <semantics>
          <mrow>
           <mfrac>
@@ -998,19 +1004,19 @@ export let modules = [
         </semantics>
        </math>       
        `,
-        solution: `<img src="assets/images/solutions/45.webp">`,
-        mastered: false
-    }]
-},
-{
-    name: "module5",
-    displayName: "Solving Equations with Algebraic Fractions",
-    content: [
+                solution: `<img src="assets/images/solutions/45.webp">`,
+                mastered: false
+            }]
+    },
     {
-        name: "Solve Equations involving Algebraic Fractions with Numeric Denominators",
-        moduleCode: 5,
-        questionCode: 1,
-        question: `
+        name: "module5",
+        displayName: "Solving Equations with Algebraic Fractions",
+        content: [
+            {
+                name: "Solve Equations involving Algebraic Fractions with Numeric Denominators",
+                moduleCode: 5,
+                questionCode: 1,
+                question: `
         <math display='block'>
             <semantics>
             <mrow>
@@ -1037,8 +1043,8 @@ export let modules = [
             </annotation>
             </semantics>
             </math>
-       `, 
-        answer: `
+       `,
+                answer: `
         <math display='block'>
             <semantics>
             <mrow>
@@ -1054,14 +1060,14 @@ export let modules = [
             </semantics>
             </math>
        `,
-        solution: `<img src="assets/images/solutions/51.webp">`,
-        mastered: false
-    },
-    {
-        name: "Solve Equations involving Algebraic Fractions with Algebraic Denominators",
-        moduleCode: 5,
-        questionCode: 2,
-        question: `
+                solution: `<img src="assets/images/solutions/51.webp">`,
+                mastered: false
+            },
+            {
+                name: "Solve Equations involving Algebraic Fractions with Algebraic Denominators",
+                moduleCode: 5,
+                questionCode: 2,
+                question: `
         <math display='block'>
         <semantics>
         <mrow>
@@ -1088,8 +1094,8 @@ export let modules = [
         </semantics>
         </math>
 
-       `, 
-        answer: `
+       `,
+                answer: `
         <math display='block'>
         <semantics>
         <mrow>
@@ -1109,14 +1115,14 @@ export let modules = [
         </semantics>
         </math>
        `,
-        solution: `<img src="assets/images/solutions/52.webp">`,
-        mastered: false
-    },
-    {
-        name: "Solve Equations involving Algebraic Fractions with Quadratic Denominators",
-        moduleCode: 5,
-        questionCode: 3,
-        question: `
+                solution: `<img src="assets/images/solutions/52.webp">`,
+                mastered: false
+            },
+            {
+                name: "Solve Equations involving Algebraic Fractions with Quadratic Denominators",
+                moduleCode: 5,
+                questionCode: 3,
+                question: `
         <math display='block'>
         <semantics>
         <mrow>
@@ -1148,8 +1154,8 @@ export let modules = [
         </semantics>
         </math>
                 
-       `, 
-        answer: `
+       `,
+                answer: `
         <math display='block'>
             <semantics>
             <mrow>
@@ -1170,8 +1176,8 @@ export let modules = [
             </semantics>
             </math>
        `,
-        solution: `<img src="assets/images/solutions/43.webp">`,
-        mastered: false
-    }]
-}
+                solution: `<img src="assets/images/solutions/43.webp">`,
+                mastered: false
+            }]
+    }
 ]

@@ -189,8 +189,8 @@ function checkIfEndOfTest() {
         //add JS confetti foe end of test
         const jsConfetti = new JSConfetti();
         jsConfetti.addConfetti({
-            emojis: ['📚','✖️','➕','➗','🔢','📝', '📐','🥇', '🤓', '🧠', '📈'],
-         })
+            emojis: ['📚', '✖️', '➕', '➗', '🔢', '📝', '📐', '🥇', '🤓', '🧠', '📈'],
+        })
         jsConfetti.addConfetti()
         return true;
     }
@@ -198,9 +198,9 @@ function checkIfEndOfTest() {
 }
 
 // ----------------------RESULTS SECTION----------------------------
-    
+
 //Build a table of results for each module
-function populateResultsTable() { 
+function populateResultsTable() {
     $("#results")[0].innerHTML = "";
     for (const module of modules) {
         //Adds the name of the topic
