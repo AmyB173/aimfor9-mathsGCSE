@@ -36,6 +36,13 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
    - [Restart Assessment Button](#restart-assessment-button)
    - [Logo Button](#logo-button-in-header)
    - [End Assessment Button](#end-assessment-button)
+   - [Results Section](#results-section)
+   - [Show me my results button](#show-me-my-results-button)
+   - [What can I do to improve button](#what-can-i-do-to-improve-button)
+   - [Email](#email)
+   - [Example email](#example-email)
+   - [Changes from initial planning](#changes-from-initial-planning)
+   - [Future Implementation](#future-implementations)
 
 3. [Tools and Technologies Used](#tools-and-technologies-used-1)
    -
@@ -53,8 +60,6 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
    * [Code](#code)
       - [Getting emailJS to work](#getting-email-js-to-work)
       - [Validating email input](#validating-email-input)
-
-
    * [Content](#content)
 
 7. [Acknowledgments](#acknowledgments-1)
@@ -340,7 +345,7 @@ On a larger screen:
 
 ![Image of the results page with collapsed buttons](./assets/images/readme/features/results-lg.png)
 
-### Show my my results button
+### Show me my results button
 
 The results of the test are presented in a table that is shown when the show me my results button is clicked. 
 
@@ -483,13 +488,8 @@ To fork the double-seven-guitars repository:
 
 ### Images
 
-
 ### Code 
-
-
-
 #### General
-
 - To install Bootstrap via npm so that I could do some customisation, I watched this tutorial video: https://www.youtube.com/watch?v=WPAiTlQr7no 
 - I used the following websites to learn about MathML, MathJax CDN and MathType for creating accessible and well-presented equations:  
    -  https://www.w3.org/Math/whatIsMathML.html 
