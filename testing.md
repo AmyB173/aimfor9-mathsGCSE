@@ -1,6 +1,14 @@
+
+# Bugs, testing and validation
+
+1. [Bugs and Fixes](#bugs-and-fixes)
+2. [Testing Plan](#testing-plan) 
+3. [Manual Testing](#manual-testing)
+4. [Automated Testing](#automated-testing-validation-and-lighthouse-testing)
+
 ## Bugs and fixes
 
-### JS
+### Counting lengths
 I was trying to create a function to see if we were at the end of the test. I wanted to count the number of modules and check if I was on the last module. I wanted to count the length of the array containing the modules but kept getting an error that length() wasn't a property of what I was trying to access. I used the following code:
 
 ```
@@ -22,6 +30,32 @@ To this end I reverted to using the CDN links for most of this.
 
 This was a good learning opportunity even if it was costly in terms of time. 
 
-## Accessibility 
 
-I was initially going to use images to present my equations but I realised this would not be very accessible for people using screen readers and so after some research I decided to use MathML to code equations. See [this](https://www.chhs.colostate.edu/accessibility/best-practices-how-tos/mathml/#:~:text=MathML%20is%20a%20way%20of,text%2Dto%2Dspeech%20software.) page for accessibility of MathML
+
+### Equations not displaying properly
+
+Fairly early on, I was testing whether the questions and answers were displaying correctly and the first answer I attempted to put it was appearing without anything following the first number: 
+
+![Equation not displaying properly](./assets/images/readme/testing/equation-not-displaying.png)
+
+I spent a long time using dev tools and tried to change the element from a heading to a paragraph, I tried altering the display properties in case it was being hidden. Eventually, I realised it was how I was using Math Type to generate the MathML code (a rogue enter sign or space was the issue I think) as when I retyped it in Math type and generate new code, it worked.
+
+### Accessibility 
+
+I was initially going to use images to present my equations but I realised this would not be very accessible for people using screen readers and so after some research I decided to use MathML to code equations. See [this](https://www.chhs.colostate.edu/accessibility/best-practices-how-tos/mathml/#:~:text=MathML%20is%20a%20way%20of,text%2Dto%2Dspeech%20software.) page for accessibility of MathML.
+
+## Testing Plan
+
+
+
+## Manual Testing
+
+## Automated Testing (Validation and Lighthouse Testing)
+
+### HTML Validation 
+
+### CSS validation 
+
+### JS Validation 
+
+### Lighthouse Testing

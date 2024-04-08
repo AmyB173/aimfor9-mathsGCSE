@@ -442,9 +442,9 @@ I also decided to have the option to enter the email at the end, as I didn't wan
 - [W3C Validator](https://validator.w3.org/) for validating HTML and CSS
 
 
-## Testing and Validation
+## Testing, Validation and Bugs
 
-
+This is included in a separate file [here](testing.md). 
 
 ## Deployment and local development
 
@@ -487,6 +487,9 @@ To fork the double-seven-guitars repository:
 ## Credits
 
 ### Images
+
+- Maths Tutoring with Amy Logo and derivatives - created by my in my business "Maths Tutoring with Amy"
+- Background on 404 page
 
 ### Code 
 #### General
