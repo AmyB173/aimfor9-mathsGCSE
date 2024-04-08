@@ -44,6 +44,10 @@ I spent a long time using dev tools and tried to change the element from a headi
 
 I was initially going to use images to present my equations but I realised this would not be very accessible for people using screen readers and so after some research I decided to use MathML to code equations. See [this](https://www.chhs.colostate.edu/accessibility/best-practices-how-tos/mathml/#:~:text=MathML%20is%20a%20way%20of,text%2Dto%2Dspeech%20software.) page for accessibility of MathML.
 
+### Bootstrap class errors
+
+These were found during validation - see validation section for full details of fix.
+
 ## Testing Plan
 
 
@@ -81,6 +85,21 @@ The initial validation threw a few errors that were small things that were easil
 
 ### CSS validation 
 
+The first validation produced 16 errors all of which came from empty properties in the bootstrap classes. There must have been an issue in compiling the scss files which caused these empty properties:
+
+![First CSS Validation in jigsaw validator](./assets/images/readme/testing/first-css-val.png)
+
+There were empty classes in the compiled main.css file which I deleted (see bs-dropdown-box-shadow): 
+
+![Bootstrap empty class in main.css](./assets/images/readme/testing/bootstrap-val-errors.png)
+
+I also deleted the correlating classes in the original scss file in the node modules folder on my local machine. In the following I would delete drop-box-shadow:
+
+![Bootstrap local scss source file](./assets/images/readme/testing/bootstrap-val-error-scss-file.png)
+
+After doing this the css validated without error: 
+
+![Final CSS validation - all passes](./assets/images/readme/testing/final-css-val.png)
 
 
 ### JS Validation 
