@@ -52,7 +52,31 @@ I was initially going to use images to present my equations but I realised this 
 
 ## Automated Testing (Validation and Lighthouse Testing)
 
-### HTML Validation 
+### HTML Validation
+
+#### Index.html
+
+The initial validation threw a few errors that were small things that were easily fixed, such as extra hyphens, duplicated ids, incorrect aria controls. 
+
+<details>
+<summary>Initial HTML validation</summary>
+
+![Page 1 HTML validation](./assets/images/readme/testing/first-html-val-1.jpg)
+![Page 2 HTML validation](./assets/images/readme/testing/first-html-val-2.jpg)
+![Page 3 HTML validation](./assets/images/readme/testing/first-html-val-3.jpg)
+![Page 4 HTML validation](./assets/images/readme/testing/first-html-val-4.jpg)
+![Page 5 HTML validation](./assets/images/readme/testing/first-html-val-5.jpg)
+
+</details>
+
+<details>
+<summary>Final HTML Validation with no errors</summary>
+ I decided to leave the "type" on the emailJS script tag as this was taken directly from their website and this was just a warning. 
+
+
+
+</details>
+
 
 ### CSS validation 
 
