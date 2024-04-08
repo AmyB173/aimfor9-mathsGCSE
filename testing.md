@@ -66,19 +66,22 @@ The initial validation threw a few errors that were small things that were easil
 ![Page 3 HTML validation](./assets/images/readme/testing/first-html-val-3.jpg)
 ![Page 4 HTML validation](./assets/images/readme/testing/first-html-val-4.jpg)
 ![Page 5 HTML validation](./assets/images/readme/testing/first-html-val-5.jpg)
-
 </details>
 
 <details>
 <summary>Final HTML Validation with no errors</summary>
  I decided to leave the "type" on the emailJS script tag as this was taken directly from their website and this was just a warning. 
 
-
-
+![Final index.html validation](./assets/images/readme/testing/final-index-html-val.png)
 </details>
 
+#### 404.html
+
+![Final 404 page html validation](./assets/images/readme/testing/final-val-404.png)
 
 ### CSS validation 
+
+
 
 ### JS Validation 
 
