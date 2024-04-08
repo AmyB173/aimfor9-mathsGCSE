@@ -30,7 +30,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     
-    <!--------- HEADER --------->
+    <!-- HEADER -->
     <header class="bg-primary py-3 mb-auto">
         <button type="button" class="btn btn-primary rounded-pill text-white logo-holder" data-bs-toggle="modal"
             data-bs-target="#logo-modal">
@@ -67,7 +67,7 @@
         <div class="row justify-content-center">
             <div class="test-area col-11 col-md-10 col-lg-8 col-xl-6">
                 
-                <!--------- INTRODUCTORY TEXT: this section explains the test and appears at the start -->
+                <!-- INTRODUCTORY TEXT: this section explains the test and appears at the start -->
                 <div id="explanation-text">
                     <h2 class="text-center mt-5">Welcome to Aim for Grade 9.</h2>
                     <p>Try out this test to see how well you know GCSE algebra needed for achieving a Grade 9. It will
@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <!--------- STARTING BOX: this section is where the user inputs their name, grade and starts the test -->
+                <!-- STARTING BOX: this section is where the user inputs their name, grade and starts the test -->
                 <div class="start-wrapper border shadow-lg rounded bg-secondary my-5 px-1 py-4">
                     <!-- Input fields for test - name non-mandatory -->
                     <input type="text" id="username" name="username" class="border rounded d-block margin-center"
@@ -121,7 +121,7 @@
                         Assessment</button>
                 </div>
 
-                <!--------- QUESTION AND ANSWERS SECTION: this section will house both the questions and then the answers for the test -->
+                <!-- QUESTION AND ANSWERS SECTION: this section will house both the questions and then the answers for the test -->
                 <div id="question-wrapper" class="border rounded bg-secondary mt-5 p-3 d-flex flex-column d-none">
                     <!-- Button to trigger moving to the previous question -->
                     <button id="previous-btn" class="btn btn-primary text-white align-self-start"> <i
@@ -156,7 +156,7 @@
                     </div>
                 </div>
 
-                <!--------- RESTART AND END BUTTONS: these are to appear at all times during the test -->
+                <!-- RESTART AND END BUTTONS: these are to appear at all times during the test -->
                 <div id="question-additional-buttons" class="mb-5 d-flex justify-content-between d-none">
                     <!-- CREDIT: modal taken and adapted from https://getbootstrap.com/docs/5.3/components/modal/-->
                     <!-- Button that triggers test to restart -->
@@ -221,7 +221,7 @@
                     </div>
                 </div>
 
-                <!--------- RESULTS SECTION: The results of the test and the option to have them emailed are here -->
+                <!-- RESULTS SECTION: The results of the test and the option to have them emailed are here -->
                 <div id="results-wrapper"
                     class="border rounded bg-secondary my-5 p-5 d-flex flex-column align-items-center d-none">
                     <h2 class="text-center py-3">Well done <span id="studentName"></span> <i
@@ -231,7 +231,7 @@
                     <p class="d-inline-flex gap-1">
                         <button class="btn btn-primary border rounded text-white" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseResults" aria-expanded="false"
-                            aria-controls="collapseExample">
+                            aria-controls="collapseResults">
                             Show me my results
                         </button>
                     </p>
@@ -243,7 +243,7 @@
                     <p class="d-inline-flex gap-1 mt-1">
                         <button class="btn btn-primary border rounded text-white" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseRevision" aria-expanded="false"
-                            aria-controls="collapseExample">
+                            aria-controls="collapseRevision">
                             What can I do to improve?
                         </button>
                     </p>
@@ -295,7 +295,7 @@
         </div>
     </main>
 
-    <!--------- FOOTER --------->
+    <!-- FOOTER -->
     <!-- CREDIT: footer to stick to bottom of page https://radu.link/make-footer-stay-bottom-page-bootstrap/ -->
     <footer class="bg-primary d-flex justify-content-end mt-auto">
         <div class="p-3">
@@ -305,7 +305,7 @@
         </div>
     </footer>
 
-    <!--------- SCRIPTS --------->
+    <!-- SCRIPTS -->
     <!-- Bootstrap JS -->
     <!-- I compiled the CSS into a file included in the project ut decided to use the CDN link for the JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
