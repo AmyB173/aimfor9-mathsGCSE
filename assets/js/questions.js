@@ -75,7 +75,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/11.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/11.webp">`,
                 mastered: false
             },
             {
@@ -120,7 +120,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/12.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/12.webp">`,
                 mastered: false
             },
             {
@@ -170,7 +170,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/13.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/13.webp">`,
                 mastered: false
             }]
     },
@@ -233,7 +233,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/21.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/21.webp">`,
                 mastered: false
             },
             {
@@ -278,7 +278,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/22.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/22.webp">`,
                 mastered: false
             },
             {
@@ -322,7 +322,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/23.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/23.webp">`,
                 mastered: false
             },
             {
@@ -367,7 +367,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/24.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/24.webp">`,
                 mastered: false
             },
             {
@@ -412,7 +412,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/25.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/25.webp">`,
                 mastered: false
             }]
     },
@@ -496,7 +496,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/31.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/31.webp">`,
                 mastered: false
             },
             {
@@ -546,7 +546,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/32.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/32.webp">`,
                 mastered: false
             },
             {
@@ -610,7 +610,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/33.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/33.webp">`,
                 mastered: false
             },
             {
@@ -660,7 +660,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/34.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/34.webp">`,
                 mastered: false
             },
             {
@@ -707,7 +707,7 @@ export let modules = [
         </semantics>
        </math>
        `,
-                solution: `<img src="assets/images/solutions/35.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/35.webp">`,
                 mastered: false
             }]
     },
@@ -767,7 +767,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/41.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/41.webp">`,
                 mastered: false
             },
             {
@@ -823,7 +823,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/42.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/42.webp">`,
                 mastered: false
             },
             {
@@ -881,7 +881,7 @@ export let modules = [
        </math>
        
        `,
-                solution: `<img src="assets/images/solutions/43.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/43.webp">`,
                 mastered: false
             },
             {
@@ -943,7 +943,7 @@ export let modules = [
        </math>
              
        `,
-                solution: `<img src="assets/images/solutions/44.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/44.webp">`,
                 mastered: false
             },
             {
@@ -1004,7 +1004,7 @@ export let modules = [
         </semantics>
        </math>       
        `,
-                solution: `<img src="assets/images/solutions/45.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/45.webp">`,
                 mastered: false
             }]
     },
@@ -1060,7 +1060,7 @@ export let modules = [
             </semantics>
             </math>
        `,
-                solution: `<img src="assets/images/solutions/51.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/51.webp">`,
                 mastered: false
             },
             {
@@ -1115,7 +1115,7 @@ export let modules = [
         </semantics>
         </math>
        `,
-                solution: `<img src="assets/images/solutions/52.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/52.webp">`,
                 mastered: false
             },
             {
@@ -1176,7 +1176,7 @@ export let modules = [
             </semantics>
             </math>
        `,
-                solution: `<img src="assets/images/solutions/43.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/43.webp">`,
                 mastered: false
             }]
     }
