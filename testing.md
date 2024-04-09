@@ -105,4 +105,27 @@ I am aware this has not solved the root cause of the issue but the properties we
 
 ### JS Validation 
 
+I use JSHint to check my javaScript for errors. It mostly picked up on missing semi-colons. I also reformatted how I used ternary operators too. All now have no major issues and the undefined variables are only because the pages are being tested in isolation.
+
+<details>
+<summary>index.js</summary>
+
+![JSHint for index.js showing no errors](./assets/images/readme/testing/index-js-hint.png)
+
+</details>
+
+<details>
+<summary>email.js</summary>
+
+![JSHint for email.js showing no errors](./assets/images/readme/testing/email-js-hint.png)
+
+</details>
+
+<details>
+<summary>questions.js</summary>
+
+![JSHint for questions.js showing no errors](./assets/images/readme/testing/questions-js-hint.png)
+
+</details>
+
 ### Lighthouse Testing

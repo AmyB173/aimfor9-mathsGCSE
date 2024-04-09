@@ -439,7 +439,9 @@ I also decided to have the option to enter the email at the end, as I didn't wan
 - [JS Confetti](https://www.npmjs.com/package/js-confetti) was used to display emojis as confetti at the end of the test
  - WAVE chrome extension for accessibility testing
  - WCAG Contrast checker chrome extension for colour contrast checking
-- [W3C Validator](https://validator.w3.org/) for validating HTML and CSS
+- [W3C Validator](https://validator.w3.org/) for validating HTML 
+- [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) to validate the CSS
+- [JSHint](https://jshint.com/) to detect errors in my javaScript files
 
 
 ## Testing, Validation and Bugs
