@@ -12,8 +12,10 @@ let grade;
 // ----------------------START SECTION----------------------------
 
 /* 
-    Insert Module Names and number of questions to "check to see what modules will be in the test" button
-    Designed to be dynamic so that the list will automatically populate with any additional modules or questions
+    Insert Module Names and number of questions to 
+    "check to see what modules will be in the test" button
+    Designed to be dynamic so that the list will automatically 
+    populate with any additional modules or questions
  */
 window.onload = () => {
     let list = "";
@@ -78,7 +80,8 @@ $("#previous-btn").on("click", () => {
         currentQuestionCode = currentModule().content.length;
     }
     /*
-        If they got the previous question wrong, but want to go back and correct it we don't want to double
+        If they got the previous question wrong, 
+        but want to go back and correct it we don't want to double
         count the wrong answer if they get it wrong again
     */
     if (currentQuestion().mastered = false) { failureCounter -= 1 };

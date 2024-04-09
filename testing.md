@@ -101,6 +101,7 @@ After doing this the css validated without error:
 
 ![Final CSS validation - all passes](./assets/images/readme/testing/final-css-val.png)
 
+I am aware this has not solved the root cause of the issue but the properties were minor ones that were not affecting my code and so I was happy at this stage to just move them. 
 
 ### JS Validation 
 

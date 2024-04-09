@@ -3,8 +3,8 @@
     Modules is an array of modules (objects)
     Each module (object) contains key value pairs, including "content"
     "Content" contains an array of question objects
-    The question and answer values contain long mathml code, collapse questions and answers for 
-    better readability
+    The question and answer values contain long mathml code, 
+    collapse questions and answers for better readability
 */
 export let modules = [
     {

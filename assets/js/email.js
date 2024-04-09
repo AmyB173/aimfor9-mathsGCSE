@@ -3,7 +3,8 @@ import {
 } from './questions.js';
 
 /*
-    CREDIT: I used the follow repository as a guide on how to use emailJS correctly: https://github.com/yamesjamess/feb-24-hackathon-love-riot
+    CREDIT: I used the follow repository as a guide on 
+    how to use emailJS correctly: https://github.com/yamesjamess/feb-24-hackathon-love-riot
     CREDIT: full details in readme
 */
 
@@ -33,7 +34,8 @@ const populateResultsForEmail = () => {
 
 /* 
     Code adapted - see credit above 
-    This function sends the email using email JS API passing in the correct parameters
+    This function sends the email using email JS API 
+    passing in the correct parameters
     When waiting for the result a spinner appears
     If the email is sent successfully user is notified
     If the email failed to send the user is notified
