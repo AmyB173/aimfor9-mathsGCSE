@@ -20,10 +20,10 @@ let grade;
 window.onload = () => {
     let list = "";
     for (const module of modules) {
-        list += `<li><strong>${module.displayName}</strong>: ${module.content.length} questions</li>`
+        list += `<li><strong>${module.displayName}</strong>: ${module.content.length} questions</li>`;
     }
     $("#moduleList")[0].innerHTML = "<ul>" + `${list}` + "</ul>";
-}
+};
 
 // Trigger for starting assessment, removing the starting text and inserting question 1
 $("#start-assessment").on("click", () => {
@@ -32,7 +32,7 @@ $("#start-assessment").on("click", () => {
     $(".start-wrapper").addClass("d-none");
     $("#explanation-text").addClass("d-none");
     $("#question-wrapper").removeClass("d-none");
-    $("#question-additional-buttons").removeClass("d-none")
+    $("#question-additional-buttons").removeClass("d-none");
     insertNextQuestion();
 });
 
@@ -53,17 +53,17 @@ $("#show-answer").on("click", () => {
     `;
     $("#questions-buttons").addClass("d-none");
     $("#answer-buttons").removeClass("d-none");
-})
+});
 
 // The "yes" and "too easy" buttons both indicate a pass on that question
 $("#yes-btn, #easy-btn").on("click", () => {
     questionFinished("pass");
-})
+});
 
 // The "no" and "too hard" buttons both indicate a fail on that question
 $("#no-btn, #hard-btn").on("click", () => {
     questionFinished("fail");
-})
+});
 
 /*
     Returns to the previous question in the module unless
@@ -84,9 +84,11 @@ $("#previous-btn").on("click", () => {
         but want to go back and correct it we don't want to double
         count the wrong answer if they get it wrong again
     */
-    if (currentQuestion().mastered = false) { failureCounter -= 1 };
+    if (currentQuestion().mastered === false) { 
+        failureCounter -= 1; 
+    }
     insertNextQuestion();
-})
+});
 
 /*
     the restart assessment button will reload the page 
@@ -94,7 +96,7 @@ $("#previous-btn").on("click", () => {
 */
 $(".restart-btn").on("click", () => {
     location.reload();
-})
+});
 
 /*
     Ends the test by setting the module code greater than the number of modules
@@ -103,7 +105,7 @@ $("#end-btn").on("click", () => {
     $('#end-modal').modal('hide');
     currentModuleCode = modules.length + 1;
     checkIfEndOfTest();
-})
+});
 
 //returns the current module array
 function currentModule() {
@@ -122,9 +124,9 @@ function currentQuestion() {
 function insertNextQuestion() {
     // previous button to be removed on first question
     if (currentQuestionCode === 1 && currentModuleCode === 1) {
-        $("#previous-btn").addClass("d-none")
+        $("#previous-btn").addClass("d-none");
     } else if (currentQuestionCode === 2 && currentModuleCode === 1) {
-        $("#previous-btn").removeClass("d-none")
+        $("#previous-btn").removeClass("d-none");
     }
     //change from answer mode to question mode
     $("#questions-buttons").removeClass("d-none");
@@ -145,9 +147,15 @@ function questionFinished(result) {
         if they pass the question is marked as mastered
         if incorrect the failure counter updates the number of failed questions in the module
     */
-    result === "pass" ? markAsMastered() : failureCounter += 1;
+    if (result === "pass") {
+        markAsMastered();
+     } else {
+        failureCounter += 1;
+     }
     updateCodes();
-    if (checkIfEndOfTest()) { return };
+    if (checkIfEndOfTest()) { 
+        return; 
+    }
     insertNextQuestion();
 }
 
@@ -189,12 +197,14 @@ function checkIfEndOfTest() {
         $("#results-wrapper").removeClass("d-none");
         $("#studentName")[0].innerHTML = username;
         populateResultsTable();
-        //add JS confetti foe end of test
+        // add JS confetti for end of test
+        // CREDIT: code taken from JS confetti website
+        // CREDIT: https://www.npmjs.com/package/js-confetti
         const jsConfetti = new JSConfetti();
         jsConfetti.addConfetti({
             emojis: ['📚', '✖️', '➕', '➗', '🔢', '📝', '📐', '🥇', '🤓', '🧠', '📈'],
-        })
-        jsConfetti.addConfetti()
+        });
+        jsConfetti.addConfetti();
         return true;
     }
     return false;
@@ -207,18 +217,17 @@ function populateResultsTable() {
     $("#results")[0].innerHTML = "";
     for (const module of modules) {
         //Adds the name of the topic
-        $("#results")[0].innerHTML += `<h2>${module.displayName}</h2>`
+        $("#results")[0].innerHTML += `<h2>${module.displayName}</h2>`;
         let resultsTable = "";
         //Adds the result of the topic in the same row on the table
         for (const question of module.content) {
-            let mastered;
-            question.mastered ? mastered = "Mastered" : mastered = "Needs revision";
+            let mastered = question.mastered ? "Mastered" : "Needs revision";
             resultsTable += `
             <tr>
                 <th>${question.name}</th>
                 <td>${mastered}</td>
             </tr>
-        `
+        `;
         }
         $("#results")[0].innerHTML += "<table>" + `${resultsTable}` + "</table>";
     }

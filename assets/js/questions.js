@@ -1180,4 +1180,4 @@ export let modules = [
                 mastered: false
             }]
     }
-]
+];

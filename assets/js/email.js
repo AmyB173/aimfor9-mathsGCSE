@@ -20,8 +20,7 @@ const populateResultsForEmail = () => {
     for (const module of modules) {
         resultsString += `${module.displayName}`.toUpperCase() + "\n";
         for (const question of module.content) {
-            let mastered;
-            question.mastered ? mastered = "Mastered" : mastered = "Needs revision";
+            let mastered = question.mastered ? "Mastered" : "Needs revision";
             if (question.questionCode == module.content.length) {
                 resultsString += question.name + ": " + mastered + "\n\n";
             } else {
@@ -30,7 +29,7 @@ const populateResultsForEmail = () => {
         }
     }
     return resultsString;
-}
+};
 
 /* 
     Code adapted - see credit above 
@@ -70,7 +69,7 @@ const sendEmail = () => {
                 spinner.addClass("d-none");
             }
         );
-}
+};
 
 /* 
     CREDIT: code taken from here: https://www.w3resource.com/javascript/form/email-validation.php
@@ -79,10 +78,10 @@ const sendEmail = () => {
 function validateEmail() {
     const email = document.getElementById("email").value;
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-        return (true)
+        return (true);
     }
-    alert("You have entered an invalid email address!")
-    return (false)
+    alert("You have entered an invalid email address!");
+    return (false);
 }
 
 // This triggers the email to send when they send email button is clicked
@@ -98,4 +97,4 @@ $("#email").on("keydown", (event) => {
         event.preventDefault();
         sendEmail();
     }
-})
+});
