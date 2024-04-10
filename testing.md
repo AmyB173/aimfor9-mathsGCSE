@@ -154,7 +154,7 @@ Table of results detailing a summary of what they know:
 </details>
 <br/>
 <details>
-<summary><strong>(B) as a user, I want to be directed to specific resources that I can > use to revise based on where I'm currently at</strong></summary>
+<summary><strong>(B) as a user, I want to be directed to specific resources that I can use to revise based on where I'm currently at</strong></summary>
 At the end of the test, the yser is directed to specific websites to improve on the topics they didn't do well on. 
 
 ![An image of the suggested revision](./assets/images/readme/features/improve-lg.png)
@@ -162,10 +162,10 @@ At the end of the test, the yser is directed to specific websites to improve on 
 <br/>
 
 <details>
-<summary><strong>(C) as a user, I want to be able to return to the website to see if > I've improved after doing the recommended work (later removed to make scope more manageable)</strong></summary>
+<summary><strong>(C) as a user, I want to be able to return to the website to see if I've improved after doing the recommended work (later removed to make scope more manageable)</strong></summary>
 Initially I envisaged making two sets of almost identical questions with different numbers to avoid false results by just "remembering" the answer but this was removed due to time constraints. This is still partially met as the user can still return to the website and do the test again. If they opt for the email, they can compare their current results with their previous results:
 
-![Example email of results](./assets/images/readme/features/email-results.png)
+![Example email of results](./assets/images/readme/features/results-email-1.png)
 
 
 
