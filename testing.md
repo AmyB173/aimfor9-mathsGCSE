@@ -192,6 +192,27 @@ This has been met by the option to have the results emailed:
 </details>
 <br/>
 
+### Accessibility Testing
+
+I have included this here even though part of it is automated (WAVE chrome tool).
+
+- I made sure the all the questions and answers were created using MathML and MathJax which ensures it can be read by screen readers: [See this article](https://www.chhs.colostate.edu/accessibility/best-practices-how-tos/mathml/#:~:text=MathML%20is%20a%20way%20of,text%2Dto%2Dspeech%20software.)
+- I am aware that the "full solution" section which was handwritten by me, will not be screen readable, but the site still remains completely useable as the solution is a nice-to-have and not essential for completing the test. It is common practice on a lot of educational websites to use handwritten mathematical solutions.
+
+#### WAVE Chome Extension Testing
+
+Several issues were raised: 
+
+- **Colour Constrast**: this was raised as the white text aainst the grey background was not providing enough contrast. I have changed the grey to a darker version to improve accessibility and so it is not longer flagged by WAVE. 
+
+- **Missing Form Label**: I added a visually hidden label for the name input to resole this
+
+- **Possible headings not being labelled**: The wording of the questions was identified as a possible heading. I feel, on balance, this would be misleading to label as a heading. 
+
+- **Repetition of the same alt text**: I'm happy to accept this as it is the logo appearing twice on the page (header and footer) and it makes sense to have the same alt text.
+
+
+
 ## Automated Testing (Validation and Lighthouse Testing)
 
 ### HTML Validation
