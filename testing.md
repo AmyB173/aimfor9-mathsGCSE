@@ -66,7 +66,7 @@ These were found during validation - see validation section for full details of 
 
 ## Manual Testing
 
-#### Content Testing
+### Content Testing
 
 <details>
 
@@ -89,7 +89,108 @@ These were found during validation - see validation section for full details of 
 
 </details>
 
-#### Feature Testing
+### Feature Testing
+
+<details>
+<summary>Feature tests (all pass)</summary>
+
+| Feature                                                                                                                                | Expected outcome                                                                                                                                                                                                                             | Pass/Fail |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| **START PAGE**                                                                                                                         |                                                                                                                                                                                                                                              |           |
+| Website link in footer                                                                                                                 | When clicked takes you to the website in a new tab                                                                                                                                                                                           | Pass      |
+| Button to reveal modules in test                                                                                                       | When the button is clicked, a list of all the modules a number of questions appear.                                                                                                                                                          | Pass      |
+| Enter name                                                                                                                             | Name can be entered, same name appears on the results page, same name appears in the email                                                                                                                                                   | Pass      |
+| Don't enter name                                                                                                                       | Enter name is optional so assessment should start without it when start assessment button is clicked                                                                                                                                         | Pass      |
+| Enter grade                                                                                                                            | All grades can be entered, they do not appear elsewhere in the test                                                                                                                                                                          | Pass      |
+| Start assessment button                                                                                                                | When clicked the first question appears                                                                                                                                                                                                     | Pass      |
+| **QUESTION SECTION FUNCTIONALITY**                                                                                                                          |                                                                                                                                                                                                                                              |           |
+| Previous button takes you to the previous question (except on question 1)                                                              | TEST ALL QUESTIONS: When the previous button is clicked, the previous question appears (and no previous button option is available for the first question)                                                                                   | Pass      |
+| Show answer button                                                                                                                     | TEST ALL QUESTIONS: When the show answer button is clicked, the question disappears and the answer and full solution appears                                                                                                                 | Pass      |
+| No button, moves onto next question                                                                                                    | TEST ALL QUESTIONS: When the no button is clicked, the answer disappears and the next question title and question appear.                                                                                                                    | Pass      |
+| Yes button, moves onto next question                                                                                                   | TEST ALL QUESTIONS: When the yes button is clicked, the answer disappears and the next question title and question appear.                                                                                                                   | Pass      |
+| Too easy button, moves onto the next question                                                                                          | TEST ALL QUESTIONS: When the too easy button is clicked, the next question title and question appear.                                                                                                                                        | Pass      |
+| Too hard button, moves onto the next question                                                                                          | TEST ALL QUESTIONS: When the too hard button is clicked, the next question title and question appear.                                                                                                                                        | Pass      |
+| Results table appears on last page with correct summary                                                                                | Test a combination of "yes" "no" "too easy" "too hard" to check results are being presented correctly                                                                                                                                        | Pass      |
+| If two questions in a module are "too hard" or "no", then move onto the next module                                                    | TEST ALL MODULES: when two incorrect answers are given, the next module's first question appears                                                                                                                                             | Pass      |
+| If two questions in a module are "too hard" or "no", then  all remaining questions are marked as "Needs revision" in the results table | TEST ALL MODULES: when two incorrect answers are given, all remaining questions appear as "needs revision"                                                                                                                                   | Pass      |
+| When final question in the test is completed, confetti appears and results page appear                                                 | Answer all question in final module correctly, last question triggers confetti and appearance of results page                                                                                                                                | Pass      |
+| If two questions in the last module are "too hard" or "no" then confetti and results page appear                                       | Answer two questions in the final module incorrectly, last question triggers confetti and appearance of results page                                                                                                                         | Pass      |
+| Buttons on results page reveal results table and suggested revision                                                                    | When clicked each button reveals the correct section, when clicked again the section disappears                                                                                                                                              | Pass      |
+| **END ASSESSMENT BUTTON**                                                                                                                  |                                                                                                                                                                                                                                              |           |
+| End assessment button, confirms,  ends the test                                                                                        | When end assessment button is clicked, a warning appears informing the user that all remaining questions will be marked incorrect, user clicks "understood" and results page appears with all remaining questions marked as "needs revision" | Pass      |
+| End assessment button, clicks cancel, continues with test                                                                              | When end assessment button is clicked, a warning appears informing the user that all remaining questions will be marked incorrect, user clicks "cancel" and test continues as normal                                                         | Pass      |
+| End assessment button, clicks the cross in top right, continues with test                                                              | When end assessment button is clicked, a warning appears informing the user that all remaining questions will be marked incorrect, user clicks cross in top-right corner and test continues as normal                                        | Pass      |
+| **RESTART ASSESSMENT BUTTON**                                                                                                              |                                                                                                                                                                                                                                              |           |
+| Restart assessment button, clicks understood, start page appears                                                                       | When the end assessment button is clicked, user receives warning that all information will be erased, user clicks understood, start page appears                                                                                             | Pass      |
+| Restart assessment button, click cancel, continues with test                                                                           | When the end assessment button is clicked, user receives warning that all information will be erased, user clicks canel, test continues as normal                                                                                            | Pass      |
+| Restart assessment button, click cross in top right, continues with test                                                               | When the end assessment button is clicked, user receives warning that all information will be erased, user clicks cross in top-right, test continues as normal                                                                               | Pass      |
+| **LOGO BUTTON**                                                                                                                            |                                                                                                                                                                                                                                              |           |
+| Logo button, clicks understood, start page appears                                                                                     | When the logo button is clicked, user receives warning that all information will be erased, user clicks understood, start page appears                                                                                                       | Pass      |
+| Logo button, click cancel, continues with test                                                                                         | When the logo button is clicked, user receives warning that all information will be erased, user clicks canel, test continues as normal                                                                                                      | Pass      |
+| Logo button, click cross in top right, continues with test                                                                             | When the logo button is clicked, user receives warning that all information will be erased, user clicks cross in top-right, test continues as normal                                                                                         | Pass      |
+| **EMAIL**                                                                                                                                  |                                                                                                                                                                                                                                              |           |
+| Email: Enter correct email and receive results                                                                                         | Enter correct email address, see spinner, see success message, receive email with the correct results                                                                                                                                        | Pass      |
+| Email: Enter invalid email and receive warning of incorrect email address                                                              | Enter invalid email address, see spinner, receive warning of invalid email                                                                                                                                                                   | Pass      |
+| Email: Enter correct email and receive warning the email did not send                                                                  | (Force this situation by temporarily changing the emailjs template) Enter correct email, see spinner, receive warning of email failing to send                                                                                               | Pass      |
+
+</details>
+
+### User Story Testing
+
+The below user stories where created in the readme at the onset of the project. I will test the website against these.
+
+<details>
+<summary><strong>(A) as a user, I want an assessment of what I do and do not know</strong></summary>
+This was later refine to just ALGEBRA in the scope section of my design. This has been met as the test assesses the student based on their inputs and gives a table of results at the end that informs the student on what they do and do not currently know how to do. 
+
+Question to assess what they know 
+![An example question](./assets/images/readme/features/first-q-lg.png)
+An answer and solution so they can determine whether they got it right:
+![An example answer](./assets/images/readme/features/answer-lg.png)
+Table of results detailing a summary of what they know:
+![An example of a summary of results](./assets/images/readme/features/show-me-results-lg.png) 
+
+
+</details>
+<br/>
+<details>
+<summary><strong>(B) as a user, I want to be directed to specific resources that I can > use to revise based on where I'm currently at</strong></summary>
+At the end of the test, the yser is directed to specific websites to improve on the topics they didn't do well on. 
+
+![An image of the suggested revision](./assets/images/readme/features/improve-lg.png)
+</details>
+<br/>
+
+<details>
+<summary><strong>(C) as a user, I want to be able to return to the website to see if > I've improved after doing the recommended work (later removed to make scope more manageable)</strong></summary>
+Initially I envisaged making two sets of almost identical questions with different numbers to avoid false results by just "remembering" the answer but this was removed due to time constraints. This is still partially met as the user can still return to the website and do the test again. If they opt for the email, they can compare their current results with their previous results:
+
+![Example email of results](./assets/images/readme/features/email-results.png)
+
+
+
+</details>
+<br/>
+
+<details>
+<summary><strong>(D) as a user, I want to be able to skip topics that I already know so I don't waste time completing those questions</strong></summary>
+This has been met through the "too easy" and "too hard" buttons. The too easy button stops them having to do the whole question if they already know how to do it. Additionally, too hard avoids them wasting time on a question they won't be able to do anyway. 
+
+See too easy and too hard buttons: 
+![Too easy button](./assets/images/readme/features/first-q-lg.png)
+
+</details>
+<br/>
+
+<details>
+<summary><strong>(E) as a user, I want to be able to return to my results at a later date</strong></summary>
+This has been met by the option to have the results emailed:
+
+![Option to email](./assets/images/readme/features/email-results.png)
+![Example email of results](./assets/images/readme/features/results-email-1.png)
+
+</details>
+<br/>
 
 ## Automated Testing (Validation and Lighthouse Testing)
 
