@@ -68,19 +68,28 @@ These were found during validation - see validation section for full details of 
 
 #### Content Testing
 
+<details>
+
+<summary>Initial Tests (partial fail)</summary>
+
 | Content test                                           | Pass/Fail                  |
 | ------------------------------------------------------ | -------------------------- |
 | All questions match all answers                        | Pass                       |
 | All answers match solution                             | Fail (final question)      |
-| All question titles correspond to the question content | Fail (module2, Question 4) |
-
-After making changes: 
+| All question titles correspond to the question content | Fail (Module 3, Question 4) |
+</details>
+<details>
+<summary>After making changes (all pass)</summary>
 
 | Content test                                           | Pass/Fail                  |
 | ------------------------------------------------------ | -------------------------- |
 | All questions match all answers                        | Pass                       |
 | All answers match solution                             | Pass     |
 | All question titles correspond to the question content | Pass |
+
+</details>
+
+#### Feature Testing
 
 ## Automated Testing (Validation and Lighthouse Testing)
 
