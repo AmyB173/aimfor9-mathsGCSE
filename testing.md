@@ -8,6 +8,18 @@
 
 ## Bugs and fixes
 
+### Spinner not disappearing after failed email send
+
+When entering an email at the end, the user is notified if the email failed to send. I encountered the issue of the spinner continuing to show long after this message disappeared. I fixed this by finding the place where the spinner needed to be removed: 
+
+![code showing spinner fix](./assets/images/readme/testing/remove-spinner-fix.png)
+
+### Selecting elements using the ID in jquery
+
+I often has the issue of trying to access the innerHTML of an element with a particular id, but couldn't get it to work. I assumed because id are by nature unique one particular element, that I wouldn't need to give an index, however, I realised that using jQuery to inspect the DOM an array is always returned so I needed to specify the index of 0 even if I was using an id to target it: 
+
+![Code showing how I accessed the innerHTML of an element using the id](./assets/images/readme/testing/jquery-id.png)
+
 ### Counting lengths
 I was trying to create a function to see if we were at the end of the test. I wanted to count the number of modules and check if I was on the last module. I wanted to count the length of the array containing the modules but kept getting an error that length() wasn't a property of what I was trying to access. I used the following code:
 
@@ -53,6 +65,8 @@ These were found during validation - see validation section for full details of 
 
 
 ## Manual Testing
+
+
 
 ## Automated Testing (Validation and Lighthouse Testing)
 
