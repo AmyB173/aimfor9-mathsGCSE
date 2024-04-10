@@ -614,7 +614,7 @@ export let modules = [
                 mastered: false
             },
             {
-                name: "Factorising quadratics where the coefficent of x is greater than 1",
+                name: "Simplifying algebraic fractions involving hidden difference of two squares",
                 moduleCode: 3,
                 questionCode: 4,
                 question: `
@@ -1176,7 +1176,7 @@ export let modules = [
             </semantics>
             </math>
        `,
-                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/43.webp">`,
+                solution: `<img alt="Handwritten full solution with workings for the current question" src="assets/images/solutions/53.webp">`,
                 mastered: false
             }]
     }
