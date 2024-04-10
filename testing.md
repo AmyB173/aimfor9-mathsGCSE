@@ -66,7 +66,21 @@ These were found during validation - see validation section for full details of 
 
 ## Manual Testing
 
+#### Content Testing
 
+| Content test                                           | Pass/Fail                  |
+| ------------------------------------------------------ | -------------------------- |
+| All questions match all answers                        | Pass                       |
+| All answers match solution                             | Fail (final question)      |
+| All question titles correspond to the question content | Fail (module2, Question 4) |
+
+After making changes: 
+
+| Content test                                           | Pass/Fail                  |
+| ------------------------------------------------------ | -------------------------- |
+| All questions match all answers                        | Pass                       |
+| All answers match solution                             | Pass     |
+| All question titles correspond to the question content | Pass |
 
 ## Automated Testing (Validation and Lighthouse Testing)
 
