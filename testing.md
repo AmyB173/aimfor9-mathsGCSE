@@ -221,6 +221,34 @@ All pages were tested, and developer tools were used on both Chrome and Firefox.
 | Tablet  | Same as first row |  Pass  |
 | Desktop | Same as first row   | Pass |
 
+#### Failed Tests and Fixes
+
+On the smallest screen, the padding was causing the content to look too squashed or too close to the edge: 
+
+![Image of fieldset with edges to close to container edge](./assets/images/readme/testing/fieldset-before-change.png)
+![Image of results looking squashed](./assets/images/readme/testing/results-before-change.png)
+
+When I increase and decreased the padding respectively, it presented much more nicely on the smallest screens:
+
+![Image of fieldset after changes](./assets/images/readme/testing/fieldset-after-change.png)
+![Image of results looking more proportional](./assets/images/readme/testing/results-after-change.png)
+
+#### Repeated Failed Tests
+
+|   Screen width | Expected Outcome  | Pass/Fail |
+| ---------------------------- | ------------- | --------- |
+| 320px - 575px  | No errors where items are overlapping, touching the edge of the screen when they shouldn't, or text being pushed under or out of the container. Modals appear well and are still functional. All buttons can be used on all screen sizes. All sizes seem proportionate to screen size | Pass |
+
+### Browser and device testing  
+- During the functionality testing, all checks were made on Chrome, Firefox and Edge. 
+
+- During the responsiveness testing all of the testing was done on Chrome and  Firefox. 
+
+- I also used this website on a variety of Android phones and checked it was working as expected. 
+
+- I did not have access to any Apple products so I couldn't do any full testing with Safari without spending money on simulators. 
+
+
 ### Accessibility Testing
 
 I have included this here even though part of it is automated (WAVE chrome tool).
