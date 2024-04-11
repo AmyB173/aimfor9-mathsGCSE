@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet"> 
+        rel="stylesheet">
 
     <!-- JQUERY-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -29,12 +29,13 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    
+
     <!-- HEADER -->
     <header class="bg-primary py-3 mb-auto">
         <button type="button" class="btn btn-primary rounded-pill text-white logo-holder" data-bs-toggle="modal"
             data-bs-target="#logo-modal">
-            <img src="./assets/images/logo-name.webp" alt="The Maths Tutoring with Amy Logo - a large A with a circle border" class="logo">
+            <img src="./assets/images/logo-name.webp"
+                alt="The Maths Tutoring with Amy Logo - a large A with a circle border" class="logo">
         </button>
         <div class="modal fade" id="logo-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="logoLabel" aria-hidden="true">
@@ -62,11 +63,11 @@
             <h2 class="text-white text-center pb-1">GCSE Maths</h2>
         </div>
     </header>
-    
+
     <main class="container-fluid ">
         <div class="row justify-content-center">
             <div class="test-area col-11 col-md-10 col-lg-8 col-xl-6">
-                
+
                 <!-- INTRODUCTORY TEXT: this section explains the test and appears at the start -->
                 <div id="explanation-text">
                     <h2 class="text-center mt-5">Welcome to Aim for Grade 9.</h2>
@@ -129,7 +130,7 @@
                     <button id="previous-btn" class="btn btn-primary text-white align-self-start"> <i
                             class="fa-solid fa-arrow-left"></i> Previous
                         Question</button>
-                    
+
                     <!-- Question title and content, replaced by answer and solution image when show answer button is clicked -->
                     <h2 class="question-title text-center p-4 fw-bold">Title Placeholder</h2>
                     <div
@@ -303,7 +304,9 @@
         <div class="p-3">
             <a class="text-white text-decoration-none fs-6" href="https://mathstutoringwithamy.co.uk/"
                 target="_blank">mathstutoringwithamy.co.uk
-                <img src="./assets/images/logo.webp" alt="The Maths Tutoring with Amy Logo - a large A with a circle border" height="50" class="ps-2"></a>
+                <img src="./assets/images/logo.webp"
+                    alt="The Maths Tutoring with Amy Logo - a large A with a circle border" height="50"
+                    class="ps-2"></a>
         </div>
     </footer>
 
@@ -312,7 +315,7 @@
     <!-- I compiled the CSS into a file included in the project but decided to use the CDN link for the JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-        
+
     <!-- Mathjax CDN for presenting equations correctly -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -330,4 +333,5 @@
     <!-- JS CONFETTI -->
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </body>
+
 </html>

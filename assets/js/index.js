@@ -84,8 +84,8 @@ $("#previous-btn").on("click", () => {
         but want to go back and correct it we don't want to double
         count the wrong answer if they get it wrong again
     */
-    if (currentQuestion().mastered === false) { 
-        failureCounter -= 1; 
+    if (currentQuestion().mastered === false) {
+        failureCounter -= 1;
     }
     insertNextQuestion();
 });
@@ -149,12 +149,12 @@ function questionFinished(result) {
     */
     if (result === "pass") {
         markAsMastered();
-     } else {
+    } else {
         failureCounter += 1;
-     }
+    }
     updateCodes();
-    if (checkIfEndOfTest()) { 
-        return; 
+    if (checkIfEndOfTest()) {
+        return;
     }
     insertNextQuestion();
 }

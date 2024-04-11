@@ -98,7 +98,6 @@ As these totals are quite different, this has highlighted that not all of these 
 #### Adaptations
 Opportunity 1's viability is low because the course is large, and to create an assessment covering every aspect of the course would be extremely time consuming and not feasible given the deadline. I will adapt this to be *algebra only*. The reasoning behind this is that algebra is the cornerstone of other topics and would potentially be the most useful to the student. I will remove Opportunity 3, 6, 7 because of time constraints however these can be implemented in the future. 
 
-
 | Opportunity/Problem | Importance | Viability
 | ----------- | ----------- | ----------- 
 | 1. To provide an assessment for ALGEBRA topics required to achieve a grade 9 | 5 | 5 |
@@ -116,7 +115,6 @@ The whole premise of the website is to do this for students.
 
 > #### Business Goal B - I want to increase visibility of my tutoring services by providing a valuable resource to parents
 Business logo on the page and link to business website appearing at several stages without being overly interfering (business has a no hard-sell policy)
-
 
 > #### User Story A - I want an assessment of what I do and do not know
 - A test or assessment with questions that the student completes, with an option to see if they got it correct at each question. Don't bombard them with hard questions if they got early easy questions wrong (option to skip questions whether by user choice or by assessment). These will be only algebra-based initially. 
@@ -193,7 +191,6 @@ Email me the results button will appear at the bottom if they would like results
 #### Colour Scheme
 The colour scheme is in line with that of my business.
 ![Colour Palette with muted blue green and purple](assets/images/readme/colour-palette.png)
-
 
 #### Typography 
 
@@ -398,7 +395,6 @@ This is what the email that is delivered looks like:
 ![Example email part 1](./assets/images/readme/features/results-email-1.png)
 ![Example email part 2](./assets/images/readme/features/results-email-2.png)
 
-
 ### Changes from initial planning
 
 Without realising it, I had created too much work for the project. To this end, the following changed were made:
@@ -443,7 +439,6 @@ I also decided to have the option to enter the email at the end, as I didn't wan
 - [W3C Validator](https://validator.w3.org/) for validating HTML 
 - [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) to validate the CSS
 - [JSHint](https://jshint.com/) to detect errors in my javaScript files
-
 
 ## Testing, Validation and Bugs
 
@@ -503,7 +498,6 @@ To fork this repository:
    - https://accessibility.oit.ncsu.edu/putting-math-on-the-web-using-mathml-and-html5/
    - [MathJax Documentation](https://docs.mathjax.org/en/latest/basic/mathematics.html)
 - To get the footer to stick to the bottom of the page with bootstrap: https://radu.link/make-footer-stay-bottom-page-bootstrap/
-
 
 #### Specific Code 
 
@@ -587,7 +581,6 @@ if (sendBtn && emailForm) {
 import {
     modules
 } from './questions.js';
-
 
 // CREDIT: I used the follow repository as a guide on how to use emailJS correctly: https://github.com/yamesjamess/feb-24-hackathon-love-riot
 // CREDIT: full details in readme
@@ -673,7 +666,6 @@ $("#email").on("keydown", (event) => {
   })
 ```
 
-
 #### Validating email input
 
 I used the following code in my email.js file exactly from [here](https://www.w3resource.com/javascript/form/email-validation.php): 
@@ -688,7 +680,6 @@ function validateEmail() {
     return (false)
 }
 ```
-
 
 ### Content
 
