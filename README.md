@@ -266,7 +266,7 @@ This is a collapsible button that will show all the modules currently in the tes
 
 On a small screen: 
 
-![Image of the collapsible button opened](./assets/images/readme/features/module-list-sm.[png])
+![Image of the collapsible button opened](./assets/images/readme/features/module-list-sm.png)
 
 On a larger screen: 
 
