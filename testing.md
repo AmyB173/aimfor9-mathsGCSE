@@ -203,7 +203,7 @@ I have included this here even though part of it is automated (WAVE chrome tool)
 
 Several issues were raised: 
 
-- **Colour Constrast**: this was raised as the white text aainst the grey background was not providing enough contrast. I have changed the grey to a darker version to improve accessibility and so it is not longer flagged by WAVE. 
+- **Colour Constrast**: this was raised as the white text against the grey background was not providing enough contrast. I have changed the grey to a darker version #637380 to improve accessibility and so it is not longer flagged by WAVE. 
 
 - **Missing Form Label**: I added a visually hidden label for the name input to resole this
 
