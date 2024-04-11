@@ -8,6 +8,7 @@ let currentModuleCode = 1;
 let failureCounter = 0;
 let username;
 let grade;
+let numberOfQuestions;
 
 // ----------------------START SECTION----------------------------
 
@@ -18,11 +19,14 @@ let grade;
     populate with any additional modules or questions
  */
 window.onload = () => {
+    // Populate module and question list on start page
     let list = "";
     for (const module of modules) {
         list += `<li><strong>${module.displayName}</strong>: ${module.content.length} questions</li>`;
     }
     $("#moduleList")[0].innerHTML = "<ul>" + `${list}` + "</ul>";
+    // Count the number of modules and store
+    numberOfQuestions = countQuestions();
 };
 
 // Trigger for starting assessment, removing the starting text and inserting question 1
@@ -108,8 +112,31 @@ $("#end-btn").on("click", () => {
     checkIfEndOfTest();
 });
 
-// Updates Progress on progress bar 
+// Count total number of questions in test
+function countQuestions() {
+    let questions = 0;
+    for (const module of modules) {
+        question += module.length;
+     }
+    return questions;
+}
 
+// Counts the number of questions completed
+function countQuestionsCompleted() {
+    if (currentModuleCode === 1) {
+        return currentQuestionCode;
+    } else {
+        for (const module of modules) {
+            
+        }
+    }
+
+}
+
+// Updates Progress on progress bar 
+function updateProgress {
+
+}
 
 //returns the current module array
 function currentModule() {
