@@ -150,7 +150,7 @@ On entering the website, you are presented with some instructions explaining the
 
 - What is your name? 
 - What is your email address (optional - only to be used to send your results)? 
-- First time or returning for a checkup?
+- First time or returning for a check-up?
 - What grade are you currently working at? 
 
 Then the user will be presented with a "start assessment" button. 
@@ -440,7 +440,6 @@ I also decided to have the option to enter the email at the end, as I didn't wan
  - [MathJax](https://www.mathjax.org/) to present equation
 - [JS Confetti](https://www.npmjs.com/package/js-confetti) was used to display emojis as confetti at the end of the test
  - WAVE chrome extension for accessibility testing
- - WCAG Contrast checker chrome extension for colour contrast checking
 - [W3C Validator](https://validator.w3.org/) for validating HTML 
 - [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) to validate the CSS
 - [JSHint](https://jshint.com/) to detect errors in my javaScript files

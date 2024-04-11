@@ -23,7 +23,7 @@ When entering an email at the end, the user is notified if the email failed to s
 
 ![code showing spinner fix](./assets/images/readme/testing/remove-spinner-fix.png)
 
-### Selecting elements using the ID in jquery
+### Selecting elements using the ID in jQuery
 
 I often has the issue of trying to access the innerHTML of an element with a particular id, but couldn't get it to work. I assumed because id are by nature unique one particular element, that I wouldn't need to give an index, however, I realised that using jQuery to inspect the DOM an array is always returned so I needed to specify the index of 0 even if I was using an id to target it: 
 
@@ -42,8 +42,8 @@ modules.length
 ```
 The above counted the amount of modules so I could check if I was at the end. A silly but time consuming error. However, I used the debugging tool in chrome and developed my knowledge of this a little further. 
 
-### Attempting to install bootstrap and jquery via npm  
-I wanted to try and install bootstrap and jquery locally via npm so I could customise Bootstrap via altering the sass variables. Given this worked for bootstrap I tried doing this jquery which worked locally. 
+### Attempting to install bootstrap and jQuery via npm  
+I wanted to try and install bootstrap and jQuery locally via npm so I could customise Bootstrap via altering the sass variables. Given this worked for bootstrap I tried doing this jQuery which worked locally. 
 
 As this is my first time using node modules and installing via npm, I didn't realise that git ignores node_modules and that github pages is designed for static pages and does not generally host the external libraries and frameworks. 
 
@@ -127,11 +127,11 @@ I plan to do mostly manual testing except for lighthouse and validation which ar
 | End assessment button, clicks the cross in top right, continues with test                                                              | When end assessment button is clicked, a warning appears informing the user that all remaining questions will be marked incorrect, user clicks cross in top-right corner and test continues as normal                                        | Pass      |
 | **RESTART ASSESSMENT BUTTON**                                                                                                              |                                                                                                                                                                                                                                              |           |
 | Restart assessment button, clicks understood, start page appears                                                                       | When the end assessment button is clicked, user receives warning that all information will be erased, user clicks understood, start page appears                                                                                             | Pass      |
-| Restart assessment button, click cancel, continues with test                                                                           | When the end assessment button is clicked, user receives warning that all information will be erased, user clicks canel, test continues as normal                                                                                            | Pass      |
+| Restart assessment button, click cancel, continues with test                                                                           | When the end assessment button is clicked, user receives warning that all information will be erased, user clicks cancel, test continues as normal                                                                                            | Pass      |
 | Restart assessment button, click cross in top right, continues with test                                                               | When the end assessment button is clicked, user receives warning that all information will be erased, user clicks cross in top-right, test continues as normal                                                                               | Pass      |
 | **LOGO BUTTON**                                                                                                                            |                                                                                                                                                                                                                                              |           |
 | Logo button, clicks understood, start page appears                                                                                     | When the logo button is clicked, user receives warning that all information will be erased, user clicks understood, start page appears                                                                                                       | Pass      |
-| Logo button, click cancel, continues with test                                                                                         | When the logo button is clicked, user receives warning that all information will be erased, user clicks canel, test continues as normal                                                                                                      | Pass      |
+| Logo button, click cancel, continues with test                                                                                         | When the logo button is clicked, user receives warning that all information will be erased, user clicks cancel, test continues as normal                                                                                                      | Pass      |
 | Logo button, click cross in top right, continues with test                                                                             | When the logo button is clicked, user receives warning that all information will be erased, user clicks cross in top-right, test continues as normal                                                                                         | Pass      |
 | **EMAIL**                                                                                                                                  |                                                                                                                                                                                                                                              |           |
 | Email: Enter correct email and receive results                                                                                         | Enter correct email address, see spinner, see success message, receive email with the correct results                                                                                                                                        | Pass      |
@@ -160,7 +160,7 @@ Table of results detailing a summary of what they know:
 <br/>
 <details>
 <summary><strong>(B) as a user, I want to be directed to specific resources that I can use to revise based on where I'm currently at</strong></summary>
-At the end of the test, the yser is directed to specific websites to improve on the topics they didn't do well on. 
+At the end of the test, the user is directed to specific websites to improve on the topics they didn't do well on. 
 
 ![An image of the suggested revision](./assets/images/readme/features/improve-lg.png)
 </details>
@@ -261,11 +261,11 @@ I have included this here even though part of it is automated (WAVE chrome tool)
 - I made sure the all the questions and answers were created using MathML and MathJax which ensures it can be read by screen readers: [See this article](https://www.chhs.colostate.edu/accessibility/best-practices-how-tos/mathml/#:~:text=MathML%20is%20a%20way%20of,text%2Dto%2Dspeech%20software.)
 - I am aware that the "full solution" section which was handwritten by me, will not be screen readable, but the site still remains completely useable as the solution is a nice-to-have and not essential for completing the test. It is common practice on a lot of educational websites to use handwritten mathematical solutions.
 
-#### WAVE Chome Extension Testing
+#### WAVE Chrome Extension Testing
 
 Several issues were raised: 
 
-- **Colour Constrast**: this was raised as the white text against the grey background was not providing enough contrast. I have changed the grey to a darker version #637380 to improve accessibility and so it is not longer flagged by WAVE. 
+- **Colour Contrast**: this was raised as the white text against the grey background was not providing enough contrast. I have changed the grey to a darker version #637380 to improve accessibility and so it is not longer flagged by WAVE. 
 
 - **Missing Form Label**: I added a visually hidden label for the name input to resole this
 
