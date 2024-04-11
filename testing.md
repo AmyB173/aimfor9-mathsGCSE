@@ -69,6 +69,10 @@ I was initially going to use images to present my equations but I realised this 
 
 These were found during validation - see validation section for full details of fix.
 
+## Testing Note
+
+I decided to add a progress bar into my project after all the testing was complete. I then re-did all tests and added in progress bar tests. If nothing changed, I did not update the test results here.
+
 ## Manual Testing
 
 During the development process, I continuously manually tested small elements of the site to check functionality and remove bugs.
