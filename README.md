@@ -487,7 +487,7 @@ To fork this repository:
 ### Images
 
 - Maths Tutoring with Amy Logo and derivatives - created by me in my business "Maths Tutoring with Amy"
-- Background on 404 page
+- Background on 404 page - image by freepik at https://www.freepik.com/free-vector/hand-drawn-no-data-illustration_49586625.htm
 
 ### Code 
 #### General
