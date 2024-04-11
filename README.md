@@ -47,7 +47,7 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
 3. [Tools and Technologies Used](#tools-and-technologies-used-1)
    -
 
-4. [Testing](#testing-and-validation)
+4. [Testing](#testing-validation-and-bugs)
    -
 
 5. [Deployment and Local Development](#deployment-and-local-development-1)
@@ -417,7 +417,7 @@ I also decided to have the option to enter the email at the end, as I didn't wan
 
 - To have the option to save your results as a pdf instead of emailed.
 
-- To have the test only accessible to those sign up to a mailing list (for marketing purposed)
+- To have the test only accessible to those sign up to a mailing list (for marketing purposes)
 
 - To offer all the topics needed to achieve a Grade 9.
 
@@ -467,7 +467,7 @@ GitHub Pages was used to deploy the live website. The instructions to achieve th
 ### Local Development
 
 #### How to Fork:
-To fork the double-seven-guitars repository:
+To fork this repository:
 
 1. Log in to GitHub
 2. Go to the repository for this project (AmyB173/aimfor9-mathsGCSE)
@@ -491,7 +491,7 @@ To fork the double-seven-guitars repository:
 
 ### Images
 
-- Maths Tutoring with Amy Logo and derivatives - created by my in my business "Maths Tutoring with Amy"
+- Maths Tutoring with Amy Logo and derivatives - created by me in my business "Maths Tutoring with Amy"
 - Background on 404 page
 
 ### Code 
@@ -696,3 +696,6 @@ All content was created by me.
 
 ## Acknowledgments
 
+With thanks to: 
+- my cohort facilitator Amy Richardson for her help and many answers to my questions
+- my fellow students in my cohort for always being on hand to answer any questions and offer support
