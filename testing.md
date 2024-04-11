@@ -192,6 +192,35 @@ This has been met by the option to have the results emailed:
 </details>
 <br/>
 
+## Responsiveness testing
+
+### Method for testing and breakpoints used
+
+I will use Google Chrome and Firefox developer tools in "responsive" mode to slowly move the screen to make it continuously larger within certain breakpoints.
+
+I have used the Bootstrap breakpoints for this testing. 
+
+I will also test the exact resolutions of a common mobile, tablet and monitor. I used 360x800, 768x1024 and 1920x1080. I decided these based on popularity of use using [this](https://www.linkedin.com/pulse/most-popular-screen-resolutions-mobile-tablet-desktop-elziady/) article. 
+
+### Testing 
+
+All pages were tested, and developer tools were used on both Chrome and Firefox. 
+
+|   Screen width | Expected Outcome  | Pass/Fail |
+| ---------------------------- | ------------- | --------- |
+| 320px - 575px  | No errors where items are overlapping, touching the edge of the screen when they shouldn't, or text being pushed under or out of the container. Modals appear well and are still functional. All buttons can be used on all screen sizes. All sizes seem proportionate to screen size | Fail |
+| 576px - 767px  | Same as first row |  Pass  |
+| 768px - 991px | Same as first row   | Pass |
+| 992px - 1199px | Same as first row   | Pass |
+| 1200px - 1400px | Same as first row   | Pass |
+
+
+|  Device          | Expected Outcome  | Pass/Fail |
+| ---------------------------- | ------------- | --------- |
+|Mobile | No errors where items are overlapping, touching the edge of the screen when they shouldn't, or text being pushed under or out of the container. Modals appear well and are still functional. All buttons can be used on all screen sizes. All sizes seem proportionate to screen size | Pass |
+| Tablet  | Same as first row |  Pass  |
+| Desktop | Same as first row   | Pass |
+
 ### Accessibility Testing
 
 I have included this here even though part of it is automated (WAVE chrome tool).
