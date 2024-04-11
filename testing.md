@@ -2,9 +2,18 @@
 # Bugs, testing and validation
 
 1. [Bugs and Fixes](#bugs-and-fixes)
-2. [Testing Plan](#testing-plan) 
-3. [Manual Testing](#manual-testing)
-4. [Automated Testing](#automated-testing-validation-and-lighthouse-testing)
+2. [Manual Testing](#manual-testing)
+    - [Content Testing](#content-testing)
+    - [Feature Testing](#feature-testing)
+    - [User Story Testing](#user-story-testing)
+    - [Responsiveness Testing](#responsiveness-testing)
+    - [Browser and Device Testing](#browser-and-device-testing)
+    - [Accessibility Testing](#accessibility-testing)
+3. [Automated Testing](#automated-testing-validation-and-lighthouse-testing)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [JS Validation](#js-validation)
+    - [Lighthouse Testing](#lighthouse-testing)
 
 ## Bugs and fixes
 
@@ -60,12 +69,8 @@ I was initially going to use images to present my equations but I realised this 
 
 These were found during validation - see validation section for full details of fix.
 
-## Testing Plan
-
-
-
 ## Manual Testing
-
+I plan to do mostly manual testing except for lighthouse and validation which are automated processes.
 ### Content Testing
 
 <details>
