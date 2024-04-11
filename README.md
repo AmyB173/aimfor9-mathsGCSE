@@ -6,7 +6,7 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
 
 [Deployed site here](https://amyb173.github.io/aimfor9-mathsGCSE/) 
 
-![Am I Responsive Screenshot](./assets/images/readme/am-I-responsive.png)
+![Am I Responsive Screenshot](./assets/images/readme/am-I-responsive2.png)
 
 ## Table of contents
 
