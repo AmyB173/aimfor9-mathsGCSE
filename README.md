@@ -237,6 +237,8 @@ This website has been built as an assessment for Grade 9 students. It is designe
 
 Every section is responsive for screen sizes down to 320px width.
 
+PLEASE NOTE: The primary grey color of this website has been updated to #637380 for accessibility reasons (see testing.md) so that there is a better contrast. The following features show the original colour #8FA5B3 - it's a slight change and nothing else has been affected. 
+
 ### Header
 
 The includes the name of the webpage and then the overarching business logo from "Maths Tutoring with Amy". The logo can be clicked to redirect you back to the starting section.
