@@ -350,3 +350,6 @@ I use JSHint to check my javaScript for errors. It mostly picked up on missing s
 </details>
 
 ### Lighthouse Testing
+
+![Mobile Lighthouse Testing](./assets/images/readme/testing/mobile-lh.png)
+![Desktop Lighthouse Testing](./assets/images/readme/testing/desktop-lh.png)
