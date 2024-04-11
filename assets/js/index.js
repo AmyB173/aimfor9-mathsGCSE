@@ -84,6 +84,7 @@ $("#previous-btn").on("click", () => {
         currentModuleCode -= 1;
         currentQuestionCode = currentModule().content.length;
     }
+    updateProgress();
     /*
         If they got the previous question wrong, 
         but want to go back and correct it we don't want to double
