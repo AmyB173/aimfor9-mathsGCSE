@@ -70,7 +70,12 @@ I was initially going to use images to present my equations but I realised this 
 These were found during validation - see validation section for full details of fix.
 
 ## Manual Testing
-I plan to do mostly manual testing except for lighthouse and validation which are automated processes.
+
+During the development process, I continuously manually tested small elements of the site to check functionality and remove bugs.
+
+I plan to do mostly manual testing for the functionality except for lighthouse and validation and WAVE accessibility testing which are automated processes. Automating things like performance testing and accessibility testing is preferred as manual testing would be laborious and impractical.
+
+
 ### Content Testing
 
 <details>
