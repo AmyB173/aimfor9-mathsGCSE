@@ -32,6 +32,7 @@ $("#start-assessment").on("click", () => {
     $(".start-wrapper").addClass("d-none");
     $("#explanation-text").addClass("d-none");
     $("#question-wrapper").removeClass("d-none");
+    $("#progress-bar").removeClass("d-none");
     $("#question-additional-buttons").removeClass("d-none");
     insertNextQuestion();
 });
@@ -106,6 +107,9 @@ $("#end-btn").on("click", () => {
     currentModuleCode = modules.length + 1;
     checkIfEndOfTest();
 });
+
+// Updates Progress on progress bar 
+
 
 //returns the current module array
 function currentModule() {
@@ -194,6 +198,7 @@ function checkIfEndOfTest() {
         $(".start-wrapper").addClass("d-none");
         $("#question-wrapper").addClass("d-none");
         $("#question-additional-buttons").addClass("d-none");
+        $("#progress-bar").addClass("d-none");
         $("#results-wrapper").removeClass("d-none");
         $("#studentName")[0].innerHTML = username;
         populateResultsTable();
