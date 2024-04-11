@@ -126,6 +126,9 @@ I plan to do mostly manual testing for the functionality except for lighthouse a
 | When final question in the test is completed, confetti appears and results page appear                                                 | Answer all question in final module correctly, last question triggers confetti and appearance of results page                                                                                                                                | Pass      |
 | If two questions in the last module are "too hard" or "no" then confetti and results page appear                                       | Answer two questions in the final module incorrectly, last question triggers confetti and appearance of results page                                                                                                                         | Pass      |
 | Buttons on results page reveal results table and suggested revision                                                                    | When clicked each button reveals the correct section, when clicked again the section disappears                                                                                                                                              | Pass      |
+| **PROGRESS BAR**                                                                                                                  |                                                                                                                                                                                                                                              |           |
+| Progress Bar                                                                                       | When moving through the questions either by clicking yes, no, too easy or too hard, the progress bar increases | Pass      |
+| Progress Bar                                                                                       | When going back to a previous question, the progress bar decreases | Fail     |
 | **END ASSESSMENT BUTTON**                                                                                                                  |                                                                                                                                                                                                                                              |           |
 | End assessment button, confirms,  ends the test                                                                                        | When end assessment button is clicked, a warning appears informing the user that all remaining questions will be marked incorrect, user clicks "understood" and results page appears with all remaining questions marked as "needs revision" | Pass      |
 | End assessment button, clicks cancel, continues with test                                                                              | When end assessment button is clicked, a warning appears informing the user that all remaining questions will be marked incorrect, user clicks "cancel" and test continues as normal                                                         | Pass      |
@@ -144,6 +147,14 @@ I plan to do mostly manual testing for the functionality except for lighthouse a
 | Email: Enter correct email and receive warning the email did not send                                                                  | (Force this situation by temporarily changing the emailjs template) Enter correct email, see spinner, receive warning of email failing to send                                                                                               | Pass      |
 
 </details>
+
+#### Fix and repeated tests for progress bar
+
+To ensure the progress bar goes back when the user clicks to a previous question, I called the updateProgress function every time the previous button is clicked. I re-completed the tests: 
+
+| **PROGRESS BAR**                                                                                                                  |                                                                                                                                                                                                                                              |           |
+| Progress Bar                                                                                       | When moving through the questions either by clicking yes, no, too easy or too hard, the progress bar increases | Pass      |
+| Progress Bar                                                                                       | When going back to a previous question, the progress bar decreases | Pass    |
 
 ### User Story Testing
 

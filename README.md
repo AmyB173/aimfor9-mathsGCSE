@@ -33,6 +33,7 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
    - [Starting Section Input](#starting-section-input)
    - [Question Section](#question-section)
    - [Answer Section](#answer-section)
+   - [Progress Bar](#progress-bar)
    - [Restart Assessment Button](#restart-assessment-button)
    - [Logo Button](#logo-button-in-header)
    - [End Assessment Button](#end-assessment-button)
