@@ -311,6 +311,18 @@ On a large screen:
 
 ![Image of the answer section with answer and fully worked solution below](./assets/images/readme/features/answer-lg.png)
 
+### Progress Bar 
+
+The progress through the test is calculated as a percentage (current question/total number question * 100) and rounded to the nearest whole number. 
+
+On a small screen: 
+
+![Image of the progress bar on a small screen](./assets/images/readme/features/progress-bar-sm.png)
+
+On a large screen: 
+
+![Image of the progress bar on a large screen](./assets/images/readme/features/progress-bar-lg.png)
+
 ### Restart Assessment Button
 When the restart assessment button is clicked a modal appears warning them that their results will be erased - option to continue or restart given.
 
