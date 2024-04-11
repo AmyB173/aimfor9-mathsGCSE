@@ -351,5 +351,12 @@ I use JSHint to check my javaScript for errors. It mostly picked up on missing s
 
 ### Lighthouse Testing
 
+#### Main Page
+
 ![Mobile Lighthouse Testing](./assets/images/readme/testing/mobile-lh.png)
 ![Desktop Lighthouse Testing](./assets/images/readme/testing/desktop-lh.png)
+
+#### 404 Page
+
+![Mobile Lighthouse Testing](./assets/images/readme/testing/404-lh-mobile.png)
+![Desktop Lighthouse Testing](./assets/images/readme/testing/404-lh-desktop.png)
