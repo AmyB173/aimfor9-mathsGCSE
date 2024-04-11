@@ -116,7 +116,7 @@ $("#end-btn").on("click", () => {
 function countQuestions() {
     let questions = 0;
     for (const module of modules) {
-        question += module.content.length;
+        questions += module.content.length;
      }
     return questions;
 }
@@ -130,19 +130,19 @@ function countQuestionsCompleted() {
         //returns the sum of all previous questions in previous modules plus current question
         let questionsCompleted = 0;
         for (const module of modules) {
-            let moduleNumber = parseInt(module.displayName.slice(-1));
+            let moduleNumber = parseInt(module.name.slice(-1));
             if (moduleNumber < currentModuleCode) {
                 questionsCompleted += module.content.length;
             }
-            questionsCompleted += currentQuestionCode;
-            return questionsCompleted;
         }
+        questionsCompleted += currentQuestionCode;
+        return questionsCompleted;
     }
 }
 
 // Updates Progress on progress bar 
 function updateProgress() {
-    let progress = countQuestionsCompleted()/numberOfQuestions;
+    let progress = Math.round((countQuestionsCompleted()/numberOfQuestions)*100);
 }
 
 //returns the current module array
@@ -180,6 +180,8 @@ function insertNextQuestion() {
     if it's not finished next question is initiated
 */
 function questionFinished(result) {
+    // When the question is finished, update progress bar
+    updateProgress();    
     /*
         mastered is automatically false
         if they pass the question is marked as mastered
