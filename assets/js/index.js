@@ -116,26 +116,33 @@ $("#end-btn").on("click", () => {
 function countQuestions() {
     let questions = 0;
     for (const module of modules) {
-        question += module.length;
+        question += module.content.length;
      }
     return questions;
 }
 
 // Counts the number of questions completed
 function countQuestionsCompleted() {
+   // returns just the current question if we are on the first module
     if (currentModuleCode === 1) {
         return currentQuestionCode;
-    } else {
+    } else { 
+        //returns the sum of all previous questions in previous modules plus current question
+        let questionsCompleted = 0;
         for (const module of modules) {
-            
+            let moduleNumber = parseInt(module.displayName.slice(-1));
+            if (moduleNumber < currentModuleCode) {
+                questionsCompleted += module.content.length;
+            }
+            questionsCompleted += currentQuestionCode;
+            return questionsCompleted;
         }
     }
-
 }
 
 // Updates Progress on progress bar 
-function updateProgress {
-
+function updateProgress() {
+    let progress = countQuestionsCompleted()/numberOfQuestions;
 }
 
 //returns the current module array
