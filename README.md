@@ -72,8 +72,8 @@ This is to complement my business "Maths Tutoring with Amy" and could potentiall
 Users will be students who are preparing and revising for their GCSE Maths, are already working at least at a Grade 7 and are aiming for a Grade 9. 
 
 - (A) as a user, I want an assessment of what I do and do not know
-- (B) as a user, I want to be directed to specific resources that I can > use to revise based on where I'm currently at
-- (C) as a user, I want to be able to return to the website to see if > I've improved after doing the recommended work (later removed to make scope more manageable)
+- (B) as a user, I want to be directed to specific resources that I can use to revise based on where I'm currently at
+- (C) as a user, I want to be able to return to the website to see if I've improved after doing the recommended work (later removed to make scope more manageable)
 - (D) as a user, I want to be able to skip topics that I already know so I don't waste time completing those questions
 - (E) as a user, I want to be able to return to my results at a later date
 
@@ -139,7 +139,9 @@ This is going to be a very content heavy project as the assessment will involve 
 
 **Ideal situation:** all questions, solutions, videos and revision materials will be produced by the business 
 
-**Minimum viable product:** given the time constraints, and the fact that the business is in it's infant stage, most of the content will not be produced by the business but will instead be taken from websites that offer questions and solutions that can be freely used. These will be referenced to the user at every stage to increase traffic to these websites (these websites are mostly not for profit and do lots of good work so promoting and supporting them is important). 
+**Minimum viable product:** given the time constraints, and the fact that the business is in it's infant stage, most of the content will not be produced by the business but will instead be taken from websites that offer questions and solutions that can be freely used. These will be referenced to the user at every stage to increase traffic to these websites (these websites are mostly not for profit and do lots of good work so promoting and supporting them is important).
+
+Note: in the end, most content was created by me (questions and solutions) however I did reference the websites in the final results page on how to improve.
 
 ### Structure
 

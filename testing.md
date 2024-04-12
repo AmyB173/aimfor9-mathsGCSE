@@ -156,7 +156,7 @@ I plan to do mostly manual testing for the functionality except for lighthouse a
 
 To ensure the progress bar goes back when the user clicks to a previous question, I called the updateProgress function every time the previous button is clicked. I re-completed the tests: 
 
-| **PROGRESS BAR**                                                                                                                  |                                                                                                                                                                                                                                              |           |
+
 | Progress Bar                                                                                       | When moving through the questions either by clicking yes, no, too easy or too hard, the progress bar increases | Pass      |
 | Progress Bar                                                                                       | When going back to a previous question, the progress bar decreases | Pass    |
 
@@ -225,7 +225,7 @@ I will use Google Chrome and Firefox developer tools in "responsive" mode to slo
 
 I have used the Bootstrap breakpoints for this testing. 
 
-I will also test the exact resolutions of a common mobile, tablet and monitor. I used 360x800, 768x1024 and 1920x1080. I decided these based on popularity of use using [this](https://www.linkedin.com/pulse/most-popular-screen-resolutions-mobile-tablet-desktop-elziady/) article. 
+I will also test the exact resolutions of a common mobile, tablet and monitor. I used 360x800, 768x1024 and 1920x1080. I decided these based on popularity of use using [this](https://www.linkedin.com/pulse/most-popular-screen-resolutions-mobile-tablet-desktop-elziady/){:target="_blank"} article. 
 
 ### Testing 
 
@@ -287,7 +287,7 @@ Several issues were raised:
 
 - **Colour Contrast**: this was raised as the white text against the grey background was not providing enough contrast. I have changed the grey to a darker version #637380 to improve accessibility and so it is not longer flagged by WAVE. 
 
-- **Missing Form Label**: I added a visually hidden label for the name input to resole this
+- **Missing Form Label**: I added a visually hidden label for the name input to resolve this
 
 - **Possible headings not being labelled**: The wording of the questions was identified as a possible heading. I feel, on balance, this would be misleading to label as a heading. 
 
