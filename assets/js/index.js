@@ -145,7 +145,6 @@ function countQuestionsCompleted() {
 function updateProgress() {
     let progress = Math.round((countQuestionsCompleted()/numberOfQuestions)*100);
     let percentage = progress + "%";
-    console.log(percentage);
     document.getElementById("progress-bar-display").style.width = percentage;
 }
 
